@@ -20,7 +20,7 @@ const AddSpecialCategory = () => {
             products: []
         };
 
-        fetch('http://localhost:5000/special_categories', {
+        fetch('https://click-pick-server.onrender.com/special_categories', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

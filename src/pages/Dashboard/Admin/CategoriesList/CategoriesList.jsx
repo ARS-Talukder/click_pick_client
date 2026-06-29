@@ -9,7 +9,7 @@ const CategoriesList = () => {
     const { data: categories, isLoading, isSuccess, isError, error, refetch } = useQuery({
         queryKey: ["categories"],
         queryFn: () => {
-            return axios.get("http://localhost:5000/categories")
+            return axios.get("https://click-pick-server.onrender.com/categories")
         }
     })
     let content;

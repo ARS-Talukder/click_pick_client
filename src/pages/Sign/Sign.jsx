@@ -46,7 +46,7 @@ const Sign = () => {
                 const customer = { name, email, phone, address }
                 if (data.user) {
                     //Post a customer
-                    fetch(`http://localhost:5000/customers/${email}`, {
+                    fetch(`https://click-pick-server.onrender.com/customers/${email}`, {
                         method: 'PUT',
                         headers: {
                             'content-type': 'application/json'

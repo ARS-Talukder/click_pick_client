@@ -9,7 +9,7 @@ const AllCustomers = () => {
     const { data: customers, isLoading, isSuccess, isError, error, refetch } = useQuery({
         queryKey: ["customers"],
         queryFn: () => {
-            return axios.get("http://localhost:5000/customers")
+            return axios.get("https://click-pick-server.onrender.com/customers")
         }
     })
 

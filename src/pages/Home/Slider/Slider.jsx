@@ -14,7 +14,7 @@ const Slider = () => {
     const { data: banner, isLoading, isSuccess, isError, error } = useQuery({
         queryKey: ["banner"],
         queryFn: () => {
-            return axios.get("http://localhost:5000/banner")
+            return axios.get("https://click-pick-server.onrender.com/banner")
         }
     })
 
@@ -42,11 +42,8 @@ const Slider = () => {
                 }}
                 // spaceBetween={30}
                 centeredSlides={true}
-                autoplay={{
-                    delay: 2500,
-                    disableOnInteraction: false,
-                }}
-                loop={true}
+                autoplay={false}
+                loop={false}
                 navigation={true}
                 modules={[Autoplay, Navigation]}
                 className="mySwiper"

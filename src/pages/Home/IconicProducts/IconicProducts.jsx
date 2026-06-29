@@ -7,7 +7,7 @@ import Loading from '../../Shared/Loading';
 const IconicProducts = () => {
     const { data: iconicCategories, isLoading, isSuccess } = useQuery({
         queryKey: ["iconicCategories"],
-        queryFn: () => axios.get("http://localhost:5000/iconic_categories")
+        queryFn: () => axios.get("https://click-pick-server.onrender.com/iconic_categories")
     });
 
     // Google Tag Manager data layer push

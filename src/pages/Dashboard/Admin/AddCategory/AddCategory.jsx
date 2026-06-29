@@ -27,11 +27,11 @@ const AddCategory = () => {
         const formData = new FormData();
         formData.append("image", file);
         try {
-            const response = await axios.post("http://localhost:5000/upload", formData, {
+            const response = await axios.post("https://click-pick-server.onrender.com/upload", formData, {
                 headers: { "Content-Type": "multipart/form-data" },
             });
 
-            setImages([...images, { _id: Date.now(), url: `http://localhost:5000/${response.data.filePath}` }]);
+            setImages([...images, { _id: Date.now(), url: `https://click-pick-server.onrender.com/${response.data.filePath}` }]);
             toast.success("Done");
         } catch (err) {
             console.error("Error uploading image:", err);
@@ -40,7 +40,7 @@ const AddCategory = () => {
     };
     const handleDeleteImage = async (id, imageUrl) => {
         try {
-            await axios.delete("http://localhost:5000/delete", {
+            await axios.delete("https://click-pick-server.onrender.com/delete", {
                 data: { imageUrl }
             });
 
@@ -63,7 +63,7 @@ const AddCategory = () => {
         const category = { name, img };
 
         if (img != undefined) {
-            fetch('http://localhost:5000/categories', {
+            fetch('https://click-pick-server.onrender.com/categories', {
                 method: 'POST',
                 headers: {
                     'content-type': 'application/json'

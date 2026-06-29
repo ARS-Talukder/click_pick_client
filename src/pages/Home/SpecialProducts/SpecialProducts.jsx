@@ -9,7 +9,7 @@ import './SpecialProducts.css';
 const SpecialProducts = () => {
     const { data: specialCategories, isLoading, isSuccess } = useQuery({
         queryKey: ["specialCategories"],
-        queryFn: () => axios.get("http://localhost:5000/special_categories")
+        queryFn: () => axios.get("https://click-pick-server.onrender.com/special_categories")
     });
 
     // // Google Tag Manager data layer push

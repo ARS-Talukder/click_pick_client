@@ -41,7 +41,7 @@ const Checkout = () => {
 
     // Fetch coupons
     useEffect(() => {
-        fetch("http://localhost:5000/coupons")
+        fetch("https://click-pick-server.onrender.com/coupons")
             .then(res => res.json())
             .then(data => setAvailableCoupons(data))
             .catch(err => console.error("Error fetching coupons:", err));
@@ -149,7 +149,7 @@ const Checkout = () => {
             ]
         };
 
-        fetch('http://localhost:5000/orders', {
+        fetch('https://click-pick-server.onrender.com/orders', {
             method: 'POST',
             headers: { 'content-type': 'application/json' },
             body: JSON.stringify(order)
@@ -164,7 +164,7 @@ const Checkout = () => {
             });
 
         const customer = { name: customerName, email: "No Email", address: { street, upazila: selectedUpazila, district: selectedDistrictName, division: selectedDivision }, phone };
-        fetch(`http://localhost:5000/customers/${phone}`, { method: 'PUT', headers: { 'content-type': 'application/json' }, body: JSON.stringify(customer) });
+        fetch(`https://click-pick-server.onrender.com/customers/${phone}`, { method: 'PUT', headers: { 'content-type': 'application/json' }, body: JSON.stringify(customer) });
     };
 
     return (

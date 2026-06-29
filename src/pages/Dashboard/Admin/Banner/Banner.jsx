@@ -13,7 +13,7 @@ const Banner = () => {
     const [images, setImages] = useState([]);
 
     useEffect(() => {
-        fetch("http://localhost:5000/banner")
+        fetch("https://click-pick-server.onrender.com/banner")
             .then(res => res.json())
             .then(data => setImages(data))
     }, [])
@@ -31,11 +31,11 @@ const Banner = () => {
         const formData = new FormData();
         formData.append("image", file);
         try {
-            const response = await axios.post("http://localhost:5000/upload", formData, {
+            const response = await axios.post("https://click-pick-server.onrender.com/upload", formData, {
                 headers: { "Content-Type": "multipart/form-data" },
             });
 
-            const imageUrl = `http://localhost:5000/${response.data.filePath}`;
+            const imageUrl = `https://click-pick-server.onrender.com/${response.data.filePath}`;
             const newImage = { _id: Date.now(), url: imageUrl };
 
             // Add new image to the local state
@@ -44,7 +44,7 @@ const Banner = () => {
             toast.success("Uploaded");
 
             //Add banner to the database
-            await fetch('http://localhost:5000/banner', {
+            await fetch('https://click-pick-server.onrender.com/banner', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -59,7 +59,7 @@ const Banner = () => {
     };
     const handleDeleteImage = async (id, imageUrl) => {
         try {
-            await axios.delete("http://localhost:5000/delete", {
+            await axios.delete("https://click-pick-server.onrender.com/delete", {
                 data: { imageUrl }
             });
 
@@ -71,7 +71,7 @@ const Banner = () => {
             toast.success("Deleted!");
 
             // Remove from database
-            fetch('http://localhost:5000/banner', {
+            fetch('https://click-pick-server.onrender.com/banner', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

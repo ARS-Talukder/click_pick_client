@@ -10,7 +10,7 @@ import toast from 'react-hot-toast';
 const SpecialCategoriesList = () => {
     const { data: specialCategories, isLoading, isSuccess, refetch } = useQuery({
         queryKey: ["specialCategories"],
-        queryFn: () => axios.get("http://localhost:5000/special_categories")
+        queryFn: () => axios.get("https://click-pick-server.onrender.com/special_categories")
     });
 
     const [deletingId, setDeletingId] = useState(null); // track deleting category
@@ -24,7 +24,7 @@ const SpecialCategoriesList = () => {
 
         try {
             setDeletingId(id); // start loading
-            await axios.delete(`http://localhost:5000/special_category_delete/${id}`);
+            await axios.delete(`https://click-pick-server.onrender.com/special_category_delete/${id}`);
             toast.success("Category deleted successfully!");
             refetch(); // refresh list
         } catch (error) {

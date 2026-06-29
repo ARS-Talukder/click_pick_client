@@ -17,7 +17,7 @@ const EditCategory = () => {
     const id = param.id;
     const [category, setCategory] = useState({});
     useEffect(() => {
-        fetch(`http://localhost:5000/category_by_id/${id}`)
+        fetch(`https://click-pick-server.onrender.com/category_by_id/${id}`)
             .then(res => res.json())
             .then(data => setCategory(data))
 
@@ -31,7 +31,7 @@ const EditCategory = () => {
     // Handling images upload state
     const [editImage, setEditImage] = useState('');
     useEffect(() => {
-        fetch(`http://localhost:5000/category_by_id/${id}`)
+        fetch(`https://click-pick-server.onrender.com/category_by_id/${id}`)
             .then(res => res.json())
             .then(data => setEditImage(data?.img))
     }, [id])
@@ -52,11 +52,11 @@ const EditCategory = () => {
         const formData = new FormData();
         formData.append("image", file);
         try {
-            const response = await axios.post("http://localhost:5000/upload", formData, {
+            const response = await axios.post("https://click-pick-server.onrender.com/upload", formData, {
                 headers: { "Content-Type": "multipart/form-data" },
             });
 
-            const imageUrl = `http://localhost:5000/${response.data.filePath}`;
+            const imageUrl = `https://click-pick-server.onrender.com/${response.data.filePath}`;
             const newImage = { _id: Date.now(), url: imageUrl };
 
             // Add new image to the local state
@@ -65,7 +65,7 @@ const EditCategory = () => {
             toast.success("Uploaded");
 
             //Add image to the database
-            fetch(`http://localhost:5000/category_image/${id}`, {
+            fetch(`https://click-pick-server.onrender.com/category_image/${id}`, {
                 method: 'PATCH',
                 headers: {
                     'content-type': 'application/json'
@@ -79,7 +79,7 @@ const EditCategory = () => {
     };
     const handleDeleteImage = async (imageUrl) => {
         try {
-            await axios.delete("http://localhost:5000/delete", {
+            await axios.delete("https://click-pick-server.onrender.com/delete", {
                 data: { imageUrl }
             });
 
@@ -89,7 +89,7 @@ const EditCategory = () => {
             toast.success("Deleted!");
 
             //Remove image from the database
-            fetch(`http://localhost:5000/category_image/${id}`, {
+            fetch(`https://click-pick-server.onrender.com/category_image/${id}`, {
                 method: 'PATCH',
                 headers: {
                     'content-type': 'application/json'
@@ -117,7 +117,7 @@ const EditCategory = () => {
             img: editImage,
         };
 
-        fetch(`http://localhost:5000/edit_category/${id}`, {
+        fetch(`https://click-pick-server.onrender.com/edit_category/${id}`, {
             method: 'PATCH',
             headers: {
                 'content-type': 'application/json'

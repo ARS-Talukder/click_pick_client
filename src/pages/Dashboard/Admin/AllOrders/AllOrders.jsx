@@ -12,12 +12,12 @@ const AllOrders = () => {
     const { data: orders, isLoading, isSuccess, isError, error, refetch } = useQuery({
         queryKey: ["orders"],
         queryFn: () => {
-            return axios.get("http://localhost:5000/orders")
+            return axios.get("https://click-pick-server.onrender.com/orders")
         }
     })
 
     const handleSearch = () => {
-        fetch(`http://localhost:5000/order_by_phone/${searchText}`)
+        fetch(`https://click-pick-server.onrender.com/order_by_phone/${searchText}`)
             .then(res => res.json())
             .then(data => setSearchResults(data))
     };

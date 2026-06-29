@@ -9,7 +9,7 @@ const ProductsList = () => {
     const { data: products, isLoading, isSuccess, isError, error, refetch } = useQuery({
         queryKey: ["products"],
         queryFn: () => {
-            return axios.get("http://localhost:5000/products")
+            return axios.get("https://click-pick-server.onrender.com/products")
         }
     })
     let content;

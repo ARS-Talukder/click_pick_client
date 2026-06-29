@@ -1,0 +1,4528 @@
+[
+    {
+        "name": "Set Menu",
+        "category": "Foods",
+        "price": "300",
+        "discount": "50",
+        "discount_price":"150",
+        "shippingCharge":"normal",
+        "productColor": [
+            {
+                "_id": 1741014126360,
+                "text": "Red"
+            },
+            {
+                "_id": 1741014129702,
+                "text": "Black"
+            },
+            {
+                "_id": 1741014132127,
+                "text": "Blue"
+            },
+            {
+                "_id": 1741014137255,
+                "text": "White"
+            }
+        ],
+        "size": [
+            {
+                "_id": 1741014142295,
+                "text": "M"
+            },
+            {
+                "_id": 1741014144151,
+                "text": "L"
+            },
+            {
+                "_id": 1741014145447,
+                "text": "XL"
+            },
+            {
+                "_id": 1741014149566,
+                "text": "XXL"
+            }
+        ],
+        "images": [
+            {
+                "_id": 174093255324589,
+                "url": "https://i.ibb.co.com/G2PRMP2/set-menu.jpg"
+            },
+            {
+                "_id": 1740932555289,
+                "url": "http://localhost:5000//uploads/1740932555788.jpg"
+            },
+            {
+                "_id": 1740932558696,
+                "url": "http://localhost:5000//uploads/1740932559194.jpg"
+            },
+            {
+                "_id": 1740933099999,
+                "url": "http://localhost:5000//uploads/1740933100446.jpg"
+            }
+        ],
+        "description": {
+            "description_details": "Product is a well-designed and good looking for the youth indeed. In truth, It’s an eye-catching model that usually makes someone presentable. If someone searching for the best quality product for men, then this might be the best model.",
+            "description_title": "Formal Shirt with best color combination",
+            "specificDescription": [
+                {
+                    "_id": 1740930140998,
+                    "text": "Brand Name: Formal Shirt"
+                },
+                {
+                    "_id": 1740930144041,
+                    "text": "Site: peakyonline"
+                },
+                {
+                    "_id": 1740930147299,
+                    "text": "color: Authentic"
+                },
+                {
+                    "_id": 1740930150446,
+                    "text": "Band Type: Full Authentic"
+                },
+                {
+                    "_id": 1740930154758,
+                    "text": "Style: Fashion & Casual"
+                },
+                {
+                    "_id": 1740930157323,
+                    "text": "Case Material: 100% color cleared"
+                },
+                {
+                    "_id": 1740930160131,
+                    "text": "Clasp Type: Pin buckle"
+                },
+                {
+                    "_id": 1740930163121,
+                    "text": "Gender: Men"
+                },
+                {
+                    "_id": 1740930166378,
+                    "text": "Band Type: Leather"
+                }
+            ]
+        },
+        "whyBest": [
+            {
+                "_id": 1740930075838,
+                "text": "We provide the best product"
+            },
+            {
+                "_id": 1740930080247,
+                "text": "Color Warranty"
+            },
+            {
+                "_id": 1740930083766,
+                "text": "We understand what it takes to build a board"
+            },
+            {
+                "_id": 1740930087904,
+                "text": "We customize the product"
+            },
+            {
+                "_id": 1740930089930,
+                "text": "We customize the product"
+            },
+            {
+                "_id": 1740930092935,
+                "text": "৭ দিনের রিপ্লেসমেন্ট সুবিধা।"
+            },
+            {
+                "_id": 1740930096283,
+                "text": "আমাদের কাছে রেডি স্টক থাকে।"
+            },
+            {
+                "_id": 1740930100821,
+                "text": "দ্রুত তম সময়ে কুরিয়ার করা হয়।"
+            },
+            {
+                "_id": 1740930105196,
+                "text": "প্রডাক্ট চেক করে নেওয়ার সুযোগ।"
+            },
+            {
+                "_id": 1740930108120,
+                "text": "১০০% অরিজিনাল প্রোডাক্ট।"
+            }
+        ]
+    },
+    {
+        "name": "Formal Shirt",
+        "category": "Clothes",
+        "price": "300",
+        "discount": "10",
+        "discount_price":"270",
+        "shippingCharge":"normal",
+        "productColor": [
+            {
+                "_id": 1741014126360,
+                "text": "Red"
+            },
+            {
+                "_id": 1741014129702,
+                "text": "Black"
+            },
+            {
+                "_id": 1741014132127,
+                "text": "Blue"
+            },
+            {
+                "_id": 1741014137255,
+                "text": "White"
+            }
+        ],
+        "size": [
+            {
+                "_id": 1741014142295,
+                "text": "M"
+            },
+            {
+                "_id": 1741014144151,
+                "text": "L"
+            },
+            {
+                "_id": 1741014145447,
+                "text": "XL"
+            },
+            {
+                "_id": 1741014149566,
+                "text": "XXL"
+            }
+        ],
+        "images": [
+            {
+                "_id": 1740932553245345,
+                "url": "https://i.ibb.co.com/TTtVhz6/formal-shirt.jpg"
+            },
+            {
+                "_id": 1740932555289,
+                "url": "http://localhost:5000//uploads/1740932555788.jpg"
+            },
+            {
+                "_id": 1740932558696,
+                "url": "http://localhost:5000//uploads/1740932559194.jpg"
+            },
+            {
+                "_id": 1740933099999,
+                "url": "http://localhost:5000//uploads/1740933100446.jpg"
+            }
+        ],
+        "description": {
+            "description_details": "Product is a well-designed and good looking for the youth indeed. In truth, It’s an eye-catching model that usually makes someone presentable. If someone searching for the best quality product for men, then this might be the best model.",
+            "description_title": "Formal Shirt with best color combination",
+            "specificDescription": [
+                {
+                    "_id": 1740930140998,
+                    "text": "Brand Name: Formal Shirt"
+                },
+                {
+                    "_id": 1740930144041,
+                    "text": "Site: peakyonline"
+                },
+                {
+                    "_id": 1740930147299,
+                    "text": "color: Authentic"
+                },
+                {
+                    "_id": 1740930150446,
+                    "text": "Band Type: Full Authentic"
+                },
+                {
+                    "_id": 1740930154758,
+                    "text": "Style: Fashion & Casual"
+                },
+                {
+                    "_id": 1740930157323,
+                    "text": "Case Material: 100% color cleared"
+                },
+                {
+                    "_id": 1740930160131,
+                    "text": "Clasp Type: Pin buckle"
+                },
+                {
+                    "_id": 1740930163121,
+                    "text": "Gender: Men"
+                },
+                {
+                    "_id": 1740930166378,
+                    "text": "Band Type: Leather"
+                }
+            ]
+        },
+        "whyBest": [
+            {
+                "_id": 1740930075838,
+                "text": "We provide the best product"
+            },
+            {
+                "_id": 1740930080247,
+                "text": "Color Warranty"
+            },
+            {
+                "_id": 1740930083766,
+                "text": "We understand what it takes to build a board"
+            },
+            {
+                "_id": 1740930087904,
+                "text": "We customize the product"
+            },
+            {
+                "_id": 1740930089930,
+                "text": "We customize the product"
+            },
+            {
+                "_id": 1740930092935,
+                "text": "৭ দিনের রিপ্লেসমেন্ট সুবিধা।"
+            },
+            {
+                "_id": 1740930096283,
+                "text": "আমাদের কাছে রেডি স্টক থাকে।"
+            },
+            {
+                "_id": 1740930100821,
+                "text": "দ্রুত তম সময়ে কুরিয়ার করা হয়।"
+            },
+            {
+                "_id": 1740930105196,
+                "text": "প্রডাক্ট চেক করে নেওয়ার সুযোগ।"
+            },
+            {
+                "_id": 1740930108120,
+                "text": "১০০% অরিজিনাল প্রোডাক্ট।"
+            }
+        ]
+    },
+    {
+        "name": "Oppo F25",
+        "category": "Mobiles",
+        "price": "450",
+        "discount": "25",
+        "discount_price":"337.5",
+        "shippingCharge":"normal",
+        "productColor": [
+            {
+                "_id": 1741014126360,
+                "text": "Red"
+            },
+            {
+                "_id": 1741014129702,
+                "text": "Black"
+            },
+            {
+                "_id": 1741014132127,
+                "text": "Blue"
+            },
+            {
+                "_id": 1741014137255,
+                "text": "White"
+            }
+        ],
+        "size": [
+            {
+                "_id": 1741014142295,
+                "text": "M"
+            },
+            {
+                "_id": 1741014144151,
+                "text": "L"
+            },
+            {
+                "_id": 1741014145447,
+                "text": "XL"
+            },
+            {
+                "_id": 1741014149566,
+                "text": "XXL"
+            }
+        ],
+        "images": [
+            {
+                "_id": 174093255324456,
+                "url": "https://i.ibb.co.com/F5XD1KY/oppo-f25.jpg"
+            },
+            {
+                "_id": 1740932555289,
+                "url": "http://localhost:5000//uploads/1740932555788.jpg"
+            },
+            {
+                "_id": 1740932558696,
+                "url": "http://localhost:5000//uploads/1740932559194.jpg"
+            },
+            {
+                "_id": 1740933099999,
+                "url": "http://localhost:5000//uploads/1740933100446.jpg"
+            }
+        ],
+        "description": {
+            "description_details": "Product is a well-designed and good looking for the youth indeed. In truth, It’s an eye-catching model that usually makes someone presentable. If someone searching for the best quality product for men, then this might be the best model.",
+            "description_title": "Formal Shirt with best color combination",
+            "specificDescription": [
+                {
+                    "_id": 1740930140998,
+                    "text": "Brand Name: Formal Shirt"
+                },
+                {
+                    "_id": 1740930144041,
+                    "text": "Site: peakyonline"
+                },
+                {
+                    "_id": 1740930147299,
+                    "text": "color: Authentic"
+                },
+                {
+                    "_id": 1740930150446,
+                    "text": "Band Type: Full Authentic"
+                },
+                {
+                    "_id": 1740930154758,
+                    "text": "Style: Fashion & Casual"
+                },
+                {
+                    "_id": 1740930157323,
+                    "text": "Case Material: 100% color cleared"
+                },
+                {
+                    "_id": 1740930160131,
+                    "text": "Clasp Type: Pin buckle"
+                },
+                {
+                    "_id": 1740930163121,
+                    "text": "Gender: Men"
+                },
+                {
+                    "_id": 1740930166378,
+                    "text": "Band Type: Leather"
+                }
+            ]
+        },
+        "whyBest": [
+            {
+                "_id": 1740930075838,
+                "text": "We provide the best product"
+            },
+            {
+                "_id": 1740930080247,
+                "text": "Color Warranty"
+            },
+            {
+                "_id": 1740930083766,
+                "text": "We understand what it takes to build a board"
+            },
+            {
+                "_id": 1740930087904,
+                "text": "We customize the product"
+            },
+            {
+                "_id": 1740930089930,
+                "text": "We customize the product"
+            },
+            {
+                "_id": 1740930092935,
+                "text": "৭ দিনের রিপ্লেসমেন্ট সুবিধা।"
+            },
+            {
+                "_id": 1740930096283,
+                "text": "আমাদের কাছে রেডি স্টক থাকে।"
+            },
+            {
+                "_id": 1740930100821,
+                "text": "দ্রুত তম সময়ে কুরিয়ার করা হয়।"
+            },
+            {
+                "_id": 1740930105196,
+                "text": "প্রডাক্ট চেক করে নেওয়ার সুযোগ।"
+            },
+            {
+                "_id": 1740930108120,
+                "text": "১০০% অরিজিনাল প্রোডাক্ট।"
+            }
+        ]
+    },
+    {
+        "name": "Realme C65",
+        "category": "Mobiles",
+        "price": "300",
+        "discount": "0",
+        "discount_price":"300",
+        "shippingCharge":"normal",
+        "productColor": [
+            {
+                "_id": 1741014126360,
+                "text": "Red"
+            },
+            {
+                "_id": 1741014129702,
+                "text": "Black"
+            },
+            {
+                "_id": 1741014132127,
+                "text": "Blue"
+            },
+            {
+                "_id": 1741014137255,
+                "text": "White"
+            }
+        ],
+        "size": [
+            {
+                "_id": 1741014142295,
+                "text": "M"
+            },
+            {
+                "_id": 1741014144151,
+                "text": "L"
+            },
+            {
+                "_id": 1741014145447,
+                "text": "XL"
+            },
+            {
+                "_id": 1741014149566,
+                "text": "XXL"
+            }
+        ],
+        "images": [
+            {
+                "_id": 1740932553245234,
+                "url": "https://i.ibb.co.com/7tKxP2Q/realme-c65.jpg"
+            },
+            {
+                "_id": 1740932555289,
+                "url": "http://localhost:5000//uploads/1740932555788.jpg"
+            },
+            {
+                "_id": 1740932558696,
+                "url": "http://localhost:5000//uploads/1740932559194.jpg"
+            },
+            {
+                "_id": 1740933099999,
+                "url": "http://localhost:5000//uploads/1740933100446.jpg"
+            }
+        ],
+        "description": {
+            "description_details": "Product is a well-designed and good looking for the youth indeed. In truth, It’s an eye-catching model that usually makes someone presentable. If someone searching for the best quality product for men, then this might be the best model.",
+            "description_title": "Formal Shirt with best color combination",
+            "specificDescription": [
+                {
+                    "_id": 1740930140998,
+                    "text": "Brand Name: Formal Shirt"
+                },
+                {
+                    "_id": 1740930144041,
+                    "text": "Site: peakyonline"
+                },
+                {
+                    "_id": 1740930147299,
+                    "text": "color: Authentic"
+                },
+                {
+                    "_id": 1740930150446,
+                    "text": "Band Type: Full Authentic"
+                },
+                {
+                    "_id": 1740930154758,
+                    "text": "Style: Fashion & Casual"
+                },
+                {
+                    "_id": 1740930157323,
+                    "text": "Case Material: 100% color cleared"
+                },
+                {
+                    "_id": 1740930160131,
+                    "text": "Clasp Type: Pin buckle"
+                },
+                {
+                    "_id": 1740930163121,
+                    "text": "Gender: Men"
+                },
+                {
+                    "_id": 1740930166378,
+                    "text": "Band Type: Leather"
+                }
+            ]
+        },
+        "whyBest": [
+            {
+                "_id": 1740930075838,
+                "text": "We provide the best product"
+            },
+            {
+                "_id": 1740930080247,
+                "text": "Color Warranty"
+            },
+            {
+                "_id": 1740930083766,
+                "text": "We understand what it takes to build a board"
+            },
+            {
+                "_id": 1740930087904,
+                "text": "We customize the product"
+            },
+            {
+                "_id": 1740930089930,
+                "text": "We customize the product"
+            },
+            {
+                "_id": 1740930092935,
+                "text": "৭ দিনের রিপ্লেসমেন্ট সুবিধা।"
+            },
+            {
+                "_id": 1740930096283,
+                "text": "আমাদের কাছে রেডি স্টক থাকে।"
+            },
+            {
+                "_id": 1740930100821,
+                "text": "দ্রুত তম সময়ে কুরিয়ার করা হয়।"
+            },
+            {
+                "_id": 1740930105196,
+                "text": "প্রডাক্ট চেক করে নেওয়ার সুযোগ।"
+            },
+            {
+                "_id": 1740930108120,
+                "text": "১০০% অরিজিনাল প্রোডাক্ট।"
+            }
+        ]
+    },
+    {
+        "name": "HP Zenbook",
+        "category": "Laptops",
+        "price": "300",
+        "discount": "15",
+        "discount_price":"255",
+        "shippingCharge":"free",
+        "productColor": [
+            {
+                "_id": 1741014126360,
+                "text": "Red"
+            },
+            {
+                "_id": 1741014129702,
+                "text": "Black"
+            },
+            {
+                "_id": 1741014132127,
+                "text": "Blue"
+            },
+            {
+                "_id": 1741014137255,
+                "text": "White"
+            }
+        ],
+        "size": [
+            {
+                "_id": 1741014142295,
+                "text": "M"
+            },
+            {
+                "_id": 1741014144151,
+                "text": "L"
+            },
+            {
+                "_id": 1741014145447,
+                "text": "XL"
+            },
+            {
+                "_id": 1741014149566,
+                "text": "XXL"
+            }
+        ],
+        "images": [
+            {
+                "_id": 174093255324567,
+                "url": "https://i.ibb.co.com/x3svWPP/hp-zenbook.jpg"
+            },
+            {
+                "_id": 1740932555289,
+                "url": "http://localhost:5000//uploads/1740932555788.jpg"
+            },
+            {
+                "_id": 1740932558696,
+                "url": "http://localhost:5000//uploads/1740932559194.jpg"
+            },
+            {
+                "_id": 1740933099999,
+                "url": "http://localhost:5000//uploads/1740933100446.jpg"
+            }
+        ],
+        "description": {
+            "description_details": "Product is a well-designed and good looking for the youth indeed. In truth, It’s an eye-catching model that usually makes someone presentable. If someone searching for the best quality product for men, then this might be the best model.",
+            "description_title": "Formal Shirt with best color combination",
+            "specificDescription": [
+                {
+                    "_id": 1740930140998,
+                    "text": "Brand Name: Formal Shirt"
+                },
+                {
+                    "_id": 1740930144041,
+                    "text": "Site: peakyonline"
+                },
+                {
+                    "_id": 1740930147299,
+                    "text": "color: Authentic"
+                },
+                {
+                    "_id": 1740930150446,
+                    "text": "Band Type: Full Authentic"
+                },
+                {
+                    "_id": 1740930154758,
+                    "text": "Style: Fashion & Casual"
+                },
+                {
+                    "_id": 1740930157323,
+                    "text": "Case Material: 100% color cleared"
+                },
+                {
+                    "_id": 1740930160131,
+                    "text": "Clasp Type: Pin buckle"
+                },
+                {
+                    "_id": 1740930163121,
+                    "text": "Gender: Men"
+                },
+                {
+                    "_id": 1740930166378,
+                    "text": "Band Type: Leather"
+                }
+            ]
+        },
+        "whyBest": [
+            {
+                "_id": 1740930075838,
+                "text": "We provide the best product"
+            },
+            {
+                "_id": 1740930080247,
+                "text": "Color Warranty"
+            },
+            {
+                "_id": 1740930083766,
+                "text": "We understand what it takes to build a board"
+            },
+            {
+                "_id": 1740930087904,
+                "text": "We customize the product"
+            },
+            {
+                "_id": 1740930089930,
+                "text": "We customize the product"
+            },
+            {
+                "_id": 1740930092935,
+                "text": "৭ দিনের রিপ্লেসমেন্ট সুবিধা।"
+            },
+            {
+                "_id": 1740930096283,
+                "text": "আমাদের কাছে রেডি স্টক থাকে।"
+            },
+            {
+                "_id": 1740930100821,
+                "text": "দ্রুত তম সময়ে কুরিয়ার করা হয়।"
+            },
+            {
+                "_id": 1740930105196,
+                "text": "প্রডাক্ট চেক করে নেওয়ার সুযোগ।"
+            },
+            {
+                "_id": 1740930108120,
+                "text": "১০০% অরিজিনাল প্রোডাক্ট।"
+            }
+        ]
+    },
+    {
+        "name": "Macbook Air",
+        "category": "Laptops",
+        "price": "300",
+        "discount": "25",
+        "discount_price":"225",
+        "shippingCharge":"normal",
+        "productColor": [
+            {
+                "_id": 1741014126360,
+                "text": "Red"
+            },
+            {
+                "_id": 1741014129702,
+                "text": "Black"
+            },
+            {
+                "_id": 1741014132127,
+                "text": "Blue"
+            },
+            {
+                "_id": 1741014137255,
+                "text": "White"
+            }
+        ],
+        "size": [
+            {
+                "_id": 1741014142295,
+                "text": "M"
+            },
+            {
+                "_id": 1741014144151,
+                "text": "L"
+            },
+            {
+                "_id": 1741014145447,
+                "text": "XL"
+            },
+            {
+                "_id": 1741014149566,
+                "text": "XXL"
+            }
+        ],
+        "images": [
+            {
+                "_id": 174093255324459,
+                "url": "https://i.ibb.co.com/G7FCQ17/macbook-air.jpg"
+            },
+            {
+                "_id": 1740932555289,
+                "url": "http://localhost:5000//uploads/1740932555788.jpg"
+            },
+            {
+                "_id": 1740932558696,
+                "url": "http://localhost:5000//uploads/1740932559194.jpg"
+            },
+            {
+                "_id": 1740933099999,
+                "url": "http://localhost:5000//uploads/1740933100446.jpg"
+            }
+        ],
+        "description": {
+            "description_details": "Product is a well-designed and good looking for the youth indeed. In truth, It’s an eye-catching model that usually makes someone presentable. If someone searching for the best quality product for men, then this might be the best model.",
+            "description_title": "Formal Shirt with best color combination",
+            "specificDescription": [
+                {
+                    "_id": 1740930140998,
+                    "text": "Brand Name: Formal Shirt"
+                },
+                {
+                    "_id": 1740930144041,
+                    "text": "Site: peakyonline"
+                },
+                {
+                    "_id": 1740930147299,
+                    "text": "color: Authentic"
+                },
+                {
+                    "_id": 1740930150446,
+                    "text": "Band Type: Full Authentic"
+                },
+                {
+                    "_id": 1740930154758,
+                    "text": "Style: Fashion & Casual"
+                },
+                {
+                    "_id": 1740930157323,
+                    "text": "Case Material: 100% color cleared"
+                },
+                {
+                    "_id": 1740930160131,
+                    "text": "Clasp Type: Pin buckle"
+                },
+                {
+                    "_id": 1740930163121,
+                    "text": "Gender: Men"
+                },
+                {
+                    "_id": 1740930166378,
+                    "text": "Band Type: Leather"
+                }
+            ]
+        },
+        "whyBest": [
+            {
+                "_id": 1740930075838,
+                "text": "We provide the best product"
+            },
+            {
+                "_id": 1740930080247,
+                "text": "Color Warranty"
+            },
+            {
+                "_id": 1740930083766,
+                "text": "We understand what it takes to build a board"
+            },
+            {
+                "_id": 1740930087904,
+                "text": "We customize the product"
+            },
+            {
+                "_id": 1740930089930,
+                "text": "We customize the product"
+            },
+            {
+                "_id": 1740930092935,
+                "text": "৭ দিনের রিপ্লেসমেন্ট সুবিধা।"
+            },
+            {
+                "_id": 1740930096283,
+                "text": "আমাদের কাছে রেডি স্টক থাকে।"
+            },
+            {
+                "_id": 1740930100821,
+                "text": "দ্রুত তম সময়ে কুরিয়ার করা হয়।"
+            },
+            {
+                "_id": 1740930105196,
+                "text": "প্রডাক্ট চেক করে নেওয়ার সুযোগ।"
+            },
+            {
+                "_id": 1740930108120,
+                "text": "১০০% অরিজিনাল প্রোডাক্ট।"
+            }
+        ]
+    },
+    {
+        "name": "Samsung S22 Ultra",
+        "category": "Mobiles",
+        "price": "820",
+        "discount": "10",
+        "discount_price":"738",
+        "shippingCharge":"normal",
+        "productColor": [
+            {
+                "_id": 1741014126360,
+                "text": "Red"
+            },
+            {
+                "_id": 1741014129702,
+                "text": "Black"
+            },
+            {
+                "_id": 1741014132127,
+                "text": "Blue"
+            },
+            {
+                "_id": 1741014137255,
+                "text": "White"
+            }
+        ],
+        "size": [
+            {
+                "_id": 1741014142295,
+                "text": "M"
+            },
+            {
+                "_id": 1741014144151,
+                "text": "L"
+            },
+            {
+                "_id": 1741014145447,
+                "text": "XL"
+            },
+            {
+                "_id": 1741014149566,
+                "text": "XXL"
+            }
+        ],
+        "images": [
+            {
+                "_id": 1740932553245567,
+                "url": "https://i.ibb.co.com/BNdsSRF/samsung-s22.jpg"
+            },
+            {
+                "_id": 1740932555289,
+                "url": "http://localhost:5000//uploads/1740932555788.jpg"
+            },
+            {
+                "_id": 1740932558696,
+                "url": "http://localhost:5000//uploads/1740932559194.jpg"
+            },
+            {
+                "_id": 1740933099999,
+                "url": "http://localhost:5000//uploads/1740933100446.jpg"
+            }
+        ],
+        "description": {
+            "description_details": "Product is a well-designed and good looking for the youth indeed. In truth, It’s an eye-catching model that usually makes someone presentable. If someone searching for the best quality product for men, then this might be the best model.",
+            "description_title": "Formal Shirt with best color combination",
+            "specificDescription": [
+                {
+                    "_id": 1740930140998,
+                    "text": "Brand Name: Formal Shirt"
+                },
+                {
+                    "_id": 1740930144041,
+                    "text": "Site: peakyonline"
+                },
+                {
+                    "_id": 1740930147299,
+                    "text": "color: Authentic"
+                },
+                {
+                    "_id": 1740930150446,
+                    "text": "Band Type: Full Authentic"
+                },
+                {
+                    "_id": 1740930154758,
+                    "text": "Style: Fashion & Casual"
+                },
+                {
+                    "_id": 1740930157323,
+                    "text": "Case Material: 100% color cleared"
+                },
+                {
+                    "_id": 1740930160131,
+                    "text": "Clasp Type: Pin buckle"
+                },
+                {
+                    "_id": 1740930163121,
+                    "text": "Gender: Men"
+                },
+                {
+                    "_id": 1740930166378,
+                    "text": "Band Type: Leather"
+                }
+            ]
+        },
+        "whyBest": [
+            {
+                "_id": 1740930075838,
+                "text": "We provide the best product"
+            },
+            {
+                "_id": 1740930080247,
+                "text": "Color Warranty"
+            },
+            {
+                "_id": 1740930083766,
+                "text": "We understand what it takes to build a board"
+            },
+            {
+                "_id": 1740930087904,
+                "text": "We customize the product"
+            },
+            {
+                "_id": 1740930089930,
+                "text": "We customize the product"
+            },
+            {
+                "_id": 1740930092935,
+                "text": "৭ দিনের রিপ্লেসমেন্ট সুবিধা।"
+            },
+            {
+                "_id": 1740930096283,
+                "text": "আমাদের কাছে রেডি স্টক থাকে।"
+            },
+            {
+                "_id": 1740930100821,
+                "text": "দ্রুত তম সময়ে কুরিয়ার করা হয়।"
+            },
+            {
+                "_id": 1740930105196,
+                "text": "প্রডাক্ট চেক করে নেওয়ার সুযোগ।"
+            },
+            {
+                "_id": 1740930108120,
+                "text": "১০০% অরিজিনাল প্রোডাক্ট।"
+            }
+        ]
+    },
+    {
+        "name": "Iphone 8 Pro",
+        "category": "Mobiles",
+        "price": "300",
+        "discount": "25",
+        "discount_price":"225",
+        "shippingCharge":"free",
+        "productColor": [
+            {
+                "_id": 1741014126360,
+                "text": "Red"
+            },
+            {
+                "_id": 1741014129702,
+                "text": "Black"
+            },
+            {
+                "_id": 1741014132127,
+                "text": "Blue"
+            },
+            {
+                "_id": 1741014137255,
+                "text": "White"
+            }
+        ],
+        "size": [
+            {
+                "_id": 1741014142295,
+                "text": "M"
+            },
+            {
+                "_id": 1741014144151,
+                "text": "L"
+            },
+            {
+                "_id": 1741014145447,
+                "text": "XL"
+            },
+            {
+                "_id": 1741014149566,
+                "text": "XXL"
+            }
+        ],
+        "images": [
+            {
+                "_id": 174093255324534,
+                "url": "https://i.ibb.co.com/g9NtXdY/ipone-8pro.jpg"
+            },
+            {
+                "_id": 1740932555289,
+                "url": "http://localhost:5000//uploads/1740932555788.jpg"
+            },
+            {
+                "_id": 1740932558696,
+                "url": "http://localhost:5000//uploads/1740932559194.jpg"
+            },
+            {
+                "_id": 1740933099999,
+                "url": "http://localhost:5000//uploads/1740933100446.jpg"
+            }
+        ],
+        "description": {
+            "description_details": "Product is a well-designed and good looking for the youth indeed. In truth, It’s an eye-catching model that usually makes someone presentable. If someone searching for the best quality product for men, then this might be the best model.",
+            "description_title": "Formal Shirt with best color combination",
+            "specificDescription": [
+                {
+                    "_id": 1740930140998,
+                    "text": "Brand Name: Formal Shirt"
+                },
+                {
+                    "_id": 1740930144041,
+                    "text": "Site: peakyonline"
+                },
+                {
+                    "_id": 1740930147299,
+                    "text": "color: Authentic"
+                },
+                {
+                    "_id": 1740930150446,
+                    "text": "Band Type: Full Authentic"
+                },
+                {
+                    "_id": 1740930154758,
+                    "text": "Style: Fashion & Casual"
+                },
+                {
+                    "_id": 1740930157323,
+                    "text": "Case Material: 100% color cleared"
+                },
+                {
+                    "_id": 1740930160131,
+                    "text": "Clasp Type: Pin buckle"
+                },
+                {
+                    "_id": 1740930163121,
+                    "text": "Gender: Men"
+                },
+                {
+                    "_id": 1740930166378,
+                    "text": "Band Type: Leather"
+                }
+            ]
+        },
+        "whyBest": [
+            {
+                "_id": 1740930075838,
+                "text": "We provide the best product"
+            },
+            {
+                "_id": 1740930080247,
+                "text": "Color Warranty"
+            },
+            {
+                "_id": 1740930083766,
+                "text": "We understand what it takes to build a board"
+            },
+            {
+                "_id": 1740930087904,
+                "text": "We customize the product"
+            },
+            {
+                "_id": 1740930089930,
+                "text": "We customize the product"
+            },
+            {
+                "_id": 1740930092935,
+                "text": "৭ দিনের রিপ্লেসমেন্ট সুবিধা।"
+            },
+            {
+                "_id": 1740930096283,
+                "text": "আমাদের কাছে রেডি স্টক থাকে।"
+            },
+            {
+                "_id": 1740930100821,
+                "text": "দ্রুত তম সময়ে কুরিয়ার করা হয়।"
+            },
+            {
+                "_id": 1740930105196,
+                "text": "প্রডাক্ট চেক করে নেওয়ার সুযোগ।"
+            },
+            {
+                "_id": 1740930108120,
+                "text": "১০০% অরিজিনাল প্রোডাক্ট।"
+            }
+        ]
+    },
+    {
+        "name": "Soft Drinks",
+        "category": "Drinks",
+        "price": "300",
+        "discount": "30",
+        "discount_price":"210",
+        "shippingCharge":"normal",
+        "productColor": [
+            {
+                "_id": 1741014126360,
+                "text": "Red"
+            },
+            {
+                "_id": 1741014129702,
+                "text": "Black"
+            },
+            {
+                "_id": 1741014132127,
+                "text": "Blue"
+            },
+            {
+                "_id": 1741014137255,
+                "text": "White"
+            }
+        ],
+        "size": [
+            {
+                "_id": 1741014142295,
+                "text": "M"
+            },
+            {
+                "_id": 1741014144151,
+                "text": "L"
+            },
+            {
+                "_id": 1741014145447,
+                "text": "XL"
+            },
+            {
+                "_id": 1741014149566,
+                "text": "XXL"
+            }
+        ],
+        "images": [
+            {
+                "_id": 174093455324534,
+                "url": "https://i.ibb.co.com/n0HgKtY/soft-Drinks.jpg"
+            },
+            {
+                "_id": 1740932555289,
+                "url": "http://localhost:5000//uploads/1740932555788.jpg"
+            },
+            {
+                "_id": 1740932558696,
+                "url": "http://localhost:5000//uploads/1740932559194.jpg"
+            },
+            {
+                "_id": 1740933099999,
+                "url": "http://localhost:5000//uploads/1740933100446.jpg"
+            }
+        ],
+        "description": {
+            "description_details": "Product is a well-designed and good looking for the youth indeed. In truth, It’s an eye-catching model that usually makes someone presentable. If someone searching for the best quality product for men, then this might be the best model.",
+            "description_title": "Formal Shirt with best color combination",
+            "specificDescription": [
+                {
+                    "_id": 1740930140998,
+                    "text": "Brand Name: Formal Shirt"
+                },
+                {
+                    "_id": 1740930144041,
+                    "text": "Site: peakyonline"
+                },
+                {
+                    "_id": 1740930147299,
+                    "text": "color: Authentic"
+                },
+                {
+                    "_id": 1740930150446,
+                    "text": "Band Type: Full Authentic"
+                },
+                {
+                    "_id": 1740930154758,
+                    "text": "Style: Fashion & Casual"
+                },
+                {
+                    "_id": 1740930157323,
+                    "text": "Case Material: 100% color cleared"
+                },
+                {
+                    "_id": 1740930160131,
+                    "text": "Clasp Type: Pin buckle"
+                },
+                {
+                    "_id": 1740930163121,
+                    "text": "Gender: Men"
+                },
+                {
+                    "_id": 1740930166378,
+                    "text": "Band Type: Leather"
+                }
+            ]
+        },
+        "whyBest": [
+            {
+                "_id": 1740930075838,
+                "text": "We provide the best product"
+            },
+            {
+                "_id": 1740930080247,
+                "text": "Color Warranty"
+            },
+            {
+                "_id": 1740930083766,
+                "text": "We understand what it takes to build a board"
+            },
+            {
+                "_id": 1740930087904,
+                "text": "We customize the product"
+            },
+            {
+                "_id": 1740930089930,
+                "text": "We customize the product"
+            },
+            {
+                "_id": 1740930092935,
+                "text": "৭ দিনের রিপ্লেসমেন্ট সুবিধা।"
+            },
+            {
+                "_id": 1740930096283,
+                "text": "আমাদের কাছে রেডি স্টক থাকে।"
+            },
+            {
+                "_id": 1740930100821,
+                "text": "দ্রুত তম সময়ে কুরিয়ার করা হয়।"
+            },
+            {
+                "_id": 1740930105196,
+                "text": "প্রডাক্ট চেক করে নেওয়ার সুযোগ।"
+            },
+            {
+                "_id": 1740930108120,
+                "text": "১০০% অরিজিনাল প্রোডাক্ট।"
+            }
+        ]
+    },
+    {
+        "name": "Cappuccino",
+        "category": "Drinks",
+        "price": "300",
+        "discount": "25",
+        "discount_price":"225",
+        "shippingCharge":"free",
+        "productColor": [
+            {
+                "_id": 1741014126360,
+                "text": "Red"
+            },
+            {
+                "_id": 1741014129702,
+                "text": "Black"
+            },
+            {
+                "_id": 1741014132127,
+                "text": "Blue"
+            },
+            {
+                "_id": 1741014137255,
+                "text": "White"
+            }
+        ],
+        "size": [
+            {
+                "_id": 1741014142295,
+                "text": "M"
+            },
+            {
+                "_id": 1741014144151,
+                "text": "L"
+            },
+            {
+                "_id": 1741014145447,
+                "text": "XL"
+            },
+            {
+                "_id": 1741014149566,
+                "text": "XXL"
+            }
+        ],
+        "images": [
+            {
+                "_id": 174095655324534,
+                "url": "https://i.ibb.co.com/6Rk84n5/cappuccino.jpg"
+            },
+            {
+                "_id": 1740932555289,
+                "url": "http://localhost:5000//uploads/1740932555788.jpg"
+            },
+            {
+                "_id": 1740932558696,
+                "url": "http://localhost:5000//uploads/1740932559194.jpg"
+            },
+            {
+                "_id": 1740933099999,
+                "url": "http://localhost:5000//uploads/1740933100446.jpg"
+            }
+        ],
+        "description": {
+            "description_details": "Product is a well-designed and good looking for the youth indeed. In truth, It’s an eye-catching model that usually makes someone presentable. If someone searching for the best quality product for men, then this might be the best model.",
+            "description_title": "Formal Shirt with best color combination",
+            "specificDescription": [
+                {
+                    "_id": 1740930140998,
+                    "text": "Brand Name: Formal Shirt"
+                },
+                {
+                    "_id": 1740930144041,
+                    "text": "Site: peakyonline"
+                },
+                {
+                    "_id": 1740930147299,
+                    "text": "color: Authentic"
+                },
+                {
+                    "_id": 1740930150446,
+                    "text": "Band Type: Full Authentic"
+                },
+                {
+                    "_id": 1740930154758,
+                    "text": "Style: Fashion & Casual"
+                },
+                {
+                    "_id": 1740930157323,
+                    "text": "Case Material: 100% color cleared"
+                },
+                {
+                    "_id": 1740930160131,
+                    "text": "Clasp Type: Pin buckle"
+                },
+                {
+                    "_id": 1740930163121,
+                    "text": "Gender: Men"
+                },
+                {
+                    "_id": 1740930166378,
+                    "text": "Band Type: Leather"
+                }
+            ]
+        },
+        "whyBest": [
+            {
+                "_id": 1740930075838,
+                "text": "We provide the best product"
+            },
+            {
+                "_id": 1740930080247,
+                "text": "Color Warranty"
+            },
+            {
+                "_id": 1740930083766,
+                "text": "We understand what it takes to build a board"
+            },
+            {
+                "_id": 1740930087904,
+                "text": "We customize the product"
+            },
+            {
+                "_id": 1740930089930,
+                "text": "We customize the product"
+            },
+            {
+                "_id": 1740930092935,
+                "text": "৭ দিনের রিপ্লেসমেন্ট সুবিধা।"
+            },
+            {
+                "_id": 1740930096283,
+                "text": "আমাদের কাছে রেডি স্টক থাকে।"
+            },
+            {
+                "_id": 1740930100821,
+                "text": "দ্রুত তম সময়ে কুরিয়ার করা হয়।"
+            },
+            {
+                "_id": 1740930105196,
+                "text": "প্রডাক্ট চেক করে নেওয়ার সুযোগ।"
+            },
+            {
+                "_id": 1740930108120,
+                "text": "১০০% অরিজিনাল প্রোডাক্ট।"
+            }
+        ]
+    },
+    {
+        "name": "Lemon Mint",
+        "category": "Drinks",
+        "price": "300",
+        "discount": "25",
+        "discount_price":"225",
+        "shippingCharge":"normal",
+        "productColor": [
+            {
+                "_id": 1741014126360,
+                "text": "Red"
+            },
+            {
+                "_id": 1741014129702,
+                "text": "Black"
+            },
+            {
+                "_id": 1741014132127,
+                "text": "Blue"
+            },
+            {
+                "_id": 1741014137255,
+                "text": "White"
+            }
+        ],
+        "size": [
+            {
+                "_id": 1741014142295,
+                "text": "M"
+            },
+            {
+                "_id": 1741014144151,
+                "text": "L"
+            },
+            {
+                "_id": 1741014145447,
+                "text": "XL"
+            },
+            {
+                "_id": 1741014149566,
+                "text": "XXL"
+            }
+        ],
+        "images": [
+            {
+                "_id": 174094555324534,
+                "url": "https://i.ibb.co.com/DLgMCbG/lemon-mint.jpg"
+            },
+            {
+                "_id": 1740932555289,
+                "url": "http://localhost:5000//uploads/1740932555788.jpg"
+            },
+            {
+                "_id": 1740932558696,
+                "url": "http://localhost:5000//uploads/1740932559194.jpg"
+            },
+            {
+                "_id": 1740933099999,
+                "url": "http://localhost:5000//uploads/1740933100446.jpg"
+            }
+        ],
+        "description": {
+            "description_details": "Product is a well-designed and good looking for the youth indeed. In truth, It’s an eye-catching model that usually makes someone presentable. If someone searching for the best quality product for men, then this might be the best model.",
+            "description_title": "Formal Shirt with best color combination",
+            "specificDescription": [
+                {
+                    "_id": 1740930140998,
+                    "text": "Brand Name: Formal Shirt"
+                },
+                {
+                    "_id": 1740930144041,
+                    "text": "Site: peakyonline"
+                },
+                {
+                    "_id": 1740930147299,
+                    "text": "color: Authentic"
+                },
+                {
+                    "_id": 1740930150446,
+                    "text": "Band Type: Full Authentic"
+                },
+                {
+                    "_id": 1740930154758,
+                    "text": "Style: Fashion & Casual"
+                },
+                {
+                    "_id": 1740930157323,
+                    "text": "Case Material: 100% color cleared"
+                },
+                {
+                    "_id": 1740930160131,
+                    "text": "Clasp Type: Pin buckle"
+                },
+                {
+                    "_id": 1740930163121,
+                    "text": "Gender: Men"
+                },
+                {
+                    "_id": 1740930166378,
+                    "text": "Band Type: Leather"
+                }
+            ]
+        },
+        "whyBest": [
+            {
+                "_id": 1740930075838,
+                "text": "We provide the best product"
+            },
+            {
+                "_id": 1740930080247,
+                "text": "Color Warranty"
+            },
+            {
+                "_id": 1740930083766,
+                "text": "We understand what it takes to build a board"
+            },
+            {
+                "_id": 1740930087904,
+                "text": "We customize the product"
+            },
+            {
+                "_id": 1740930089930,
+                "text": "We customize the product"
+            },
+            {
+                "_id": 1740930092935,
+                "text": "৭ দিনের রিপ্লেসমেন্ট সুবিধা।"
+            },
+            {
+                "_id": 1740930096283,
+                "text": "আমাদের কাছে রেডি স্টক থাকে।"
+            },
+            {
+                "_id": 1740930100821,
+                "text": "দ্রুত তম সময়ে কুরিয়ার করা হয়।"
+            },
+            {
+                "_id": 1740930105196,
+                "text": "প্রডাক্ট চেক করে নেওয়ার সুযোগ।"
+            },
+            {
+                "_id": 1740930108120,
+                "text": "১০০% অরিজিনাল প্রোডাক্ট।"
+            }
+        ]
+    },
+    {
+        "name": "Simple Bag",
+        "category": "Bags",
+        "price": "300",
+        "discount": "25",
+        "discount_price":"225",
+        "shippingCharge":"normal",
+        "productColor": [
+            {
+                "_id": 1741014126360,
+                "text": "Red"
+            },
+            {
+                "_id": 1741014129702,
+                "text": "Black"
+            },
+            {
+                "_id": 1741014132127,
+                "text": "Blue"
+            },
+            {
+                "_id": 1741014137255,
+                "text": "White"
+            }
+        ],
+        "size": [
+            {
+                "_id": 1741014142295,
+                "text": "M"
+            },
+            {
+                "_id": 1741014144151,
+                "text": "L"
+            },
+            {
+                "_id": 1741014145447,
+                "text": "XL"
+            },
+            {
+                "_id": 1741014149566,
+                "text": "XXL"
+            }
+        ],
+        "images": [
+            {
+                "_id": 174095655324534,
+                "url": "https://i.ibb.co.com/X5Jbj3F/simple-bag.jpg"
+            },
+            {
+                "_id": 1740932555289,
+                "url": "http://localhost:5000//uploads/1740932555788.jpg"
+            },
+            {
+                "_id": 1740932558696,
+                "url": "http://localhost:5000//uploads/1740932559194.jpg"
+            },
+            {
+                "_id": 1740933099999,
+                "url": "http://localhost:5000//uploads/1740933100446.jpg"
+            }
+        ],
+        "description": {
+            "description_details": "Product is a well-designed and good looking for the youth indeed. In truth, It’s an eye-catching model that usually makes someone presentable. If someone searching for the best quality product for men, then this might be the best model.",
+            "description_title": "Formal Shirt with best color combination",
+            "specificDescription": [
+                {
+                    "_id": 1740930140998,
+                    "text": "Brand Name: Formal Shirt"
+                },
+                {
+                    "_id": 1740930144041,
+                    "text": "Site: peakyonline"
+                },
+                {
+                    "_id": 1740930147299,
+                    "text": "color: Authentic"
+                },
+                {
+                    "_id": 1740930150446,
+                    "text": "Band Type: Full Authentic"
+                },
+                {
+                    "_id": 1740930154758,
+                    "text": "Style: Fashion & Casual"
+                },
+                {
+                    "_id": 1740930157323,
+                    "text": "Case Material: 100% color cleared"
+                },
+                {
+                    "_id": 1740930160131,
+                    "text": "Clasp Type: Pin buckle"
+                },
+                {
+                    "_id": 1740930163121,
+                    "text": "Gender: Men"
+                },
+                {
+                    "_id": 1740930166378,
+                    "text": "Band Type: Leather"
+                }
+            ]
+        },
+        "whyBest": [
+            {
+                "_id": 1740930075838,
+                "text": "We provide the best product"
+            },
+            {
+                "_id": 1740930080247,
+                "text": "Color Warranty"
+            },
+            {
+                "_id": 1740930083766,
+                "text": "We understand what it takes to build a board"
+            },
+            {
+                "_id": 1740930087904,
+                "text": "We customize the product"
+            },
+            {
+                "_id": 1740930089930,
+                "text": "We customize the product"
+            },
+            {
+                "_id": 1740930092935,
+                "text": "৭ দিনের রিপ্লেসমেন্ট সুবিধা।"
+            },
+            {
+                "_id": 1740930096283,
+                "text": "আমাদের কাছে রেডি স্টক থাকে।"
+            },
+            {
+                "_id": 1740930100821,
+                "text": "দ্রুত তম সময়ে কুরিয়ার করা হয়।"
+            },
+            {
+                "_id": 1740930105196,
+                "text": "প্রডাক্ট চেক করে নেওয়ার সুযোগ।"
+            },
+            {
+                "_id": 1740930108120,
+                "text": "১০০% অরিজিনাল প্রোডাক্ট।"
+            }
+        ]
+    },
+    {
+        "name": "Luggage",
+        "category": "Bags",
+        "price": "300",
+        "discount": "25",
+        "discount_price":"225",
+        "shippingCharge":"free",
+        "productColor": [
+            {
+                "_id": 1741014126360,
+                "text": "Red"
+            },
+            {
+                "_id": 1741014129702,
+                "text": "Black"
+            },
+            {
+                "_id": 1741014132127,
+                "text": "Blue"
+            },
+            {
+                "_id": 1741014137255,
+                "text": "White"
+            }
+        ],
+        "size": [
+            {
+                "_id": 1741014142295,
+                "text": "M"
+            },
+            {
+                "_id": 1741014144151,
+                "text": "L"
+            },
+            {
+                "_id": 1741014145447,
+                "text": "XL"
+            },
+            {
+                "_id": 1741014149566,
+                "text": "XXL"
+            }
+        ],
+        "images": [
+            {
+                "_id": 174593255324534,
+                "url": "https://i.ibb.co.com/N32bkVf/luggage.jpg"
+            },
+            {
+                "_id": 1740932555289,
+                "url": "http://localhost:5000//uploads/1740932555788.jpg"
+            },
+            {
+                "_id": 1740932558696,
+                "url": "http://localhost:5000//uploads/1740932559194.jpg"
+            },
+            {
+                "_id": 1740933099999,
+                "url": "http://localhost:5000//uploads/1740933100446.jpg"
+            }
+        ],
+        "description": {
+            "description_details": "Product is a well-designed and good looking for the youth indeed. In truth, It’s an eye-catching model that usually makes someone presentable. If someone searching for the best quality product for men, then this might be the best model.",
+            "description_title": "Formal Shirt with best color combination",
+            "specificDescription": [
+                {
+                    "_id": 1740930140998,
+                    "text": "Brand Name: Formal Shirt"
+                },
+                {
+                    "_id": 1740930144041,
+                    "text": "Site: peakyonline"
+                },
+                {
+                    "_id": 1740930147299,
+                    "text": "color: Authentic"
+                },
+                {
+                    "_id": 1740930150446,
+                    "text": "Band Type: Full Authentic"
+                },
+                {
+                    "_id": 1740930154758,
+                    "text": "Style: Fashion & Casual"
+                },
+                {
+                    "_id": 1740930157323,
+                    "text": "Case Material: 100% color cleared"
+                },
+                {
+                    "_id": 1740930160131,
+                    "text": "Clasp Type: Pin buckle"
+                },
+                {
+                    "_id": 1740930163121,
+                    "text": "Gender: Men"
+                },
+                {
+                    "_id": 1740930166378,
+                    "text": "Band Type: Leather"
+                }
+            ]
+        },
+        "whyBest": [
+            {
+                "_id": 1740930075838,
+                "text": "We provide the best product"
+            },
+            {
+                "_id": 1740930080247,
+                "text": "Color Warranty"
+            },
+            {
+                "_id": 1740930083766,
+                "text": "We understand what it takes to build a board"
+            },
+            {
+                "_id": 1740930087904,
+                "text": "We customize the product"
+            },
+            {
+                "_id": 1740930089930,
+                "text": "We customize the product"
+            },
+            {
+                "_id": 1740930092935,
+                "text": "৭ দিনের রিপ্লেসমেন্ট সুবিধা।"
+            },
+            {
+                "_id": 1740930096283,
+                "text": "আমাদের কাছে রেডি স্টক থাকে।"
+            },
+            {
+                "_id": 1740930100821,
+                "text": "দ্রুত তম সময়ে কুরিয়ার করা হয়।"
+            },
+            {
+                "_id": 1740930105196,
+                "text": "প্রডাক্ট চেক করে নেওয়ার সুযোগ।"
+            },
+            {
+                "_id": 1740930108120,
+                "text": "১০০% অরিজিনাল প্রোডাক্ট।"
+            }
+        ]
+    },
+    {
+        "name": "JBL 97H",
+        "category": "Electronics",
+        "price": "300",
+        "discount": "25",
+        "discount_price":"225",
+        "shippingCharge":"free",
+        "productColor": [
+            {
+                "_id": 1741014126360,
+                "text": "Red"
+            },
+            {
+                "_id": 1741014129702,
+                "text": "Black"
+            },
+            {
+                "_id": 1741014132127,
+                "text": "Blue"
+            },
+            {
+                "_id": 1741014137255,
+                "text": "White"
+            }
+        ],
+        "size": [
+            {
+                "_id": 1741014142295,
+                "text": "M"
+            },
+            {
+                "_id": 1741014144151,
+                "text": "L"
+            },
+            {
+                "_id": 1741014145447,
+                "text": "XL"
+            },
+            {
+                "_id": 1741014149566,
+                "text": "XXL"
+            }
+        ],
+        "images": [
+            {
+                "_id": 174093278324534,
+                "url": "https://i.ibb.co.com/x67fqSg/jbl-97h.jpg"
+            },
+            {
+                "_id": 1740932555289,
+                "url": "http://localhost:5000//uploads/1740932555788.jpg"
+            },
+            {
+                "_id": 1740932558696,
+                "url": "http://localhost:5000//uploads/1740932559194.jpg"
+            },
+            {
+                "_id": 1740933099999,
+                "url": "http://localhost:5000//uploads/1740933100446.jpg"
+            }
+        ],
+        "description": {
+            "description_details": "Product is a well-designed and good looking for the youth indeed. In truth, It’s an eye-catching model that usually makes someone presentable. If someone searching for the best quality product for men, then this might be the best model.",
+            "description_title": "Formal Shirt with best color combination",
+            "specificDescription": [
+                {
+                    "_id": 1740930140998,
+                    "text": "Brand Name: Formal Shirt"
+                },
+                {
+                    "_id": 1740930144041,
+                    "text": "Site: peakyonline"
+                },
+                {
+                    "_id": 1740930147299,
+                    "text": "color: Authentic"
+                },
+                {
+                    "_id": 1740930150446,
+                    "text": "Band Type: Full Authentic"
+                },
+                {
+                    "_id": 1740930154758,
+                    "text": "Style: Fashion & Casual"
+                },
+                {
+                    "_id": 1740930157323,
+                    "text": "Case Material: 100% color cleared"
+                },
+                {
+                    "_id": 1740930160131,
+                    "text": "Clasp Type: Pin buckle"
+                },
+                {
+                    "_id": 1740930163121,
+                    "text": "Gender: Men"
+                },
+                {
+                    "_id": 1740930166378,
+                    "text": "Band Type: Leather"
+                }
+            ]
+        },
+        "whyBest": [
+            {
+                "_id": 1740930075838,
+                "text": "We provide the best product"
+            },
+            {
+                "_id": 1740930080247,
+                "text": "Color Warranty"
+            },
+            {
+                "_id": 1740930083766,
+                "text": "We understand what it takes to build a board"
+            },
+            {
+                "_id": 1740930087904,
+                "text": "We customize the product"
+            },
+            {
+                "_id": 1740930089930,
+                "text": "We customize the product"
+            },
+            {
+                "_id": 1740930092935,
+                "text": "৭ দিনের রিপ্লেসমেন্ট সুবিধা।"
+            },
+            {
+                "_id": 1740930096283,
+                "text": "আমাদের কাছে রেডি স্টক থাকে।"
+            },
+            {
+                "_id": 1740930100821,
+                "text": "দ্রুত তম সময়ে কুরিয়ার করা হয়।"
+            },
+            {
+                "_id": 1740930105196,
+                "text": "প্রডাক্ট চেক করে নেওয়ার সুযোগ।"
+            },
+            {
+                "_id": 1740930108120,
+                "text": "১০০% অরিজিনাল প্রোডাক্ট।"
+            }
+        ]
+    },
+    {
+        "name": "Titan",
+        "category": "Watch",
+        "price": "300",
+        "discount": "25",
+         "discount_price":"225",
+         "shippingCharge":"normal",
+        "productColor": [
+            {
+                "_id": 1741014126360,
+                "text": "Red"
+            },
+            {
+                "_id": 1741014129702,
+                "text": "Black"
+            },
+            {
+                "_id": 1741014132127,
+                "text": "Blue"
+            },
+            {
+                "_id": 1741014137255,
+                "text": "White"
+            }
+        ],
+        "size": [
+            {
+                "_id": 1741014142295,
+                "text": "M"
+            },
+            {
+                "_id": 1741014144151,
+                "text": "L"
+            },
+            {
+                "_id": 1741014145447,
+                "text": "XL"
+            },
+            {
+                "_id": 1741014149566,
+                "text": "XXL"
+            }
+        ],
+        "images": [
+            {
+                "_id": 174563255324534,
+                "url": "https://i.ibb.co.com/1X3mXSg/titan.jpg"
+            },
+            {
+                "_id": 1740932555289,
+                "url": "http://localhost:5000//uploads/1740932555788.jpg"
+            },
+            {
+                "_id": 1740932558696,
+                "url": "http://localhost:5000//uploads/1740932559194.jpg"
+            },
+            {
+                "_id": 1740933099999,
+                "url": "http://localhost:5000//uploads/1740933100446.jpg"
+            }
+        ],
+        "description": {
+            "description_details": "Product is a well-designed and good looking for the youth indeed. In truth, It’s an eye-catching model that usually makes someone presentable. If someone searching for the best quality product for men, then this might be the best model.",
+            "description_title": "Formal Shirt with best color combination",
+            "specificDescription": [
+                {
+                    "_id": 1740930140998,
+                    "text": "Brand Name: Formal Shirt"
+                },
+                {
+                    "_id": 1740930144041,
+                    "text": "Site: peakyonline"
+                },
+                {
+                    "_id": 1740930147299,
+                    "text": "color: Authentic"
+                },
+                {
+                    "_id": 1740930150446,
+                    "text": "Band Type: Full Authentic"
+                },
+                {
+                    "_id": 1740930154758,
+                    "text": "Style: Fashion & Casual"
+                },
+                {
+                    "_id": 1740930157323,
+                    "text": "Case Material: 100% color cleared"
+                },
+                {
+                    "_id": 1740930160131,
+                    "text": "Clasp Type: Pin buckle"
+                },
+                {
+                    "_id": 1740930163121,
+                    "text": "Gender: Men"
+                },
+                {
+                    "_id": 1740930166378,
+                    "text": "Band Type: Leather"
+                }
+            ]
+        },
+        "whyBest": [
+            {
+                "_id": 1740930075838,
+                "text": "We provide the best product"
+            },
+            {
+                "_id": 1740930080247,
+                "text": "Color Warranty"
+            },
+            {
+                "_id": 1740930083766,
+                "text": "We understand what it takes to build a board"
+            },
+            {
+                "_id": 1740930087904,
+                "text": "We customize the product"
+            },
+            {
+                "_id": 1740930089930,
+                "text": "We customize the product"
+            },
+            {
+                "_id": 1740930092935,
+                "text": "৭ দিনের রিপ্লেসমেন্ট সুবিধা।"
+            },
+            {
+                "_id": 1740930096283,
+                "text": "আমাদের কাছে রেডি স্টক থাকে।"
+            },
+            {
+                "_id": 1740930100821,
+                "text": "দ্রুত তম সময়ে কুরিয়ার করা হয়।"
+            },
+            {
+                "_id": 1740930105196,
+                "text": "প্রডাক্ট চেক করে নেওয়ার সুযোগ।"
+            },
+            {
+                "_id": 1740930108120,
+                "text": "১০০% অরিজিনাল প্রোডাক্ট।"
+            }
+        ]
+    },
+    {
+        "name": "Burger",
+        "category": "Foods",
+        "price": "300",
+        "discount": "25",
+         "discount_price":"225",
+         "shippingCharge":"normal",
+        "productColor": [
+            {
+                "_id": 1741014126360,
+                "text": "Red"
+            },
+            {
+                "_id": 1741014129702,
+                "text": "Black"
+            },
+            {
+                "_id": 1741014132127,
+                "text": "Blue"
+            },
+            {
+                "_id": 1741014137255,
+                "text": "White"
+            }
+        ],
+        "size": [
+            {
+                "_id": 1741014142295,
+                "text": "M"
+            },
+            {
+                "_id": 1741014144151,
+                "text": "L"
+            },
+            {
+                "_id": 1741014145447,
+                "text": "XL"
+            },
+            {
+                "_id": 1741014149566,
+                "text": "XXL"
+            }
+        ],
+        "images": [
+            {
+                "_id": 174093255624534,
+                "url": "https://i.ibb.co.com/XZXXf2B/burger.jpg"
+            },
+            {
+                "_id": 1740932555289,
+                "url": "http://localhost:5000//uploads/1740932555788.jpg"
+            },
+            {
+                "_id": 1740932558696,
+                "url": "http://localhost:5000//uploads/1740932559194.jpg"
+            },
+            {
+                "_id": 1740933099999,
+                "url": "http://localhost:5000//uploads/1740933100446.jpg"
+            }
+        ],
+        "description": {
+            "description_details": "Product is a well-designed and good looking for the youth indeed. In truth, It’s an eye-catching model that usually makes someone presentable. If someone searching for the best quality product for men, then this might be the best model.",
+            "description_title": "Formal Shirt with best color combination",
+            "specificDescription": [
+                {
+                    "_id": 1740930140998,
+                    "text": "Brand Name: Formal Shirt"
+                },
+                {
+                    "_id": 1740930144041,
+                    "text": "Site: peakyonline"
+                },
+                {
+                    "_id": 1740930147299,
+                    "text": "color: Authentic"
+                },
+                {
+                    "_id": 1740930150446,
+                    "text": "Band Type: Full Authentic"
+                },
+                {
+                    "_id": 1740930154758,
+                    "text": "Style: Fashion & Casual"
+                },
+                {
+                    "_id": 1740930157323,
+                    "text": "Case Material: 100% color cleared"
+                },
+                {
+                    "_id": 1740930160131,
+                    "text": "Clasp Type: Pin buckle"
+                },
+                {
+                    "_id": 1740930163121,
+                    "text": "Gender: Men"
+                },
+                {
+                    "_id": 1740930166378,
+                    "text": "Band Type: Leather"
+                }
+            ]
+        },
+        "whyBest": [
+            {
+                "_id": 1740930075838,
+                "text": "We provide the best product"
+            },
+            {
+                "_id": 1740930080247,
+                "text": "Color Warranty"
+            },
+            {
+                "_id": 1740930083766,
+                "text": "We understand what it takes to build a board"
+            },
+            {
+                "_id": 1740930087904,
+                "text": "We customize the product"
+            },
+            {
+                "_id": 1740930089930,
+                "text": "We customize the product"
+            },
+            {
+                "_id": 1740930092935,
+                "text": "৭ দিনের রিপ্লেসমেন্ট সুবিধা।"
+            },
+            {
+                "_id": 1740930096283,
+                "text": "আমাদের কাছে রেডি স্টক থাকে।"
+            },
+            {
+                "_id": 1740930100821,
+                "text": "দ্রুত তম সময়ে কুরিয়ার করা হয়।"
+            },
+            {
+                "_id": 1740930105196,
+                "text": "প্রডাক্ট চেক করে নেওয়ার সুযোগ।"
+            },
+            {
+                "_id": 1740930108120,
+                "text": "১০০% অরিজিনাল প্রোডাক্ট।"
+            }
+        ]
+    },
+    {
+        "name": "Belt Watch",
+        "category": "Watch",
+        "price": "300",
+        "discount": "25",
+         "discount_price":"225",
+         "shippingCharge":"normal",
+        "productColor": [
+            {
+                "_id": 1741014126360,
+                "text": "Red"
+            },
+            {
+                "_id": 1741014129702,
+                "text": "Black"
+            },
+            {
+                "_id": 1741014132127,
+                "text": "Blue"
+            },
+            {
+                "_id": 1741014137255,
+                "text": "White"
+            }
+        ],
+        "size": [
+            {
+                "_id": 1741014142295,
+                "text": "M"
+            },
+            {
+                "_id": 1741014144151,
+                "text": "L"
+            },
+            {
+                "_id": 1741014145447,
+                "text": "XL"
+            },
+            {
+                "_id": 1741014149566,
+                "text": "XXL"
+            }
+        ],
+        "images": [
+            {
+                "_id": 174093255564534,
+                "url": "https://i.ibb.co.com/94GchdL/belt-Watch.jpg"
+            },
+            {
+                "_id": 1740932555289,
+                "url": "http://localhost:5000//uploads/1740932555788.jpg"
+            },
+            {
+                "_id": 1740932558696,
+                "url": "http://localhost:5000//uploads/1740932559194.jpg"
+            },
+            {
+                "_id": 1740933099999,
+                "url": "http://localhost:5000//uploads/1740933100446.jpg"
+            }
+        ],
+        "description": {
+            "description_details": "Product is a well-designed and good looking for the youth indeed. In truth, It’s an eye-catching model that usually makes someone presentable. If someone searching for the best quality product for men, then this might be the best model.",
+            "description_title": "Formal Shirt with best color combination",
+            "specificDescription": [
+                {
+                    "_id": 1740930140998,
+                    "text": "Brand Name: Formal Shirt"
+                },
+                {
+                    "_id": 1740930144041,
+                    "text": "Site: peakyonline"
+                },
+                {
+                    "_id": 1740930147299,
+                    "text": "color: Authentic"
+                },
+                {
+                    "_id": 1740930150446,
+                    "text": "Band Type: Full Authentic"
+                },
+                {
+                    "_id": 1740930154758,
+                    "text": "Style: Fashion & Casual"
+                },
+                {
+                    "_id": 1740930157323,
+                    "text": "Case Material: 100% color cleared"
+                },
+                {
+                    "_id": 1740930160131,
+                    "text": "Clasp Type: Pin buckle"
+                },
+                {
+                    "_id": 1740930163121,
+                    "text": "Gender: Men"
+                },
+                {
+                    "_id": 1740930166378,
+                    "text": "Band Type: Leather"
+                }
+            ]
+        },
+        "whyBest": [
+            {
+                "_id": 1740930075838,
+                "text": "We provide the best product"
+            },
+            {
+                "_id": 1740930080247,
+                "text": "Color Warranty"
+            },
+            {
+                "_id": 1740930083766,
+                "text": "We understand what it takes to build a board"
+            },
+            {
+                "_id": 1740930087904,
+                "text": "We customize the product"
+            },
+            {
+                "_id": 1740930089930,
+                "text": "We customize the product"
+            },
+            {
+                "_id": 1740930092935,
+                "text": "৭ দিনের রিপ্লেসমেন্ট সুবিধা।"
+            },
+            {
+                "_id": 1740930096283,
+                "text": "আমাদের কাছে রেডি স্টক থাকে।"
+            },
+            {
+                "_id": 1740930100821,
+                "text": "দ্রুত তম সময়ে কুরিয়ার করা হয়।"
+            },
+            {
+                "_id": 1740930105196,
+                "text": "প্রডাক্ট চেক করে নেওয়ার সুযোগ।"
+            },
+            {
+                "_id": 1740930108120,
+                "text": "১০০% অরিজিনাল প্রোডাক্ট।"
+            }
+        ]
+    },
+    {
+        "name": "Rolex",
+        "category": "Watch",
+        "price": "300",
+        "discount": "25",
+         "discount_price":"225",
+         "shippingCharge":"normal",
+        "productColor": [
+            {
+                "_id": 1741014126360,
+                "text": "Red"
+            },
+            {
+                "_id": 1741014129702,
+                "text": "Black"
+            },
+            {
+                "_id": 1741014132127,
+                "text": "Blue"
+            },
+            {
+                "_id": 1741014137255,
+                "text": "White"
+            }
+        ],
+        "size": [
+            {
+                "_id": 1741014142295,
+                "text": "M"
+            },
+            {
+                "_id": 1741014144151,
+                "text": "L"
+            },
+            {
+                "_id": 1741014145447,
+                "text": "XL"
+            },
+            {
+                "_id": 1741014149566,
+                "text": "XXL"
+            }
+        ],
+        "images": [
+            {
+                "_id": 174093255398534,
+                "url": "https://i.ibb.co.com/DpGx2w0/polex.jpg"
+            },
+            {
+                "_id": 1740932555289,
+                "url": "http://localhost:5000//uploads/1740932555788.jpg"
+            },
+            {
+                "_id": 1740932558696,
+                "url": "http://localhost:5000//uploads/1740932559194.jpg"
+            },
+            {
+                "_id": 1740933099999,
+                "url": "http://localhost:5000//uploads/1740933100446.jpg"
+            }
+        ],
+        "description": {
+            "description_details": "Product is a well-designed and good looking for the youth indeed. In truth, It’s an eye-catching model that usually makes someone presentable. If someone searching for the best quality product for men, then this might be the best model.",
+            "description_title": "Formal Shirt with best color combination",
+            "specificDescription": [
+                {
+                    "_id": 1740930140998,
+                    "text": "Brand Name: Formal Shirt"
+                },
+                {
+                    "_id": 1740930144041,
+                    "text": "Site: peakyonline"
+                },
+                {
+                    "_id": 1740930147299,
+                    "text": "color: Authentic"
+                },
+                {
+                    "_id": 1740930150446,
+                    "text": "Band Type: Full Authentic"
+                },
+                {
+                    "_id": 1740930154758,
+                    "text": "Style: Fashion & Casual"
+                },
+                {
+                    "_id": 1740930157323,
+                    "text": "Case Material: 100% color cleared"
+                },
+                {
+                    "_id": 1740930160131,
+                    "text": "Clasp Type: Pin buckle"
+                },
+                {
+                    "_id": 1740930163121,
+                    "text": "Gender: Men"
+                },
+                {
+                    "_id": 1740930166378,
+                    "text": "Band Type: Leather"
+                }
+            ]
+        },
+        "whyBest": [
+            {
+                "_id": 1740930075838,
+                "text": "We provide the best product"
+            },
+            {
+                "_id": 1740930080247,
+                "text": "Color Warranty"
+            },
+            {
+                "_id": 1740930083766,
+                "text": "We understand what it takes to build a board"
+            },
+            {
+                "_id": 1740930087904,
+                "text": "We customize the product"
+            },
+            {
+                "_id": 1740930089930,
+                "text": "We customize the product"
+            },
+            {
+                "_id": 1740930092935,
+                "text": "৭ দিনের রিপ্লেসমেন্ট সুবিধা।"
+            },
+            {
+                "_id": 1740930096283,
+                "text": "আমাদের কাছে রেডি স্টক থাকে।"
+            },
+            {
+                "_id": 1740930100821,
+                "text": "দ্রুত তম সময়ে কুরিয়ার করা হয়।"
+            },
+            {
+                "_id": 1740930105196,
+                "text": "প্রডাক্ট চেক করে নেওয়ার সুযোগ।"
+            },
+            {
+                "_id": 1740930108120,
+                "text": "১০০% অরিজিনাল প্রোডাক্ট।"
+            }
+        ]
+    },
+    {
+        "name": "White Shoe",
+        "category": "Shoes",
+        "price": "300",
+        "discount": "25",
+         "discount_price":"225",
+         "shippingCharge":"free",
+        "productColor": [
+            {
+                "_id": 1741014126360,
+                "text": "Red"
+            },
+            {
+                "_id": 1741014129702,
+                "text": "Black"
+            },
+            {
+                "_id": 1741014132127,
+                "text": "Blue"
+            },
+            {
+                "_id": 1741014137255,
+                "text": "White"
+            }
+        ],
+        "size": [
+            {
+                "_id": 1741014142295,
+                "text": "M"
+            },
+            {
+                "_id": 1741014144151,
+                "text": "L"
+            },
+            {
+                "_id": 1741014145447,
+                "text": "XL"
+            },
+            {
+                "_id": 1741014149566,
+                "text": "XXL"
+            }
+        ],
+        "images": [
+            {
+                "_id": 174099855324534,
+                "url": "https://i.ibb.co.com/Yd2xMgZ/white-shoe.jpg"
+            },
+            {
+                "_id": 1740932555289,
+                "url": "http://localhost:5000//uploads/1740932555788.jpg"
+            },
+            {
+                "_id": 1740932558696,
+                "url": "http://localhost:5000//uploads/1740932559194.jpg"
+            },
+            {
+                "_id": 1740933099999,
+                "url": "http://localhost:5000//uploads/1740933100446.jpg"
+            }
+        ],
+        "description": {
+            "description_details": "Product is a well-designed and good looking for the youth indeed. In truth, It’s an eye-catching model that usually makes someone presentable. If someone searching for the best quality product for men, then this might be the best model.",
+            "description_title": "Formal Shirt with best color combination",
+            "specificDescription": [
+                {
+                    "_id": 1740930140998,
+                    "text": "Brand Name: Formal Shirt"
+                },
+                {
+                    "_id": 1740930144041,
+                    "text": "Site: peakyonline"
+                },
+                {
+                    "_id": 1740930147299,
+                    "text": "color: Authentic"
+                },
+                {
+                    "_id": 1740930150446,
+                    "text": "Band Type: Full Authentic"
+                },
+                {
+                    "_id": 1740930154758,
+                    "text": "Style: Fashion & Casual"
+                },
+                {
+                    "_id": 1740930157323,
+                    "text": "Case Material: 100% color cleared"
+                },
+                {
+                    "_id": 1740930160131,
+                    "text": "Clasp Type: Pin buckle"
+                },
+                {
+                    "_id": 1740930163121,
+                    "text": "Gender: Men"
+                },
+                {
+                    "_id": 1740930166378,
+                    "text": "Band Type: Leather"
+                }
+            ]
+        },
+        "whyBest": [
+            {
+                "_id": 1740930075838,
+                "text": "We provide the best product"
+            },
+            {
+                "_id": 1740930080247,
+                "text": "Color Warranty"
+            },
+            {
+                "_id": 1740930083766,
+                "text": "We understand what it takes to build a board"
+            },
+            {
+                "_id": 1740930087904,
+                "text": "We customize the product"
+            },
+            {
+                "_id": 1740930089930,
+                "text": "We customize the product"
+            },
+            {
+                "_id": 1740930092935,
+                "text": "৭ দিনের রিপ্লেসমেন্ট সুবিধা।"
+            },
+            {
+                "_id": 1740930096283,
+                "text": "আমাদের কাছে রেডি স্টক থাকে।"
+            },
+            {
+                "_id": 1740930100821,
+                "text": "দ্রুত তম সময়ে কুরিয়ার করা হয়।"
+            },
+            {
+                "_id": 1740930105196,
+                "text": "প্রডাক্ট চেক করে নেওয়ার সুযোগ।"
+            },
+            {
+                "_id": 1740930108120,
+                "text": "১০০% অরিজিনাল প্রোডাক্ট।"
+            }
+        ]
+    },
+    {
+        "name": "Causal Shirt",
+        "category": "Clothes",
+        "price": "300",
+        "discount": "25",
+         "discount_price":"225",
+         "shippingCharge":"free",
+        "productColor": [
+            {
+                "_id": 1741014126360,
+                "text": "Red"
+            },
+            {
+                "_id": 1741014129702,
+                "text": "Black"
+            },
+            {
+                "_id": 1741014132127,
+                "text": "Blue"
+            },
+            {
+                "_id": 1741014137255,
+                "text": "White"
+            }
+        ],
+        "size": [
+            {
+                "_id": 1741014142295,
+                "text": "M"
+            },
+            {
+                "_id": 1741014144151,
+                "text": "L"
+            },
+            {
+                "_id": 1741014145447,
+                "text": "XL"
+            },
+            {
+                "_id": 1741014149566,
+                "text": "XXL"
+            }
+        ],
+        "images": [
+            {
+                "_id": 174093250924534,
+                "url": "https://i.ibb.co.com/vwnhCbd/formal-casual-mixed.jpg"
+            },
+            {
+                "_id": 1740932555289,
+                "url": "http://localhost:5000//uploads/1740932555788.jpg"
+            },
+            {
+                "_id": 1740932558696,
+                "url": "http://localhost:5000//uploads/1740932559194.jpg"
+            },
+            {
+                "_id": 1740933099999,
+                "url": "http://localhost:5000//uploads/1740933100446.jpg"
+            }
+        ],
+        "description": {
+            "description_details": "Product is a well-designed and good looking for the youth indeed. In truth, It’s an eye-catching model that usually makes someone presentable. If someone searching for the best quality product for men, then this might be the best model.",
+            "description_title": "Formal Shirt with best color combination",
+            "specificDescription": [
+                {
+                    "_id": 1740930140998,
+                    "text": "Brand Name: Formal Shirt"
+                },
+                {
+                    "_id": 1740930144041,
+                    "text": "Site: peakyonline"
+                },
+                {
+                    "_id": 1740930147299,
+                    "text": "color: Authentic"
+                },
+                {
+                    "_id": 1740930150446,
+                    "text": "Band Type: Full Authentic"
+                },
+                {
+                    "_id": 1740930154758,
+                    "text": "Style: Fashion & Casual"
+                },
+                {
+                    "_id": 1740930157323,
+                    "text": "Case Material: 100% color cleared"
+                },
+                {
+                    "_id": 1740930160131,
+                    "text": "Clasp Type: Pin buckle"
+                },
+                {
+                    "_id": 1740930163121,
+                    "text": "Gender: Men"
+                },
+                {
+                    "_id": 1740930166378,
+                    "text": "Band Type: Leather"
+                }
+            ]
+        },
+        "whyBest": [
+            {
+                "_id": 1740930075838,
+                "text": "We provide the best product"
+            },
+            {
+                "_id": 1740930080247,
+                "text": "Color Warranty"
+            },
+            {
+                "_id": 1740930083766,
+                "text": "We understand what it takes to build a board"
+            },
+            {
+                "_id": 1740930087904,
+                "text": "We customize the product"
+            },
+            {
+                "_id": 1740930089930,
+                "text": "We customize the product"
+            },
+            {
+                "_id": 1740930092935,
+                "text": "৭ দিনের রিপ্লেসমেন্ট সুবিধা।"
+            },
+            {
+                "_id": 1740930096283,
+                "text": "আমাদের কাছে রেডি স্টক থাকে।"
+            },
+            {
+                "_id": 1740930100821,
+                "text": "দ্রুত তম সময়ে কুরিয়ার করা হয়।"
+            },
+            {
+                "_id": 1740930105196,
+                "text": "প্রডাক্ট চেক করে নেওয়ার সুযোগ।"
+            },
+            {
+                "_id": 1740930108120,
+                "text": "১০০% অরিজিনাল প্রোডাক্ট।"
+            }
+        ]
+    },
+    {
+        "name": "JBL 3G",
+        "category": "Electronics",
+        "price": "300",
+        "discount": "0",
+         "discount_price":"300",
+         "shippingCharge":"free",
+        "productColor": [
+            {
+                "_id": 1741014126360,
+                "text": "Red"
+            },
+            {
+                "_id": 1741014129702,
+                "text": "Black"
+            },
+            {
+                "_id": 1741014132127,
+                "text": "Blue"
+            },
+            {
+                "_id": 1741014137255,
+                "text": "White"
+            }
+        ],
+        "size": [
+            {
+                "_id": 1741014142295,
+                "text": "M"
+            },
+            {
+                "_id": 1741014144151,
+                "text": "L"
+            },
+            {
+                "_id": 1741014145447,
+                "text": "XL"
+            },
+            {
+                "_id": 1741014149566,
+                "text": "XXL"
+            }
+        ],
+        "images": [
+            {
+                "_id": 174093255324534,
+                "url": "https://i.ibb.co.com/QM5mxmS/jbl-3g.jpg"
+            },
+            {
+                "_id": 1740932555289,
+                "url": "http://localhost:5000//uploads/1740932555788.jpg"
+            },
+            {
+                "_id": 1740932558696,
+                "url": "http://localhost:5000//uploads/1740932559194.jpg"
+            },
+            {
+                "_id": 1740933099999,
+                "url": "http://localhost:5000//uploads/1740933100446.jpg"
+            }
+        ],
+        "description": {
+            "description_details": "Product is a well-designed and good looking for the youth indeed. In truth, It’s an eye-catching model that usually makes someone presentable. If someone searching for the best quality product for men, then this might be the best model.",
+            "description_title": "Formal Shirt with best color combination",
+            "specificDescription": [
+                {
+                    "_id": 1740930140998,
+                    "text": "Brand Name: Formal Shirt"
+                },
+                {
+                    "_id": 1740930144041,
+                    "text": "Site: peakyonline"
+                },
+                {
+                    "_id": 1740930147299,
+                    "text": "color: Authentic"
+                },
+                {
+                    "_id": 1740930150446,
+                    "text": "Band Type: Full Authentic"
+                },
+                {
+                    "_id": 1740930154758,
+                    "text": "Style: Fashion & Casual"
+                },
+                {
+                    "_id": 1740930157323,
+                    "text": "Case Material: 100% color cleared"
+                },
+                {
+                    "_id": 1740930160131,
+                    "text": "Clasp Type: Pin buckle"
+                },
+                {
+                    "_id": 1740930163121,
+                    "text": "Gender: Men"
+                },
+                {
+                    "_id": 1740930166378,
+                    "text": "Band Type: Leather"
+                }
+            ]
+        },
+        "whyBest": [
+            {
+                "_id": 1740930075838,
+                "text": "We provide the best product"
+            },
+            {
+                "_id": 1740930080247,
+                "text": "Color Warranty"
+            },
+            {
+                "_id": 1740930083766,
+                "text": "We understand what it takes to build a board"
+            },
+            {
+                "_id": 1740930087904,
+                "text": "We customize the product"
+            },
+            {
+                "_id": 1740930089930,
+                "text": "We customize the product"
+            },
+            {
+                "_id": 1740930092935,
+                "text": "৭ দিনের রিপ্লেসমেন্ট সুবিধা।"
+            },
+            {
+                "_id": 1740930096283,
+                "text": "আমাদের কাছে রেডি স্টক থাকে।"
+            },
+            {
+                "_id": 1740930100821,
+                "text": "দ্রুত তম সময়ে কুরিয়ার করা হয়।"
+            },
+            {
+                "_id": 1740930105196,
+                "text": "প্রডাক্ট চেক করে নেওয়ার সুযোগ।"
+            },
+            {
+                "_id": 1740930108120,
+                "text": "১০০% অরিজিনাল প্রোডাক্ট।"
+            }
+        ]
+    },
+    {
+        "name": "Travel Bag",
+        "category": "Bags",
+        "price": "300",
+        "discount": "25",
+         "discount_price":"225",
+         "shippingCharge":"normal",
+        "productColor": [
+            {
+                "_id": 1741014126360,
+                "text": "Red"
+            },
+            {
+                "_id": 1741014129702,
+                "text": "Black"
+            },
+            {
+                "_id": 1741014132127,
+                "text": "Blue"
+            },
+            {
+                "_id": 1741014137255,
+                "text": "White"
+            }
+        ],
+        "size": [
+            {
+                "_id": 1741014142295,
+                "text": "M"
+            },
+            {
+                "_id": 1741014144151,
+                "text": "L"
+            },
+            {
+                "_id": 1741014145447,
+                "text": "XL"
+            },
+            {
+                "_id": 1741014149566,
+                "text": "XXL"
+            }
+        ],
+        "images": [
+            {
+                "_id": 174093287324534,
+                "url": "https://i.ibb.co.com/QcQGNcr/travel-bag.jpg"
+            },
+            {
+                "_id": 1740932555289,
+                "url": "http://localhost:5000//uploads/1740932555788.jpg"
+            },
+            {
+                "_id": 1740932558696,
+                "url": "http://localhost:5000//uploads/1740932559194.jpg"
+            },
+            {
+                "_id": 1740933099999,
+                "url": "http://localhost:5000//uploads/1740933100446.jpg"
+            }
+        ],
+        "description": {
+            "description_details": "Product is a well-designed and good looking for the youth indeed. In truth, It’s an eye-catching model that usually makes someone presentable. If someone searching for the best quality product for men, then this might be the best model.",
+            "description_title": "Formal Shirt with best color combination",
+            "specificDescription": [
+                {
+                    "_id": 1740930140998,
+                    "text": "Brand Name: Formal Shirt"
+                },
+                {
+                    "_id": 1740930144041,
+                    "text": "Site: peakyonline"
+                },
+                {
+                    "_id": 1740930147299,
+                    "text": "color: Authentic"
+                },
+                {
+                    "_id": 1740930150446,
+                    "text": "Band Type: Full Authentic"
+                },
+                {
+                    "_id": 1740930154758,
+                    "text": "Style: Fashion & Casual"
+                },
+                {
+                    "_id": 1740930157323,
+                    "text": "Case Material: 100% color cleared"
+                },
+                {
+                    "_id": 1740930160131,
+                    "text": "Clasp Type: Pin buckle"
+                },
+                {
+                    "_id": 1740930163121,
+                    "text": "Gender: Men"
+                },
+                {
+                    "_id": 1740930166378,
+                    "text": "Band Type: Leather"
+                }
+            ]
+        },
+        "whyBest": [
+            {
+                "_id": 1740930075838,
+                "text": "We provide the best product"
+            },
+            {
+                "_id": 1740930080247,
+                "text": "Color Warranty"
+            },
+            {
+                "_id": 1740930083766,
+                "text": "We understand what it takes to build a board"
+            },
+            {
+                "_id": 1740930087904,
+                "text": "We customize the product"
+            },
+            {
+                "_id": 1740930089930,
+                "text": "We customize the product"
+            },
+            {
+                "_id": 1740930092935,
+                "text": "৭ দিনের রিপ্লেসমেন্ট সুবিধা।"
+            },
+            {
+                "_id": 1740930096283,
+                "text": "আমাদের কাছে রেডি স্টক থাকে।"
+            },
+            {
+                "_id": 1740930100821,
+                "text": "দ্রুত তম সময়ে কুরিয়ার করা হয়।"
+            },
+            {
+                "_id": 1740930105196,
+                "text": "প্রডাক্ট চেক করে নেওয়ার সুযোগ।"
+            },
+            {
+                "_id": 1740930108120,
+                "text": "১০০% অরিজিনাল প্রোডাক্ট।"
+            }
+        ]
+    },
+    {
+        "name": "Pizza",
+        "category": "Foods",
+        "price": "300",
+        "discount": "0",
+         "discount_price":"300",
+         "shippingCharge":"normal",
+        "productColor": [
+            {
+                "_id": 1741014126360,
+                "text": "Red"
+            },
+            {
+                "_id": 1741014129702,
+                "text": "Black"
+            },
+            {
+                "_id": 1741014132127,
+                "text": "Blue"
+            },
+            {
+                "_id": 1741014137255,
+                "text": "White"
+            }
+        ],
+        "size": [
+            {
+                "_id": 1741014142295,
+                "text": "M"
+            },
+            {
+                "_id": 1741014144151,
+                "text": "L"
+            },
+            {
+                "_id": 1741014145447,
+                "text": "XL"
+            },
+            {
+                "_id": 1741014149566,
+                "text": "XXL"
+            }
+        ],
+        "images": [
+            {
+                "_id": 174093243324534,
+                "url": "https://i.ibb.co.com/Fww4pd4/pizza.jpg"
+            },
+            {
+                "_id": 1740932555289,
+                "url": "http://localhost:5000//uploads/1740932555788.jpg"
+            },
+            {
+                "_id": 1740932558696,
+                "url": "http://localhost:5000//uploads/1740932559194.jpg"
+            },
+            {
+                "_id": 1740933099999,
+                "url": "http://localhost:5000//uploads/1740933100446.jpg"
+            }
+        ],
+        "description": {
+            "description_details": "Product is a well-designed and good looking for the youth indeed. In truth, It’s an eye-catching model that usually makes someone presentable. If someone searching for the best quality product for men, then this might be the best model.",
+            "description_title": "Formal Shirt with best color combination",
+            "specificDescription": [
+                {
+                    "_id": 1740930140998,
+                    "text": "Brand Name: Formal Shirt"
+                },
+                {
+                    "_id": 1740930144041,
+                    "text": "Site: peakyonline"
+                },
+                {
+                    "_id": 1740930147299,
+                    "text": "color: Authentic"
+                },
+                {
+                    "_id": 1740930150446,
+                    "text": "Band Type: Full Authentic"
+                },
+                {
+                    "_id": 1740930154758,
+                    "text": "Style: Fashion & Casual"
+                },
+                {
+                    "_id": 1740930157323,
+                    "text": "Case Material: 100% color cleared"
+                },
+                {
+                    "_id": 1740930160131,
+                    "text": "Clasp Type: Pin buckle"
+                },
+                {
+                    "_id": 1740930163121,
+                    "text": "Gender: Men"
+                },
+                {
+                    "_id": 1740930166378,
+                    "text": "Band Type: Leather"
+                }
+            ]
+        },
+        "whyBest": [
+            {
+                "_id": 1740930075838,
+                "text": "We provide the best product"
+            },
+            {
+                "_id": 1740930080247,
+                "text": "Color Warranty"
+            },
+            {
+                "_id": 1740930083766,
+                "text": "We understand what it takes to build a board"
+            },
+            {
+                "_id": 1740930087904,
+                "text": "We customize the product"
+            },
+            {
+                "_id": 1740930089930,
+                "text": "We customize the product"
+            },
+            {
+                "_id": 1740930092935,
+                "text": "৭ দিনের রিপ্লেসমেন্ট সুবিধা।"
+            },
+            {
+                "_id": 1740930096283,
+                "text": "আমাদের কাছে রেডি স্টক থাকে।"
+            },
+            {
+                "_id": 1740930100821,
+                "text": "দ্রুত তম সময়ে কুরিয়ার করা হয়।"
+            },
+            {
+                "_id": 1740930105196,
+                "text": "প্রডাক্ট চেক করে নেওয়ার সুযোগ।"
+            },
+            {
+                "_id": 1740930108120,
+                "text": "১০০% অরিজিনাল প্রোডাক্ট।"
+            }
+        ]
+    },
+    {
+        "name": "Red Shoe",
+        "category": "Shoes",
+        "price": "300",
+        "discount": "25",
+         "discount_price":"225",
+         "shippingCharge":"normal",
+        "productColor": [
+            {
+                "_id": 1741014126360,
+                "text": "Red"
+            },
+            {
+                "_id": 1741014129702,
+                "text": "Black"
+            },
+            {
+                "_id": 1741014132127,
+                "text": "Blue"
+            },
+            {
+                "_id": 1741014137255,
+                "text": "White"
+            }
+        ],
+        "size": [
+            {
+                "_id": 1741014142295,
+                "text": "M"
+            },
+            {
+                "_id": 1741014144151,
+                "text": "L"
+            },
+            {
+                "_id": 1741014145447,
+                "text": "XL"
+            },
+            {
+                "_id": 1741014149566,
+                "text": "XXL"
+            }
+        ],
+        "images": [
+            {
+                "_id": 174089255324534,
+                "url": "https://i.ibb.co.com/68h1z15/red-shoe.jpg"
+            },
+            {
+                "_id": 1740932555289,
+                "url": "http://localhost:5000//uploads/1740932555788.jpg"
+            },
+            {
+                "_id": 1740932558696,
+                "url": "http://localhost:5000//uploads/1740932559194.jpg"
+            },
+            {
+                "_id": 1740933099999,
+                "url": "http://localhost:5000//uploads/1740933100446.jpg"
+            }
+        ],
+        "description": {
+            "description_details": "Product is a well-designed and good looking for the youth indeed. In truth, It’s an eye-catching model that usually makes someone presentable. If someone searching for the best quality product for men, then this might be the best model.",
+            "description_title": "Formal Shirt with best color combination",
+            "specificDescription": [
+                {
+                    "_id": 1740930140998,
+                    "text": "Brand Name: Formal Shirt"
+                },
+                {
+                    "_id": 1740930144041,
+                    "text": "Site: peakyonline"
+                },
+                {
+                    "_id": 1740930147299,
+                    "text": "color: Authentic"
+                },
+                {
+                    "_id": 1740930150446,
+                    "text": "Band Type: Full Authentic"
+                },
+                {
+                    "_id": 1740930154758,
+                    "text": "Style: Fashion & Casual"
+                },
+                {
+                    "_id": 1740930157323,
+                    "text": "Case Material: 100% color cleared"
+                },
+                {
+                    "_id": 1740930160131,
+                    "text": "Clasp Type: Pin buckle"
+                },
+                {
+                    "_id": 1740930163121,
+                    "text": "Gender: Men"
+                },
+                {
+                    "_id": 1740930166378,
+                    "text": "Band Type: Leather"
+                }
+            ]
+        },
+        "whyBest": [
+            {
+                "_id": 1740930075838,
+                "text": "We provide the best product"
+            },
+            {
+                "_id": 1740930080247,
+                "text": "Color Warranty"
+            },
+            {
+                "_id": 1740930083766,
+                "text": "We understand what it takes to build a board"
+            },
+            {
+                "_id": 1740930087904,
+                "text": "We customize the product"
+            },
+            {
+                "_id": 1740930089930,
+                "text": "We customize the product"
+            },
+            {
+                "_id": 1740930092935,
+                "text": "৭ দিনের রিপ্লেসমেন্ট সুবিধা।"
+            },
+            {
+                "_id": 1740930096283,
+                "text": "আমাদের কাছে রেডি স্টক থাকে।"
+            },
+            {
+                "_id": 1740930100821,
+                "text": "দ্রুত তম সময়ে কুরিয়ার করা হয়।"
+            },
+            {
+                "_id": 1740930105196,
+                "text": "প্রডাক্ট চেক করে নেওয়ার সুযোগ।"
+            },
+            {
+                "_id": 1740930108120,
+                "text": "১০০% অরিজিনাল প্রোডাক্ট।"
+            }
+        ]
+    },
+    {
+        "name": "White T-Shirt",
+        "category": "Clothes",
+        "price": "300",
+        "discount": "25",
+         "discount_price":"225",
+         "shippingCharge":"normal",
+        "productColor": [
+            {
+                "_id": 1741014126360,
+                "text": "Red"
+            },
+            {
+                "_id": 1741014129702,
+                "text": "Black"
+            },
+            {
+                "_id": 1741014132127,
+                "text": "Blue"
+            },
+            {
+                "_id": 1741014137255,
+                "text": "White"
+            }
+        ],
+        "size": [
+            {
+                "_id": 1741014142295,
+                "text": "M"
+            },
+            {
+                "_id": 1741014144151,
+                "text": "L"
+            },
+            {
+                "_id": 1741014145447,
+                "text": "XL"
+            },
+            {
+                "_id": 1741014149566,
+                "text": "XXL"
+            }
+        ],
+        "images": [
+            {
+                "_id": 174093255328534,
+                "url": "https://i.ibb.co.com/Sv493t8/white-tshirt.jpg"
+            },
+            {
+                "_id": 1740932555289,
+                "url": "http://localhost:5000//uploads/1740932555788.jpg"
+            },
+            {
+                "_id": 1740932558696,
+                "url": "http://localhost:5000//uploads/1740932559194.jpg"
+            },
+            {
+                "_id": 1740933099999,
+                "url": "http://localhost:5000//uploads/1740933100446.jpg"
+            }
+        ],
+        "description": {
+            "description_details": "Product is a well-designed and good looking for the youth indeed. In truth, It’s an eye-catching model that usually makes someone presentable. If someone searching for the best quality product for men, then this might be the best model.",
+            "description_title": "Formal Shirt with best color combination",
+            "specificDescription": [
+                {
+                    "_id": 1740930140998,
+                    "text": "Brand Name: Formal Shirt"
+                },
+                {
+                    "_id": 1740930144041,
+                    "text": "Site: peakyonline"
+                },
+                {
+                    "_id": 1740930147299,
+                    "text": "color: Authentic"
+                },
+                {
+                    "_id": 1740930150446,
+                    "text": "Band Type: Full Authentic"
+                },
+                {
+                    "_id": 1740930154758,
+                    "text": "Style: Fashion & Casual"
+                },
+                {
+                    "_id": 1740930157323,
+                    "text": "Case Material: 100% color cleared"
+                },
+                {
+                    "_id": 1740930160131,
+                    "text": "Clasp Type: Pin buckle"
+                },
+                {
+                    "_id": 1740930163121,
+                    "text": "Gender: Men"
+                },
+                {
+                    "_id": 1740930166378,
+                    "text": "Band Type: Leather"
+                }
+            ]
+        },
+        "whyBest": [
+            {
+                "_id": 1740930075838,
+                "text": "We provide the best product"
+            },
+            {
+                "_id": 1740930080247,
+                "text": "Color Warranty"
+            },
+            {
+                "_id": 1740930083766,
+                "text": "We understand what it takes to build a board"
+            },
+            {
+                "_id": 1740930087904,
+                "text": "We customize the product"
+            },
+            {
+                "_id": 1740930089930,
+                "text": "We customize the product"
+            },
+            {
+                "_id": 1740930092935,
+                "text": "৭ দিনের রিপ্লেসমেন্ট সুবিধা।"
+            },
+            {
+                "_id": 1740930096283,
+                "text": "আমাদের কাছে রেডি স্টক থাকে।"
+            },
+            {
+                "_id": 1740930100821,
+                "text": "দ্রুত তম সময়ে কুরিয়ার করা হয়।"
+            },
+            {
+                "_id": 1740930105196,
+                "text": "প্রডাক্ট চেক করে নেওয়ার সুযোগ।"
+            },
+            {
+                "_id": 1740930108120,
+                "text": "১০০% অরিজিনাল প্রোডাক্ট।"
+            }
+        ]
+    },
+    {
+        "name": "Cap T-shirt Combo",
+        "category": "Clothes",
+        "price": "300",
+        "discount": "0",
+         "discount_price":"300",
+         "shippingCharge":"normal",
+        "productColor": [
+            {
+                "_id": 1741014126360,
+                "text": "Red"
+            },
+            {
+                "_id": 1741014129702,
+                "text": "Black"
+            },
+            {
+                "_id": 1741014132127,
+                "text": "Blue"
+            },
+            {
+                "_id": 1741014137255,
+                "text": "White"
+            }
+        ],
+        "size": [
+            {
+                "_id": 1741014142295,
+                "text": "M"
+            },
+            {
+                "_id": 1741014144151,
+                "text": "L"
+            },
+            {
+                "_id": 1741014145447,
+                "text": "XL"
+            },
+            {
+                "_id": 1741014149566,
+                "text": "XXL"
+            }
+        ],
+        "images": [
+            {
+                "_id": 174093255324534,
+                "url": "https://i.ibb.co.com/TMy6VHF/cap-tshirt-combo.jpg"
+            },
+            {
+                "_id": 1740932555289,
+                "url": "http://localhost:5000//uploads/1740932555788.jpg"
+            },
+            {
+                "_id": 1740932558696,
+                "url": "http://localhost:5000//uploads/1740932559194.jpg"
+            },
+            {
+                "_id": 1740933099999,
+                "url": "http://localhost:5000//uploads/1740933100446.jpg"
+            }
+        ],
+        "description": {
+            "description_details": "Product is a well-designed and good looking for the youth indeed. In truth, It’s an eye-catching model that usually makes someone presentable. If someone searching for the best quality product for men, then this might be the best model.",
+            "description_title": "Formal Shirt with best color combination",
+            "specificDescription": [
+                {
+                    "_id": 1740930140998,
+                    "text": "Brand Name: Formal Shirt"
+                },
+                {
+                    "_id": 1740930144041,
+                    "text": "Site: peakyonline"
+                },
+                {
+                    "_id": 1740930147299,
+                    "text": "color: Authentic"
+                },
+                {
+                    "_id": 1740930150446,
+                    "text": "Band Type: Full Authentic"
+                },
+                {
+                    "_id": 1740930154758,
+                    "text": "Style: Fashion & Casual"
+                },
+                {
+                    "_id": 1740930157323,
+                    "text": "Case Material: 100% color cleared"
+                },
+                {
+                    "_id": 1740930160131,
+                    "text": "Clasp Type: Pin buckle"
+                },
+                {
+                    "_id": 1740930163121,
+                    "text": "Gender: Men"
+                },
+                {
+                    "_id": 1740930166378,
+                    "text": "Band Type: Leather"
+                }
+            ]
+        },
+        "whyBest": [
+            {
+                "_id": 1740930075838,
+                "text": "We provide the best product"
+            },
+            {
+                "_id": 1740930080247,
+                "text": "Color Warranty"
+            },
+            {
+                "_id": 1740930083766,
+                "text": "We understand what it takes to build a board"
+            },
+            {
+                "_id": 1740930087904,
+                "text": "We customize the product"
+            },
+            {
+                "_id": 1740930089930,
+                "text": "We customize the product"
+            },
+            {
+                "_id": 1740930092935,
+                "text": "৭ দিনের রিপ্লেসমেন্ট সুবিধা।"
+            },
+            {
+                "_id": 1740930096283,
+                "text": "আমাদের কাছে রেডি স্টক থাকে।"
+            },
+            {
+                "_id": 1740930100821,
+                "text": "দ্রুত তম সময়ে কুরিয়ার করা হয়।"
+            },
+            {
+                "_id": 1740930105196,
+                "text": "প্রডাক্ট চেক করে নেওয়ার সুযোগ।"
+            },
+            {
+                "_id": 1740930108120,
+                "text": "১০০% অরিজিনাল প্রোডাক্ট।"
+            }
+        ]
+    },
+    {
+        "name": "Formal Shirt",
+        "category": "Clothes",
+        "price": "1200",
+        "discount": "20",
+         "discount_price":"960",
+         "shippingCharge":"normal",
+        "productColor": [
+            {
+                "_id": 1741014126360,
+                "text": "Red"
+            },
+            {
+                "_id": 1741014129702,
+                "text": "Black"
+            },
+            {
+                "_id": 1741014132127,
+                "text": "Blue"
+            },
+            {
+                "_id": 1741014137255,
+                "text": "White"
+            }
+        ],
+        "size": [
+            {
+                "_id": 1741014142295,
+                "text": "M"
+            },
+            {
+                "_id": 1741014144151,
+                "text": "L"
+            },
+            {
+                "_id": 1741014145447,
+                "text": "XL"
+            },
+            {
+                "_id": 1741014149566,
+                "text": "XXL"
+            }
+        ],
+        "images": [
+            {
+                "_id": 1740932553258,
+                "url": "http://localhost:5000//uploads/1740932553759.jpg"
+            },
+            {
+                "_id": 1740932555289,
+                "url": "http://localhost:5000//uploads/1740932555788.jpg"
+            },
+            {
+                "_id": 1740932558696,
+                "url": "http://localhost:5000//uploads/1740932559194.jpg"
+            },
+            {
+                "_id": 1740933099999,
+                "url": "http://localhost:5000//uploads/1740933100446.jpg"
+            }
+        ],
+        "description": {
+            "description_details": "Product is a well-designed and good looking for the youth indeed. In truth, It’s an eye-catching model that usually makes someone presentable. If someone searching for the best quality product for men, then this might be the best model.",
+            "description_title": "Formal Shirt with best color combination",
+            "specificDescription": [
+                {
+                    "_id": 1740930140998,
+                    "text": "Brand Name: Formal Shirt"
+                },
+                {
+                    "_id": 1740930144041,
+                    "text": "Site: peakyonline"
+                },
+                {
+                    "_id": 1740930147299,
+                    "text": "color: Authentic"
+                },
+                {
+                    "_id": 1740930150446,
+                    "text": "Band Type: Full Authentic"
+                },
+                {
+                    "_id": 1740930154758,
+                    "text": "Style: Fashion & Casual"
+                },
+                {
+                    "_id": 1740930157323,
+                    "text": "Case Material: 100% color cleared"
+                },
+                {
+                    "_id": 1740930160131,
+                    "text": "Clasp Type: Pin buckle"
+                },
+                {
+                    "_id": 1740930163121,
+                    "text": "Gender: Men"
+                },
+                {
+                    "_id": 1740930166378,
+                    "text": "Band Type: Leather"
+                }
+            ]
+        },
+        "whyBest": [
+            {
+                "_id": 1740930075838,
+                "text": "We provide the best product"
+            },
+            {
+                "_id": 1740930080247,
+                "text": "Color Warranty"
+            },
+            {
+                "_id": 1740930083766,
+                "text": "We understand what it takes to build a board"
+            },
+            {
+                "_id": 1740930087904,
+                "text": "We customize the product"
+            },
+            {
+                "_id": 1740930089930,
+                "text": "We customize the product"
+            },
+            {
+                "_id": 1740930092935,
+                "text": "৭ দিনের রিপ্লেসমেন্ট সুবিধা।"
+            },
+            {
+                "_id": 1740930096283,
+                "text": "আমাদের কাছে রেডি স্টক থাকে।"
+            },
+            {
+                "_id": 1740930100821,
+                "text": "দ্রুত তম সময়ে কুরিয়ার করা হয়।"
+            },
+            {
+                "_id": 1740930105196,
+                "text": "প্রডাক্ট চেক করে নেওয়ার সুযোগ।"
+            },
+            {
+                "_id": 1740930108120,
+                "text": "১০০% অরিজিনাল প্রোডাক্ট।"
+            }
+        ]
+    },
+    {
+        "name": "Cloth Bag",
+        "category": "Bags",
+        "price": "300",
+        "discount": "25",
+         "discount_price":"225",
+         "shippingCharge":"free",
+        "productColor": [
+            {
+                "_id": 1741014126360,
+                "text": "Red"
+            },
+            {
+                "_id": 1741014129702,
+                "text": "Black"
+            },
+            {
+                "_id": 1741014132127,
+                "text": "Blue"
+            },
+            {
+                "_id": 1741014137255,
+                "text": "White"
+            }
+        ],
+        "size": [
+            {
+                "_id": 1741014142295,
+                "text": "M"
+            },
+            {
+                "_id": 1741014144151,
+                "text": "L"
+            },
+            {
+                "_id": 1741014145447,
+                "text": "XL"
+            },
+            {
+                "_id": 1741014149566,
+                "text": "XXL"
+            }
+        ],
+        "images": [
+            {
+                "_id": 17490325532456,
+                "url": "https://i.ibb.co.com/zn1Zxht/cloth-bag.jpg"
+            },
+            {
+                "_id": 1740932555289,
+                "url": "http://localhost:5000//uploads/1740932555788.jpg"
+            },
+            {
+                "_id": 1740932558696,
+                "url": "http://localhost:5000//uploads/1740932559194.jpg"
+            },
+            {
+                "_id": 1740933099999,
+                "url": "http://localhost:5000//uploads/1740933100446.jpg"
+            }
+        ],
+        "description": {
+            "description_details": "Product is a well-designed and good looking for the youth indeed. In truth, It’s an eye-catching model that usually makes someone presentable. If someone searching for the best quality product for men, then this might be the best model.",
+            "description_title": "Formal Shirt with best color combination",
+            "specificDescription": [
+                {
+                    "_id": 1740930140998,
+                    "text": "Brand Name: Formal Shirt"
+                },
+                {
+                    "_id": 1740930144041,
+                    "text": "Site: peakyonline"
+                },
+                {
+                    "_id": 1740930147299,
+                    "text": "color: Authentic"
+                },
+                {
+                    "_id": 1740930150446,
+                    "text": "Band Type: Full Authentic"
+                },
+                {
+                    "_id": 1740930154758,
+                    "text": "Style: Fashion & Casual"
+                },
+                {
+                    "_id": 1740930157323,
+                    "text": "Case Material: 100% color cleared"
+                },
+                {
+                    "_id": 1740930160131,
+                    "text": "Clasp Type: Pin buckle"
+                },
+                {
+                    "_id": 1740930163121,
+                    "text": "Gender: Men"
+                },
+                {
+                    "_id": 1740930166378,
+                    "text": "Band Type: Leather"
+                }
+            ]
+        },
+        "whyBest": [
+            {
+                "_id": 1740930075838,
+                "text": "We provide the best product"
+            },
+            {
+                "_id": 1740930080247,
+                "text": "Color Warranty"
+            },
+            {
+                "_id": 1740930083766,
+                "text": "We understand what it takes to build a board"
+            },
+            {
+                "_id": 1740930087904,
+                "text": "We customize the product"
+            },
+            {
+                "_id": 1740930089930,
+                "text": "We customize the product"
+            },
+            {
+                "_id": 1740930092935,
+                "text": "৭ দিনের রিপ্লেসমেন্ট সুবিধা।"
+            },
+            {
+                "_id": 1740930096283,
+                "text": "আমাদের কাছে রেডি স্টক থাকে।"
+            },
+            {
+                "_id": 1740930100821,
+                "text": "দ্রুত তম সময়ে কুরিয়ার করা হয়।"
+            },
+            {
+                "_id": 1740930105196,
+                "text": "প্রডাক্ট চেক করে নেওয়ার সুযোগ।"
+            },
+            {
+                "_id": 1740930108120,
+                "text": "১০০% অরিজিনাল প্রোডাক্ট।"
+            }
+        ]
+    },
+    {
+        "name": "Formal Shirt",
+        "category": "Clothes",
+        "price": "1200",
+        "discount": "20",
+         "discount_price":"960",
+         "shippingCharge":"normal",
+        "productColor": [
+            {
+                "_id": 1741014126360,
+                "text": "Red"
+            },
+            {
+                "_id": 1741014129702,
+                "text": "Black"
+            },
+            {
+                "_id": 1741014132127,
+                "text": "Blue"
+            },
+            {
+                "_id": 1741014137255,
+                "text": "White"
+            }
+        ],
+        "size": [
+            {
+                "_id": 1741014142295,
+                "text": "M"
+            },
+            {
+                "_id": 1741014144151,
+                "text": "L"
+            },
+            {
+                "_id": 1741014145447,
+                "text": "XL"
+            },
+            {
+                "_id": 1741014149566,
+                "text": "XXL"
+            }
+        ],
+        "images": [
+            {
+                "_id": 1740932553258,
+                "url": "http://localhost:5000//uploads/1740932553759.jpg"
+            },
+            {
+                "_id": 1740932555289,
+                "url": "http://localhost:5000//uploads/1740932555788.jpg"
+            },
+            {
+                "_id": 1740932558696,
+                "url": "http://localhost:5000//uploads/1740932559194.jpg"
+            },
+            {
+                "_id": 1740933099999,
+                "url": "http://localhost:5000//uploads/1740933100446.jpg"
+            }
+        ],
+        "description": {
+            "description_details": "Product is a well-designed and good looking for the youth indeed. In truth, It’s an eye-catching model that usually makes someone presentable. If someone searching for the best quality product for men, then this might be the best model.",
+            "description_title": "Formal Shirt with best color combination",
+            "specificDescription": [
+                {
+                    "_id": 1740930140998,
+                    "text": "Brand Name: Formal Shirt"
+                },
+                {
+                    "_id": 1740930144041,
+                    "text": "Site: peakyonline"
+                },
+                {
+                    "_id": 1740930147299,
+                    "text": "color: Authentic"
+                },
+                {
+                    "_id": 1740930150446,
+                    "text": "Band Type: Full Authentic"
+                },
+                {
+                    "_id": 1740930154758,
+                    "text": "Style: Fashion & Casual"
+                },
+                {
+                    "_id": 1740930157323,
+                    "text": "Case Material: 100% color cleared"
+                },
+                {
+                    "_id": 1740930160131,
+                    "text": "Clasp Type: Pin buckle"
+                },
+                {
+                    "_id": 1740930163121,
+                    "text": "Gender: Men"
+                },
+                {
+                    "_id": 1740930166378,
+                    "text": "Band Type: Leather"
+                }
+            ]
+        },
+        "whyBest": [
+            {
+                "_id": 1740930075838,
+                "text": "We provide the best product"
+            },
+            {
+                "_id": 1740930080247,
+                "text": "Color Warranty"
+            },
+            {
+                "_id": 1740930083766,
+                "text": "We understand what it takes to build a board"
+            },
+            {
+                "_id": 1740930087904,
+                "text": "We customize the product"
+            },
+            {
+                "_id": 1740930089930,
+                "text": "We customize the product"
+            },
+            {
+                "_id": 1740930092935,
+                "text": "৭ দিনের রিপ্লেসমেন্ট সুবিধা।"
+            },
+            {
+                "_id": 1740930096283,
+                "text": "আমাদের কাছে রেডি স্টক থাকে।"
+            },
+            {
+                "_id": 1740930100821,
+                "text": "দ্রুত তম সময়ে কুরিয়ার করা হয়।"
+            },
+            {
+                "_id": 1740930105196,
+                "text": "প্রডাক্ট চেক করে নেওয়ার সুযোগ।"
+            },
+            {
+                "_id": 1740930108120,
+                "text": "১০০% অরিজিনাল প্রোডাক্ট।"
+            }
+        ]
+    },
+    {
+        "name": "Raksin Bag",
+        "category": "Bags",
+        "price": "300",
+        "discount": "25",
+         "discount_price":"225",
+         "shippingCharge":"free",
+        "productColor": [
+            {
+                "_id": 1741014126360,
+                "text": "Red"
+            },
+            {
+                "_id": 1741014129702,
+                "text": "Black"
+            },
+            {
+                "_id": 1741014132127,
+                "text": "Blue"
+            },
+            {
+                "_id": 1741014137255,
+                "text": "White"
+            }
+        ],
+        "size": [
+            {
+                "_id": 1741014142295,
+                "text": "M"
+            },
+            {
+                "_id": 1741014144151,
+                "text": "L"
+            },
+            {
+                "_id": 1741014145447,
+                "text": "XL"
+            },
+            {
+                "_id": 1741014149566,
+                "text": "XXL"
+            }
+        ],
+        "images": [
+            {
+                "_id": 17409325532456,
+                "url": "https://i.ibb.co.com/R6gtjkk/Raksin-bag.jpg"
+            },
+            {
+                "_id": 1740932555289,
+                "url": "http://localhost:5000//uploads/1740932555788.jpg"
+            },
+            {
+                "_id": 1740932558696,
+                "url": "http://localhost:5000//uploads/1740932559194.jpg"
+            },
+            {
+                "_id": 1740933099999,
+                "url": "http://localhost:5000//uploads/1740933100446.jpg"
+            }
+        ],
+        "description": {
+            "description_details": "Product is a well-designed and good looking for the youth indeed. In truth, It’s an eye-catching model that usually makes someone presentable. If someone searching for the best quality product for men, then this might be the best model.",
+            "description_title": "Formal Shirt with best color combination",
+            "specificDescription": [
+                {
+                    "_id": 1740930140998,
+                    "text": "Brand Name: Formal Shirt"
+                },
+                {
+                    "_id": 1740930144041,
+                    "text": "Site: peakyonline"
+                },
+                {
+                    "_id": 1740930147299,
+                    "text": "color: Authentic"
+                },
+                {
+                    "_id": 1740930150446,
+                    "text": "Band Type: Full Authentic"
+                },
+                {
+                    "_id": 1740930154758,
+                    "text": "Style: Fashion & Casual"
+                },
+                {
+                    "_id": 1740930157323,
+                    "text": "Case Material: 100% color cleared"
+                },
+                {
+                    "_id": 1740930160131,
+                    "text": "Clasp Type: Pin buckle"
+                },
+                {
+                    "_id": 1740930163121,
+                    "text": "Gender: Men"
+                },
+                {
+                    "_id": 1740930166378,
+                    "text": "Band Type: Leather"
+                }
+            ]
+        },
+        "whyBest": [
+            {
+                "_id": 1740930075838,
+                "text": "We provide the best product"
+            },
+            {
+                "_id": 1740930080247,
+                "text": "Color Warranty"
+            },
+            {
+                "_id": 1740930083766,
+                "text": "We understand what it takes to build a board"
+            },
+            {
+                "_id": 1740930087904,
+                "text": "We customize the product"
+            },
+            {
+                "_id": 1740930089930,
+                "text": "We customize the product"
+            },
+            {
+                "_id": 1740930092935,
+                "text": "৭ দিনের রিপ্লেসমেন্ট সুবিধা।"
+            },
+            {
+                "_id": 1740930096283,
+                "text": "আমাদের কাছে রেডি স্টক থাকে।"
+            },
+            {
+                "_id": 1740930100821,
+                "text": "দ্রুত তম সময়ে কুরিয়ার করা হয়।"
+            },
+            {
+                "_id": 1740930105196,
+                "text": "প্রডাক্ট চেক করে নেওয়ার সুযোগ।"
+            },
+            {
+                "_id": 1740930108120,
+                "text": "১০০% অরিজিনাল প্রোডাক্ট।"
+            }
+        ]
+    },
+    {
+        "name": "Formal Shirt",
+        "category": "Clothes",
+        "price": "1200",
+        "discount": "0",
+         "discount_price":"1200",
+         "shippingCharge":"normal",
+        "productColor": [
+            {
+                "_id": 1741014126360,
+                "text": "Red"
+            },
+            {
+                "_id": 1741014129702,
+                "text": "Black"
+            },
+            {
+                "_id": 1741014132127,
+                "text": "Blue"
+            },
+            {
+                "_id": 1741014137255,
+                "text": "White"
+            }
+        ],
+        "size": [
+            {
+                "_id": 1741014142295,
+                "text": "M"
+            },
+            {
+                "_id": 1741014144151,
+                "text": "L"
+            },
+            {
+                "_id": 1741014145447,
+                "text": "XL"
+            },
+            {
+                "_id": 1741014149566,
+                "text": "XXL"
+            }
+        ],
+        "images": [
+            {
+                "_id": 1740932553258,
+                "url": "http://localhost:5000//uploads/1740932553759.jpg"
+            },
+            {
+                "_id": 1740932555289,
+                "url": "http://localhost:5000//uploads/1740932555788.jpg"
+            },
+            {
+                "_id": 1740932558696,
+                "url": "http://localhost:5000//uploads/1740932559194.jpg"
+            },
+            {
+                "_id": 1740933099999,
+                "url": "http://localhost:5000//uploads/1740933100446.jpg"
+            }
+        ],
+        "description": {
+            "description_details": "Product is a well-designed and good looking for the youth indeed. In truth, It’s an eye-catching model that usually makes someone presentable. If someone searching for the best quality product for men, then this might be the best model.",
+            "description_title": "Formal Shirt with best color combination",
+            "specificDescription": [
+                {
+                    "_id": 1740930140998,
+                    "text": "Brand Name: Formal Shirt"
+                },
+                {
+                    "_id": 1740930144041,
+                    "text": "Site: peakyonline"
+                },
+                {
+                    "_id": 1740930147299,
+                    "text": "color: Authentic"
+                },
+                {
+                    "_id": 1740930150446,
+                    "text": "Band Type: Full Authentic"
+                },
+                {
+                    "_id": 1740930154758,
+                    "text": "Style: Fashion & Casual"
+                },
+                {
+                    "_id": 1740930157323,
+                    "text": "Case Material: 100% color cleared"
+                },
+                {
+                    "_id": 1740930160131,
+                    "text": "Clasp Type: Pin buckle"
+                },
+                {
+                    "_id": 1740930163121,
+                    "text": "Gender: Men"
+                },
+                {
+                    "_id": 1740930166378,
+                    "text": "Band Type: Leather"
+                }
+            ]
+        },
+        "whyBest": [
+            {
+                "_id": 1740930075838,
+                "text": "We provide the best product"
+            },
+            {
+                "_id": 1740930080247,
+                "text": "Color Warranty"
+            },
+            {
+                "_id": 1740930083766,
+                "text": "We understand what it takes to build a board"
+            },
+            {
+                "_id": 1740930087904,
+                "text": "We customize the product"
+            },
+            {
+                "_id": 1740930089930,
+                "text": "We customize the product"
+            },
+            {
+                "_id": 1740930092935,
+                "text": "৭ দিনের রিপ্লেসমেন্ট সুবিধা।"
+            },
+            {
+                "_id": 1740930096283,
+                "text": "আমাদের কাছে রেডি স্টক থাকে।"
+            },
+            {
+                "_id": 1740930100821,
+                "text": "দ্রুত তম সময়ে কুরিয়ার করা হয়।"
+            },
+            {
+                "_id": 1740930105196,
+                "text": "প্রডাক্ট চেক করে নেওয়ার সুযোগ।"
+            },
+            {
+                "_id": 1740930108120,
+                "text": "১০০% অরিজিনাল প্রোডাক্ট।"
+            }
+        ]
+    }
+]

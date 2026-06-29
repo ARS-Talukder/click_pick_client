@@ -1,0 +1,42 @@
+[
+    {
+        "name": "Bags",
+        "img": "https://i.ibb.co.com/1LdzzMV/bagpack.jpg"
+    },
+    {
+        "name": "Textiles",
+        "img": "https://i.ibb.co.com/vQB7RY6/textiles.jpg"
+    },
+    {
+        "name": "Foods",
+        "img": "https://i.ibb.co.com/47sfgGN/food.jpg"
+    },
+    {
+        "name": "Drinks",
+        "img": "https://i.ibb.co.com/bzSmZJp/drinks.jpg"
+    },
+    {
+        "name": "Electronics",
+        "img": "https://i.ibb.co.com/2kBvXsC/electronics.jpg"
+    },
+    {
+        "name": "Mobiles",
+        "img": "https://i.ibb.co.com/wQ7hqgs/mobile.jpg"
+    },
+    {
+        "name": "Laptops",
+        "img": "https://i.ibb.co.com/zsMGhf1/laptop.jpg"
+    },
+    {
+        "name": "Watch",
+        "img": "https://i.ibb.co.com/DpGx2w0/polex.jpg"
+    },
+    {
+        "name": "Shoes",
+        "img": "https://i.ibb.co.com/Yd2xMgZ/white-shoe.jpg"
+    },
+    {
+        "name": "Clothes",
+        "img": "https://i.ibb.co.com/w0r9yLH/Clothes.jpg"
+    }
+]

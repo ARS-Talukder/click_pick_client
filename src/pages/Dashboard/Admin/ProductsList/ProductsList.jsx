@@ -14,7 +14,7 @@ const ProductsList = () => {
     const { data: products, isLoading, isSuccess, isError, error, refetch } = useQuery({
         queryKey: ["products", currentPage],
         queryFn: () => {
-            return axios.get(`http://localhost:5000/products_paginated?page=${currentPage}&limit=${productsPerPage}`)
+            return axios.get(`https://click-pick-server.onrender.com/products_paginated?page=${currentPage}&limit=${productsPerPage}`)
         }
     })
 

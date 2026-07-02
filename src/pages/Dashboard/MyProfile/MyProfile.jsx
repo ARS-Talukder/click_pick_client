@@ -15,7 +15,7 @@ const MyProfile = () => {
     const { data: customers, isLoading, isSuccess, isError, refetch } = useQuery({
         queryKey: ["customers"],
         queryFn: () => {
-            return axios.get("http://localhost:5000/customers")
+            return axios.get("https://click-pick-server.onrender.com/customers")
         }
     })
 

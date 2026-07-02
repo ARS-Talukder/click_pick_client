@@ -11,7 +11,7 @@ import { Link } from 'react-router-dom';
 const IconicCategories = () => {
     const { data: iconicCategories, isLoading, isSuccess, refetch } = useQuery({
         queryKey: ["iconicCategories"],
-        queryFn: () => axios.get("http://localhost:5000/iconic_categories")
+        queryFn: () => axios.get("https://click-pick-server.onrender.com/iconic_categories")
     });
 
     const [deletingId, setDeletingId] = useState(null); // track deleting category
@@ -25,7 +25,7 @@ const IconicCategories = () => {
 
         try {
             setDeletingId(id); // start loading
-            await axios.delete(`http://localhost:5000/iconic_category_delete/${id}`);
+            await axios.delete(`https://click-pick-server.onrender.com/iconic_category_delete/${id}`);
             toast.success("Category deleted successfully!");
             refetch(); // refresh list
         } catch (error) {
@@ -45,7 +45,7 @@ const IconicCategories = () => {
             products: []
         };
 
-        fetch('http://localhost:5000/iconic_categories', {
+        fetch('https://click-pick-server.onrender.com/iconic_categories', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

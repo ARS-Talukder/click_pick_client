@@ -33,7 +33,7 @@ const Checkout = () => {
 
     // Fetch divisions
     useEffect(() => {
-        fetch("http://localhost:5000/divisions")
+        fetch("https://click-pick-server.onrender.com/divisions")
             .then(res => res.json())
             .then(data => setDivisions(data.data || []))
             .catch(err => console.error("Error fetching divisions:", err));
@@ -41,7 +41,7 @@ const Checkout = () => {
 
     // Fetch coupons
     useEffect(() => {
-        fetch("http://localhost:5000/coupons")
+        fetch("https://click-pick-server.onrender.com/coupons")
             .then(res => res.json())
             .then(data => setAvailableCoupons(data))
             .catch(err => console.error("Error fetching coupons:", err));
@@ -57,7 +57,7 @@ const Checkout = () => {
         setUpazilas([]);
 
         if (divisionId) {
-            fetch(`http://localhost:5000/districts/${divisionId}`)
+            fetch(`https://click-pick-server.onrender.com/districts/${divisionId}`)
                 .then(res => res.json())
                 .then(data => setDistricts(data.data || []))
                 .catch(err => console.error("Error fetching districts:", err));
@@ -74,7 +74,7 @@ const Checkout = () => {
         setUpazilas([]);
 
         if (districtId) {
-            fetch(`http://localhost:5000/upazilas/${districtId}`)
+            fetch(`https://click-pick-server.onrender.com/upazilas/${districtId}`)
                 .then(res => res.json())
                 .then(data => setUpazilas(data.data || []))
                 .catch(err => console.error("Error fetching upazilas:", err));
@@ -150,7 +150,7 @@ const Checkout = () => {
             ]
         };
 
-        fetch('http://localhost:5000/orders', {
+        fetch('https://click-pick-server.onrender.com/orders', {
             method: 'POST',
             headers: { 'content-type': 'application/json' },
             body: JSON.stringify(order)
@@ -165,7 +165,7 @@ const Checkout = () => {
             });
 
         const customer = { name: customerName, email: "No Email", address: { street, upazila: selectedUpazila, district: selectedDistrictName, division: selectedDivision }, phone };
-        fetch(`http://localhost:5000/customers/${phone}`, { method: 'PUT', headers: { 'content-type': 'application/json' }, body: JSON.stringify(customer) });
+        fetch(`https://click-pick-server.onrender.com/customers/${phone}`, { method: 'PUT', headers: { 'content-type': 'application/json' }, body: JSON.stringify(customer) });
     };
 
     return (

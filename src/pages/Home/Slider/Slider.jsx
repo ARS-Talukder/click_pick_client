@@ -14,7 +14,7 @@ const Slider = () => {
     const { data: banner, isLoading, isSuccess, isError, error } = useQuery({
         queryKey: ["banner"],
         queryFn: () => {
-            return axios.get("http://localhost:5000/banner")
+            return axios.get("https://click-pick-server.onrender.com/banner")
         }
     })
 

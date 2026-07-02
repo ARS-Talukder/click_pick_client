@@ -14,7 +14,7 @@ const EditProduct = () => {
     const id = param.id;
     const [product, setProduct] = useState({});
     useEffect(() => {
-        fetch(`http://localhost:5000/product/${id}`)
+        fetch(`https://click-pick-server.onrender.com/product/${id}`)
             .then(res => res.json())
             .then(data => setProduct(data))
 
@@ -27,7 +27,7 @@ const EditProduct = () => {
     // Handling images upload state
     const [editImages, setEditImages] = useState([]);
     useEffect(() => {
-        fetch(`http://localhost:5000/product/${id}`)
+        fetch(`https://click-pick-server.onrender.com/product/${id}`)
             .then(res => res.json())
             .then(data => setEditImages(data?.images))
     }, [id])
@@ -38,7 +38,7 @@ const EditProduct = () => {
     const { data: categories, isLoading, isSuccess, isError } = useQuery({
         queryKey: ["categories"],
         queryFn: () => {
-            return axios.get("http://localhost:5000/categories")
+            return axios.get("https://click-pick-server.onrender.com/categories")
         }
     })
 
@@ -82,11 +82,11 @@ const EditProduct = () => {
         const formData = new FormData();
         formData.append("image", file);
         try {
-            const response = await axios.post("http://localhost:5000/upload", formData, {
+            const response = await axios.post("https://click-pick-server.onrender.com/upload", formData, {
                 headers: { "Content-Type": "multipart/form-data" },
             });
 
-            const imageUrl = `http://localhost:5000/${response.data.filePath}`;
+            const imageUrl = `https://click-pick-server.onrender.com/${response.data.filePath}`;
             const newImage = { _id: Date.now(), url: imageUrl };
 
             // Add new image to the local state
@@ -95,7 +95,7 @@ const EditProduct = () => {
             toast.success("Uploaded");
 
             //Add image to the database
-            fetch(`http://localhost:5000/product_image/${id}`, {
+            fetch(`https://click-pick-server.onrender.com/product_image/${id}`, {
                 method: 'PATCH',
                 headers: {
                     'content-type': 'application/json'
@@ -109,7 +109,7 @@ const EditProduct = () => {
     };
     const handleDeleteImage = async (imageId, imageUrl) => {
         try {
-            await axios.delete("http://localhost:5000/delete", {
+            await axios.delete("https://click-pick-server.onrender.com/delete", {
                 data: { imageUrl }
             });
 
@@ -121,7 +121,7 @@ const EditProduct = () => {
             toast.success("Deleted!");
 
             //Remove image from the database
-            fetch(`http://localhost:5000/product_image/${id}`, {
+            fetch(`https://click-pick-server.onrender.com/product_image/${id}`, {
                 method: 'PATCH',
                 headers: {
                     'content-type': 'application/json'
@@ -181,7 +181,7 @@ const EditProduct = () => {
             images: editImages,
             description
         };
-        fetch(`http://localhost:5000/edit_product/${id}`, {
+        fetch(`https://click-pick-server.onrender.com/edit_product/${id}`, {
             method: 'PATCH',
             headers: {
                 'content-type': 'application/json'

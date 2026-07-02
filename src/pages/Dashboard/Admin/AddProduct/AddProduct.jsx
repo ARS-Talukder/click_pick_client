@@ -37,7 +37,7 @@ const AddProduct = () => {
     const { data: categories, isLoading, isSuccess, isError } = useQuery({
         queryKey: ["categories"],
         queryFn: () => {
-            return axios.get("http://localhost:5000/categories")
+            return axios.get("https://click-pick-server.onrender.com/categories")
         }
     })
 
@@ -121,11 +121,11 @@ const AddProduct = () => {
         const formData = new FormData();
         formData.append("image", file);
         try {
-            const response = await axios.post("http://localhost:5000/upload", formData, {
+            const response = await axios.post("https://click-pick-server.onrender.com/upload", formData, {
                 headers: { "Content-Type": "multipart/form-data" },
             });
 
-            setImages([...images, { _id: Date.now(), url: `http://localhost:5000/${response.data.filePath}` }]);
+            setImages([...images, { _id: Date.now(), url: `https://click-pick-server.onrender.com/${response.data.filePath}` }]);
             toast.success("Uploaded");
         } catch (err) {
             console.error("Error uploading image:", err);
@@ -134,7 +134,7 @@ const AddProduct = () => {
     };
     const handleDeleteImage = async (id, imageUrl) => {
         try {
-            await axios.delete("http://localhost:5000/delete", {
+            await axios.delete("https://click-pick-server.onrender.com/delete", {
                 data: { imageUrl }
             });
 
@@ -186,7 +186,7 @@ const AddProduct = () => {
         const description = { description_title, description_details, specificDescription };
         const product = { name, category, shippingCharge, price, discount, discount_price, subtitle, whyBest: why, productColor, size, images: images, description };
 
-        fetch('http://localhost:5000/products', {
+        fetch('https://click-pick-server.onrender.com/products', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

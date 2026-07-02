@@ -12,7 +12,7 @@ const OrderTrack = () => {
         e.preventDefault();
         const phone = e.target.phone.value;
 
-        fetch(`http://localhost:5000/order_by_phone/${phone}`, {
+        fetch(`https://click-pick-server.onrender.com/order_by_phone/${phone}`, {
             method: 'GET',
             headers: { 'content-type': 'application/json' }
         })

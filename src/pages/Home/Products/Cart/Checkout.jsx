@@ -33,7 +33,7 @@ const Checkout = () => {
 
     // Fetch divisions
     useEffect(() => {
-        fetch("https://bdapis.vercel.app/geo/v2.0/divisions")
+        fetch("http://localhost:5000/divisions")
             .then(res => res.json())
             .then(data => setDivisions(data.data || []))
             .catch(err => console.error("Error fetching divisions:", err));
@@ -41,7 +41,7 @@ const Checkout = () => {
 
     // Fetch coupons
     useEffect(() => {
-        fetch("https://click-pick-server.onrender.com/coupons")
+        fetch("http://localhost:5000/coupons")
             .then(res => res.json())
             .then(data => setAvailableCoupons(data))
             .catch(err => console.error("Error fetching coupons:", err));
@@ -50,13 +50,14 @@ const Checkout = () => {
     const handleDivisionChange = (e) => {
         const divisionId = e.target.value;
         const division = divisions.find(d => d.id === divisionId);
-        setSelectedDivision(division?.name || '');
-        setSelectedUpazila('');
+
+        setSelectedDivision(division?.name || "");
+        setSelectedUpazila("");
         setDistricts([]);
         setUpazilas([]);
 
         if (divisionId) {
-            fetch(`https://bdapis.vercel.app/geo/v2.0/districts/${divisionId}`)
+            fetch(`http://localhost:5000/districts/${divisionId}`)
                 .then(res => res.json())
                 .then(data => setDistricts(data.data || []))
                 .catch(err => console.error("Error fetching districts:", err));
@@ -68,12 +69,12 @@ const Checkout = () => {
         const district = districts.find(d => d.id === districtId);
 
         setSelectedDistrictId(districtId);
-        setSelectedDistrictName(district?.name || '');
-        setSelectedUpazila('');
+        setSelectedDistrictName(district?.name || "");
+        setSelectedUpazila("");
         setUpazilas([]);
 
         if (districtId) {
-            fetch(`https://bdapis.vercel.app/geo/v2.0/upazilas/${districtId}`)
+            fetch(`http://localhost:5000/upazilas/${districtId}`)
                 .then(res => res.json())
                 .then(data => setUpazilas(data.data || []))
                 .catch(err => console.error("Error fetching upazilas:", err));
@@ -149,7 +150,7 @@ const Checkout = () => {
             ]
         };
 
-        fetch('https://click-pick-server.onrender.com/orders', {
+        fetch('http://localhost:5000/orders', {
             method: 'POST',
             headers: { 'content-type': 'application/json' },
             body: JSON.stringify(order)
@@ -164,7 +165,7 @@ const Checkout = () => {
             });
 
         const customer = { name: customerName, email: "No Email", address: { street, upazila: selectedUpazila, district: selectedDistrictName, division: selectedDivision }, phone };
-        fetch(`https://click-pick-server.onrender.com/customers/${phone}`, { method: 'PUT', headers: { 'content-type': 'application/json' }, body: JSON.stringify(customer) });
+        fetch(`http://localhost:5000/customers/${phone}`, { method: 'PUT', headers: { 'content-type': 'application/json' }, body: JSON.stringify(customer) });
     };
 
     return (

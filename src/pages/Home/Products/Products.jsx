@@ -1,5 +1,6 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import Product from './Product';
+import Pagination from '../../Shared/Pagination';
 import { useQuery } from '@tanstack/react-query';
 import Loading from '../../Shared/Loading';
 import { FaLongArrowAltRight } from "react-icons/fa";
@@ -7,14 +8,18 @@ import axios from 'axios';
 import { Link } from 'react-router-dom';
 
 const Products = () => {
+    // Current page and products per page is to send for pagination
+    const [currentPage, setCurrentPage] = useState(1);
+    const productsPerPage = 10;
+
     const { data: products, isLoading, isSuccess, isError, error } = useQuery({
-        queryKey: ["products"],
+        queryKey: ["products", currentPage],
         queryFn: () => {
-            return axios.get("https://click-pick-server.onrender.com/products")
+            return axios.get(`http://localhost:5000/products_paginated?page=${currentPage}&limit=${productsPerPage}`)
         }
     })
     useEffect(() => {
-        if (!isSuccess || !products?.data) return;
+        if (!isSuccess || !products?.data?.products) return;
 
         // Track if already fired in this render cycle
         let hasPushed = false;
@@ -31,7 +36,11 @@ const Products = () => {
             });
             hasPushed = true;
         }
-    }, [isSuccess, products?.data]);
+    }, [isSuccess, products?.data?.products]);
+
+    // Calculating the page number for pagination
+    const totalProducts = products?.data?.totalProducts || 0;
+    const totalPages = Math.ceil(totalProducts / productsPerPage);
 
     let content;
 
@@ -40,7 +49,7 @@ const Products = () => {
     }
 
     if (isSuccess) {
-        content = products.data.map(product => <Product key={product._id} product={product}></Product>)
+        content = products.data.products.map(product => <Product key={product._id} product={product}></Product>)
     }
 
 
@@ -56,6 +65,8 @@ const Products = () => {
             <div className='grid grid-cols-2 lg:grid-cols-6 md:grid-cols-4 gap-5'>
                 {content}
             </div>
+
+            <Pagination currentPage={currentPage} setCurrentPage={setCurrentPage} totalPages={totalPages} />
 
         </div>
     );

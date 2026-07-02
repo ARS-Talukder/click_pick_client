@@ -21,7 +21,7 @@ const Header = () => {
 
     const { data: categories, isLoading, isSuccess } = useQuery({
         queryKey: ["categories"],
-        queryFn: () => axios.get("https://click-pick-server.onrender.com/categories")
+        queryFn: () => axios.get("http://localhost:5000/categories")
     });
 
     // Category Drawer open and close handling

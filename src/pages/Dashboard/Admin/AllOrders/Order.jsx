@@ -54,7 +54,7 @@ const Order = ({ order, index, refetch }) => {
             steps: steps
         };
 
-        fetch(`https://click-pick-server.onrender.com/order_state/${_id}`, {
+        fetch(`http://localhost:5000/order_state/${_id}`, {
             method: 'PATCH',
             headers: {
                 'content-type': 'application/json'
@@ -90,7 +90,7 @@ const Order = ({ order, index, refetch }) => {
     const handleDelete = (id) => {
         const proceed = window.confirm('Do You Want to remove this order information from database?');
         if (proceed) {
-            fetch(`https://click-pick-server.onrender.com/order-delete/${id}`, {
+            fetch(`http://localhost:5000/order-delete/${id}`, {
                 method: 'DELETE'
             })
                 .then(res => res.json())

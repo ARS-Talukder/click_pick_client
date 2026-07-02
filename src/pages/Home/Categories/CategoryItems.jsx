@@ -7,7 +7,7 @@ const CategoryItems = () => {
     let content;
     const [products, setProducts] = useState([])
     useEffect(() => {
-        fetch(`https://click-pick-server.onrender.com/category/${name}`)
+        fetch(`http://localhost:5000/category/${name}`)
             .then(res => res.json())
             .then(data => setProducts(data))
 

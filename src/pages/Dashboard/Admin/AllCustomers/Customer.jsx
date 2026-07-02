@@ -7,7 +7,7 @@ const Customer = ({ customer, index, refetch }) => {
     const handleDelete = (id) => {
         const proceed = window.confirm('Do You Want to remove this order information from database?');
         if (proceed) {
-            fetch(`https://click-pick-server.onrender.com/customer-delete/${_id}`, {
+            fetch(`http://localhost:5000/customer-delete/${_id}`, {
                 method: 'DELETE'
             })
                 .then(res => res.json())

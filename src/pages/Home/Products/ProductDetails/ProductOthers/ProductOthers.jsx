@@ -11,7 +11,7 @@ const ProductOthers = ({ product }) => {
 
             <h4 className={specificDescription.length == '' ? 'hidden' : 'font-bold'}>Specification:</h4>
             <div className='text-slate-600 px-3 my-4'>
-                {specificDescription.map(s => <pre key={s._id} className="whitespace-pre-wrap break-words"><small>{s.text}</small></pre>)}
+                {specificDescription?.map(s => <pre key={s._id} className="whitespace-pre-wrap break-words"><small>{s.text}</small></pre>)}
             </div>
             <div className='my-8'>
                 {

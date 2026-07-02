@@ -30,10 +30,14 @@ const AddProduct = () => {
     const [sizeText, setSizeText] = useState('');
     const [size, setSize] = useState([]);
 
+    // Handling Why Best or Specification?
+    const [whyText, setWhyText] = useState('');
+    const [why, setWhy] = useState([]);
+
     const { data: categories, isLoading, isSuccess, isError } = useQuery({
         queryKey: ["categories"],
         queryFn: () => {
-            return axios.get("https://click-pick-server.onrender.com/categories")
+            return axios.get("http://localhost:5000/categories")
         }
     })
 
@@ -90,6 +94,20 @@ const AddProduct = () => {
         setSize(prev => prev.filter(item => item._id !== id));
     };
 
+    // Handling Why Best
+    const handleWhy = () => {
+        if (whyText.trim() === '') return;
+        const newItem = {
+            _id: Date.now(),
+            text: whyText
+        };
+        setWhy(prev => [...prev, newItem]);
+        setWhyText('');
+    }
+    const handleDeleteWhy = (id) => {
+        setWhy(prev => prev.filter(item => item._id !== id));
+    };
+
 
 
     // Handling image upload and delete from hosting
@@ -103,11 +121,11 @@ const AddProduct = () => {
         const formData = new FormData();
         formData.append("image", file);
         try {
-            const response = await axios.post("https://click-pick-server.onrender.com/upload", formData, {
+            const response = await axios.post("http://localhost:5000/upload", formData, {
                 headers: { "Content-Type": "multipart/form-data" },
             });
 
-            setImages([...images, { _id: Date.now(), url: `https://click-pick-server.onrender.com/${response.data.filePath}` }]);
+            setImages([...images, { _id: Date.now(), url: `http://localhost:5000/${response.data.filePath}` }]);
             toast.success("Uploaded");
         } catch (err) {
             console.error("Error uploading image:", err);
@@ -116,7 +134,7 @@ const AddProduct = () => {
     };
     const handleDeleteImage = async (id, imageUrl) => {
         try {
-            await axios.delete("https://click-pick-server.onrender.com/delete", {
+            await axios.delete("http://localhost:5000/delete", {
                 data: { imageUrl }
             });
 
@@ -153,15 +171,22 @@ const AddProduct = () => {
             discount = Math.floor(((price - discount_price) * 100) / price);
         }
 
+        const specificDescription = e.target.specificDescription.value
+            .split("\n")
+            .map(item => item.trim())
+            .filter(item => item)
+            .map(item => ({
+                _id: crypto.randomUUID(),
+                text: item
+            }));
+
         const subtitle = e.target.subtitle.value;
-        const whyBest = e.target.whyBest.value;
         const description_title = e.target.description_title.value;
         const description_details = e.target.description_details.value;
-        const specificDescription = e.target.specificDescription.value;
         const description = { description_title, description_details, specificDescription };
-        const product = { name, category, shippingCharge, price, discount, discount_price, subtitle, whyBest, productColor, size, images: images, description };
+        const product = { name, category, shippingCharge, price, discount, discount_price, subtitle, whyBest: why, productColor, size, images: images, description };
 
-        fetch('https://click-pick-server.onrender.com/products', {
+        fetch('http://localhost:5000/products', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
@@ -181,6 +206,7 @@ const AddProduct = () => {
             .finally(() => {
                 setLoading(false); // Stop loading
             });
+
 
     }
     return (
@@ -317,12 +343,33 @@ const AddProduct = () => {
 
                     {/* Why our products are the best */}
                     <section className='bg-white p-5 rounded-xl my-4'>
-                        <div className="form-control w-full">
-                            <label className="label">
-                                <span className="label-text text-slate-500 font-bold">Specification</span>
-                            </label>
-                            <textarea name="whyBest" className="textarea textarea-bordered textarea-sm w-full h-24 bg-slate-50"></textarea>
-
+                        <h2 className='text-slate-500 font-bold mb-2'>Why this product?</h2>
+                        <ul>
+                            {
+                                why.map((w) =>
+                                    <li key={w._id} className='px-2 my-2 flex items-center'>
+                                        <span>✅</span>
+                                        <span className='mx-2'>{w.text}</span>
+                                        <button className='bg-red-100' title="Delete" onClick={() => handleDeleteWhy(w._id)}>
+                                            <AiFillDelete className="text-xl text-red-500"></AiFillDelete>
+                                        </button>
+                                    </li>)
+                            }
+                        </ul>
+                        <div className='flex justify-between my-2'>
+                            <div className="w-5/6 my-2 mr-2">
+                                <input type="text" className="input input-bordered input-sm w-full h-14 bg-slate-50" value={whyText}
+                                    onChange={(e) => setWhyText(e.target.value)}
+                                    onKeyDown={(e) => {
+                                        if (e.key === "Enter") {
+                                            e.preventDefault();
+                                            handleWhy();
+                                        }
+                                    }} />
+                            </div>
+                            <div className="w-1/6 my-2">
+                                <button type="button" onClick={handleWhy} className='w-full btn btn-success h-14 text-white'>Add</button>
+                            </div>
                         </div>
                     </section>
 

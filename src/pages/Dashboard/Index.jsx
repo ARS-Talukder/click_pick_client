@@ -13,10 +13,10 @@ import auth from '../../firebase.init';
 
 const fetchAllData = async () => {
     const [products, categories, orders, customers] = await Promise.all([
-        axios.get("https://click-pick-server.onrender.com/products"),
-        axios.get("https://click-pick-server.onrender.com/categories"),
-        axios.get("https://click-pick-server.onrender.com/orders"),
-        axios.get("https://click-pick-server.onrender.com/customers")
+        axios.get("http://localhost:5000/products"),
+        axios.get("http://localhost:5000/categories"),
+        axios.get("http://localhost:5000/orders"),
+        axios.get("http://localhost:5000/customers")
     ]);
 
     return {

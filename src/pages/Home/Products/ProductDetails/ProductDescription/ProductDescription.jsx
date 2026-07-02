@@ -122,12 +122,12 @@ const ProductDescription = ({ product }) => {
 
             <h2 className='font-bold'>{subtitle}</h2>
 
-            <div className={whyBest.length === 0 ? 'hidden' : ''}>
-                <h3 className='text-xl font-bold'>
-                    Specification
+            <div className={whyBest?.length === 0 ? 'hidden' : ''}>
+                <h3 className='font-bold'>
+                    Why This Product?
                 </h3>
                 <div className='pt-2 pb-4'>
-                    {whyBest.map(w => <div key={w._id} className="whitespace-pre-wrap break-words my-1">✅ <span className='text-gray-500 text-sm font-bold'>{w.text}</span></div>)}
+                    {whyBest?.map(w => <div key={w._id} className="whitespace-pre-wrap break-words my-1">✅ <span className='text-gray-500 text-sm font-bold'>{w.text}</span></div>)}
                 </div>
 
             </div>

@@ -51,7 +51,7 @@ const Product = ({ product }) => {
         });
     }
 
-    let productAdded = false;
+    // let productAdded = false;
     let dispatch = useDispatchCart();
     let data = useCart();
 
@@ -86,14 +86,15 @@ const Product = ({ product }) => {
         });
     }
 
-    if (data.length !== 0) {
-        for (let i = 0; i < data.length; i++) {
-            const data_id = data[i].product_id;
-            if (data_id === _id) {
-                productAdded = true
-            }
-        }
-    }
+    // if (data.length !== 0) {
+    //     for (let i = 0; i < data.length; i++) {
+    //         const data_id = data[i].product_id;
+    //         if (data_id === _id) {
+    //             productAdded = true
+    //         }
+    //     }
+    // }
+    const productAdded = data.some(item => item.product_id === _id);
 
     return (
         <div className='text-slate-700 font-sans border-2 rounded-lg hover:border-blue-500 pt-1 relative bg-white shadow-sm hover:shadow-md transition-shadow'>

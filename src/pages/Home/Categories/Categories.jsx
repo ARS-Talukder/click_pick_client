@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 const Categories = () => {
     const { data: categories, isLoading, isSuccess } = useQuery({
         queryKey: ["categories"],
-        queryFn: () => axios.get("https://click-pick-server.onrender.com/categories")
+        queryFn: () => axios.get("http://localhost:5000/categories")
     });
 
     const [isMobile, setIsMobile] = useState(window.innerWidth < 768);

@@ -9,7 +9,7 @@ import Product from '../Products/Product';
 const Campaign = () => {
     const { data: specialCategories, isLoading, isSuccess } = useQuery({
         queryKey: ["specialCategories"],
-        queryFn: () => axios.get("https://click-pick-server.onrender.com/special_categories")
+        queryFn: () => axios.get("http://localhost:5000/special_categories")
     });
 
     // Google Tag Manager data layer push

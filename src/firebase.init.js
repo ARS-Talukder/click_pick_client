@@ -6,12 +6,12 @@ import { getAuth } from "firebase/auth";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyCqiRozVK_uDna4-gWmaYiqcKG9D24VHnE",
-    authDomain: "peaky-online.firebaseapp.com",
-    projectId: "peaky-online",
-    storageBucket: "peaky-online.firebasestorage.app",
-    messagingSenderId: "251069214985",
-    appId: "1:251069214985:web:4be2804c3bbdc7516d63d8"
+    apiKey: "AIzaSyDfD1qDn4uPbg1Iku_AaV5kyrnyJhSrl-o",
+    authDomain: "click-pick-90f48.firebaseapp.com",
+    projectId: "click-pick-90f48",
+    storageBucket: "click-pick-90f48.firebasestorage.app",
+    messagingSenderId: "896448568577",
+    appId: "1:896448568577:web:3d8dbad5f7ce3e7de08f00"
 };
 
 // Initialize Firebase

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import './Header.css'
 import { VscAccount } from "react-icons/vsc";
 import { FaBars, FaTimes } from "react-icons/fa";
@@ -8,20 +8,23 @@ import auth from '../../../firebase.init';
 import Loading from '../Loading';
 import { BsCart } from "react-icons/bs";
 import { signOut } from 'firebase/auth';
-import { useCart } from '../../ContextReducer';
+import { useCart, useDispatchCart } from '../../ContextReducer';
 import useAdmin from '../../hooks/useAdmin';
 import CartDrawer from '../../Home/Products/Cart/CartDrawer/CartDrawer';
 import axios from 'axios';
 import { useQuery } from '@tanstack/react-query';
+import { FiSearch } from "react-icons/fi";
+import useDebounce from '../../hooks/useDebounce';
 
 
 const Header = () => {
     const [user, loading, error] = useAuthState(auth);
     const [admin, adminLoading] = useAdmin(user);
+    const dispatch = useDispatchCart();
 
     const { data: categories, isLoading, isSuccess } = useQuery({
         queryKey: ["categories"],
-        queryFn: () => axios.get("https://click-pick-server.onrender.com/categories")
+        queryFn: () => axios.get("http://localhost:5000/categories")
     });
 
     // Category Drawer open and close handling
@@ -29,6 +32,35 @@ const Header = () => {
 
     // Cart Drawer open and close handling
     const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+
+    //Search Product Field handling
+    const [searchText, setSearchText] = useState("");
+
+    // handling debounce search
+    const debouncedSearch = useDebounce(searchText, 500);
+
+    // Autocomplete search suggestions handling
+    const [suggestions, setSuggestions] = useState([]);
+    const [showSuggestions, setShowSuggestions] = useState(false);
+
+    // Handling close search Suggestions When Clicking Outside
+    const searchRef = useRef(null);
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            if (
+                searchRef.current &&
+                !searchRef.current.contains(event.target)
+            ) {
+                setShowSuggestions(false);
+            }
+        };
+
+        document.addEventListener("click", handleClickOutside);
+
+        return () => {
+            document.removeEventListener("click", handleClickOutside);
+        };
+    }, []);
 
     const navigate = useNavigate();
     const data = useCart();
@@ -48,9 +80,61 @@ const Header = () => {
         });
     }
 
+    // Search Product Field handling function
+    const handleSearch = (e) => {
+        e.preventDefault();
+
+        const search = searchText.trim();
+
+        if (!search) return;
+
+        navigate(`/search?q=${encodeURIComponent(search)}`);
+        setShowSuggestions(false);
+        setSuggestions([]);
+    };
+
+    // Autocomplete search suggestions handling function
+    const fetchSuggestions = async (value) => {
+        try {
+
+            if (!value.trim()) {
+                setSuggestions([]);
+                setShowSuggestions(false);
+                return;
+            }
+
+            const res = await axios.get(
+                `http://localhost:5000/products/suggestions?q=${value}`
+            );
+
+            setSuggestions(res.data);
+
+        } catch (error) {
+            console.log(error);
+        }
+    };
+
+    useEffect(() => {
+
+        fetchSuggestions(debouncedSearch);
+
+    }, [debouncedSearch]);
+
+    // making Suggestions search item clickable
+    const handleSuggestionClick = (product) => {
+        setSearchText(product.name);
+
+        setSuggestions([]);
+
+        setShowSuggestions(false);
+
+        navigate(`/search?q=${encodeURIComponent(product.name)}`);
+    };
+
     if (isLoading || loading || adminLoading) {
-        <Loading></Loading>
+        return <Loading />;
     }
+
 
     const handleSignOut = () => {
         signOut(auth);
@@ -59,6 +143,7 @@ const Header = () => {
         const proceed = window.confirm("Signing Out");
         if (proceed) {
             handleSignOut();
+            dispatch({ type: "CLEAR" });
             navigate('/');
         }
         else {
@@ -66,6 +151,7 @@ const Header = () => {
         }
 
     }
+
     return (
         <header className='header_container'>
             {/* Overlay. It creates darker the page when drawer opens */}
@@ -123,20 +209,53 @@ const Header = () => {
                 <Link className='ml-6' to='/'><img src="https://i.ibb.co.com/gb91DzSb/header-logo.png" alt="logo" width={80} /></Link>
             </div>
 
-            <div className='header_center'>
-                <label className="input input-bordered flex items-center gap-2 w-full text-gray-500">
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 16 16"
-                        fill="currentColor"
-                        className="h-4 w-4 opacity-70">
-                        <path
-                            fillRule="evenodd"
-                            d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"
-                            clipRule="evenodd" />
-                    </svg>
-                    <input type="text" className="grow text-black" placeholder="Search here..." />
-                </label>
+            <div className='header_center relative' ref={searchRef}>
+                <form action="" onSubmit={handleSearch} className='w-full'>
+                    {
+                        showSuggestions && suggestions.length > 0 && (
+                            <div className="absolute left-0 right-0 top-full mt-1 bg-white shadow-lg rounded-md z-50 border max-h-80 overflow-y-auto">
+
+                                {
+                                    suggestions.map((item) => (
+                                        <div
+                                            key={item._id}
+                                            className="px-4 py-3 cursor-pointer hover:bg-gray-100 text-black"
+                                            onClick={() => handleSuggestionClick(item)}
+                                        >
+                                            <div className='flex items-center'>
+                                                <FiSearch className="text-gray-500" size={18} />
+                                                <span className='mx-2'>{item.name}</span>
+                                            </div>
+                                        </div>
+                                    ))
+                                }
+
+                            </div>
+                        )
+                    }
+                    <label className="input input-bordered flex items-center gap-2 w-full text-gray-500">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 16 16"
+                            fill="currentColor"
+                            className="h-4 w-4 opacity-70">
+                            <path
+                                fillRule="evenodd"
+                                d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"
+                                clipRule="evenodd" />
+                        </svg>
+                        <input
+                            type="text"
+                            value={searchText}
+                            onChange={(e) => {
+                                setSearchText(e.target.value);
+                                setShowSuggestions(true);
+                            }}
+                            className="grow text-black"
+                            placeholder="Search here..."
+                        />
+                    </label>
+                </form>
             </div>
 
             <div className='header_right'>

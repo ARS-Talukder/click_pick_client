@@ -43,7 +43,7 @@ const Register = () => {
             await createUserWithEmailAndPassword(email, password);
             await updateProfile({ displayName: name });
             //Post a customer
-            fetch(`https://click-pick-server.onrender.com/customers/${email}`, {
+            fetch(`http://localhost:5000/customers/${email}`, {
                 method: 'PUT',
                 headers: {
                     'content-type': 'application/json'
@@ -67,7 +67,7 @@ const Register = () => {
                 const customer = { name, email, phone, address }
                 if (data.user) {
                     //Post a customer
-                    fetch(`https://click-pick-server.onrender.com/customers/${email}`, {
+                    fetch(`http://localhost:5000/customers/${email}`, {
                         method: 'PUT',
                         headers: {
                             'content-type': 'application/json'

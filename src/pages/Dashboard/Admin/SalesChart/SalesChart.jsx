@@ -15,37 +15,37 @@ const SalesChart = () => {
     const [todaySalesData, setTodaySalesData] = useState({ totalSales: 0, count: 0 });
 
     useEffect(() => {
-        axios.get('https://click-pick-server.onrender.com/api/sales/total')
+        axios.get('http://localhost:5000/api/sales/total')
             .then(res => setTotalSalesData(res.data))
             .catch(err => console.error("Error fetching total sales:", err));
     }, []);
 
     useEffect(() => {
-        axios.get('https://click-pick-server.onrender.com/api/sales/today')
+        axios.get('http://localhost:5000/api/sales/today')
             .then(res => setTodaySalesData(res.data))
             .catch(err => console.error("Error fetching today's sales:", err));
     }, []);
 
     useEffect(() => {
-        axios.get('https://click-pick-server.onrender.com/api/sales/monthly-summary')
+        axios.get('http://localhost:5000/api/sales/monthly-summary')
             .then(res => setMonthlySalesData(res.data))
             .catch(err => console.error(err));
     }, []);
 
     useEffect(() => {
-        axios.get('https://click-pick-server.onrender.com/api/sales/last-month')
+        axios.get('http://localhost:5000/api/sales/last-month')
             .then(res => setLastMontSalesData(res.data))
             .catch(err => console.error("Last month chart error:", err));
     }, []);
 
     useEffect(() => {
-        axios.get('https://click-pick-server.onrender.com/api/sales/this-month')
+        axios.get('http://localhost:5000/api/sales/this-month')
             .then(res => setThisMonthSalesData(res.data))
             .catch(err => console.error("Error fetching this month sales:", err));
     }, []);
 
     useEffect(() => {
-        axios.get('https://click-pick-server.onrender.com/api/sales/last-7-days')
+        axios.get('http://localhost:5000/api/sales/last-7-days')
             .then(res => setLastSevenDaysData(res.data))
             .catch(err => console.error("Error fetching last 7 days sales:", err));
     }, []);

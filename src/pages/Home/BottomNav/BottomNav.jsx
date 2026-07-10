@@ -6,7 +6,7 @@ import { FaShoppingCart, FaUser, FaBars, FaTimes } from "react-icons/fa";
 import { FiLogOut } from "react-icons/fi";
 import { MdCampaign } from "react-icons/md";
 import { Link, useNavigate } from 'react-router-dom';
-import { useCart } from '../../ContextReducer';
+import { useCart, useDispatchCart } from '../../ContextReducer';
 import CartDrawer from '../Products/Cart/CartDrawer/CartDrawer';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import useAdmin from '../../hooks/useAdmin';
@@ -18,10 +18,11 @@ const BottomNav = () => {
     const [drawerOpen, setDrawerOpen] = useState(false);
     const [user, loading, error] = useAuthState(auth);
     const [admin, adminLoading] = useAdmin(user);
+    const dispatch = useDispatchCart();
 
     const { data: categories, isLoading, isSuccess } = useQuery({
         queryKey: ["categories"],
-        queryFn: () => axios.get("https://click-pick-server.onrender.com/categories")
+        queryFn: () => axios.get("http://localhost:5000/categories")
     });
 
     if (isLoading || loading || adminLoading) {
@@ -35,6 +36,7 @@ const BottomNav = () => {
         const proceed = window.confirm("Signing Out");
         if (proceed) {
             handleSignOut();
+            dispatch({ type: "CLEAR" });
             navigate('/');
         }
         else {

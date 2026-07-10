@@ -13,7 +13,7 @@ const SpecialCategory = () => {
 
     // Fetch the special category
     useEffect(() => {
-        fetch(`https://click-pick-server.onrender.com/special_category/${id}`)
+        fetch(`http://localhost:5000/special_category/${id}`)
             .then(res => res.json())
             .then(data => {
                 setSpecialCategory(data);
@@ -24,7 +24,7 @@ const SpecialCategory = () => {
 
     // Fetch all products
     useEffect(() => {
-        fetch("https://click-pick-server.onrender.com/products")
+        fetch("http://localhost:5000/products")
             .then(res => res.json())
             .then(data => setAllProducts(data));
     }, []);
@@ -38,7 +38,7 @@ const SpecialCategory = () => {
 
     // Add product to special category
     const handleAddProduct = (product) => {
-        fetch(`https://click-pick-server.onrender.com/special_category/${id}/add-product`, {
+        fetch(`http://localhost:5000/special_category/${id}/add-product`, {
             method: "PATCH",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(product)
@@ -54,7 +54,7 @@ const SpecialCategory = () => {
 
     // Remove product from special category
     const handleRemoveProduct = (product) => {
-        fetch(`https://click-pick-server.onrender.com/special_category/${id}/remove-product`, {
+        fetch(`http://localhost:5000/special_category/${id}/remove-product`, {
             method: "PATCH",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ _id: product._id })
@@ -71,7 +71,7 @@ const SpecialCategory = () => {
     // Update Timer
     const handleUpdateTimer = (e) => {
         e.preventDefault();
-        fetch(`https://click-pick-server.onrender.com/special_category/${id}/update-timer`, {
+        fetch(`http://localhost:5000/special_category/${id}/update-timer`, {
             method: "PATCH",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ startTime, endTime })

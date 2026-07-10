@@ -5,8 +5,13 @@ const useAdmin = user => {
     const [adminLoading, setAdminLoading] = useState(true);
     useEffect(() => {
         const email = user?.email;
+        if (!email) {
+            setAdmin(false);
+            setAdminLoading(false);
+            return;
+        }
         if (email) {
-            fetch(`https://click-pick-server.onrender.com/admin/${email}`, {
+            fetch(`http://localhost:5000/admin/${email}`, {
                 method: 'GET',
                 headers: {
                     'content-type': 'application/json'
@@ -15,8 +20,14 @@ const useAdmin = user => {
                 .then(res => res.json())
                 .then(data => {
                     setAdmin(data.admin);
-                    setAdminLoading(false);
                 })
+                .catch(err => {
+                    console.error(err);
+                    setAdmin(false);
+                })
+                .finally(() => {
+                    setAdminLoading(false);
+                });
         }
     }, [user])
 

@@ -39,6 +39,7 @@ import Coupon from './pages/Dashboard/Admin/Coupon/Coupon'
 import IconicCategories from './pages/Dashboard/Admin/IconicCategories/IconicCategories'
 import IconicCategory from './pages/Dashboard/Admin/IconicCategories/IconicCategory'
 import Campaign from './pages/Home/Campaign/Campaign'
+import SearchProducts from './pages/Home/Search/SearchProducts'
 
 function App() {
 
@@ -60,6 +61,8 @@ function App() {
           <Route path='/product/:id' element={<ProductDetails></ProductDetails>}></Route>
           <Route path='all_products' element={<AllProducts></AllProducts>}></Route>
           <Route path='all_categories' element={<AllCategories></AllCategories>}></Route>
+          <Route path='search' element={<SearchProducts></SearchProducts>}></Route>
+
           <Route path='campaign' element={<Campaign></Campaign>}></Route>
 
           <Route path='/dashboard' element={<RequireAuth><Dashboard></Dashboard></RequireAuth>}>

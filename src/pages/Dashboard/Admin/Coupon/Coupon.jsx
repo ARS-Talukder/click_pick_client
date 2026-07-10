@@ -11,7 +11,7 @@ const Coupon = () => {
     const { data: coupons, isLoading, isSuccess, isError, error, refetch } = useQuery({
         queryKey: ["coupons"],
         queryFn: () => {
-            return axios.get("https://click-pick-server.onrender.com/coupons")
+            return axios.get("http://localhost:5000/coupons")
         }
     })
 
@@ -44,7 +44,7 @@ const Coupon = () => {
     const handleDelete = (id) => {
         const proceed = window.confirm('Want to delete?');
         if (proceed) {
-            fetch(`https://click-pick-server.onrender.com/coupon/${id}`, {
+            fetch(`http://localhost:5000/coupon/${id}`, {
                 method: 'DELETE'
             })
                 .then(res => res.json())
@@ -67,7 +67,7 @@ const Coupon = () => {
         const coupon = { coupon_code, coupon_discount };
         console.log(coupon)
 
-        fetch('https://click-pick-server.onrender.com/coupon', {
+        fetch('http://localhost:5000/coupon', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

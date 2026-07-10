@@ -10,7 +10,7 @@ const CategoryTable = ({ index, category, refetch }) => {
     const handleDelete = (id) => {
         const proceed = window.confirm('Do You Want to delete this category?');
         if (proceed) {
-            fetch(`https://click-pick-server.onrender.com/category-delete/${id}`, {
+            fetch(`http://localhost:5000/category-delete/${id}`, {
                 method: 'DELETE'
             })
                 .then(res => res.json())

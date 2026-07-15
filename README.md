@@ -139,8 +139,6 @@ npm start or nodemon index.js
 ## Client (.env)
 
 ```env
-VITE_API_URL=
-
 VITE_FIREBASE_API_KEY=
 
 VITE_FIREBASE_AUTH_DOMAIN=

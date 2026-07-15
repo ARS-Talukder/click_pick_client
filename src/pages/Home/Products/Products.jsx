@@ -6,6 +6,7 @@ import Loading from '../../Shared/Loading';
 import { FaLongArrowAltRight } from "react-icons/fa";
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import API from '../../../api/api';
 
 const Products = () => {
     // Current page and products per page is to send for pagination
@@ -15,28 +16,10 @@ const Products = () => {
     const { data: products, isLoading, isSuccess, isError, error } = useQuery({
         queryKey: ["products", currentPage],
         queryFn: () => {
-            return axios.get(`http://localhost:5000/products_paginated?page=${currentPage}&limit=${productsPerPage}`)
+            return API.get(`/products_paginated?page=${currentPage}&limit=${productsPerPage}`)
         }
     })
-    useEffect(() => {
-        if (!isSuccess || !products?.data?.products) return;
 
-        // Track if already fired in this render cycle
-        let hasPushed = false;
-
-        if (!hasPushed) {
-            window.dataLayer.push({ ecommerce: null });
-            window.dataLayer.push({
-                event: "view_item_list",
-                ecommerce: {
-                    currency: "BDT",
-                    items: products.data,
-                },
-                pagePath: window.location.pathname,
-            });
-            hasPushed = true;
-        }
-    }, [isSuccess, products?.data?.products]);
 
     // Calculating the page number for pagination
     const totalProducts = products?.data?.totalProducts || 0;
@@ -45,7 +28,7 @@ const Products = () => {
     let content;
 
     if (isLoading) {
-        return <Loading></Loading>
+        return <Loading />
     }
 
     if (isSuccess) {

@@ -4,18 +4,19 @@ import React from 'react';
 import CategoryTable from './CategoryTable';
 import DashboardButton from '../../DashboardButton';
 import Loading from '../../../Shared/Loading';
+import API from '../../../../api/api';
 
 const CategoriesList = () => {
     const { data: categories, isLoading, isSuccess, isError, error, refetch } = useQuery({
         queryKey: ["categories"],
         queryFn: () => {
-            return axios.get("http://localhost:5000/categories")
+            return API.get("/categories")
         }
     })
     let content;
 
     if (isLoading) {
-        return <Loading></Loading>
+        return <Loading />
     }
 
     if (isSuccess) {

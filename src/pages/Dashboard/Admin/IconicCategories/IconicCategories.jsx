@@ -7,11 +7,12 @@ import Loading from '../../../Shared/Loading';
 import { FaCloudUploadAlt } from "react-icons/fa";
 import toast from 'react-hot-toast';
 import { Link } from 'react-router-dom';
+import API, { SERVER_URL } from '../../../../api/api';
 
 const IconicCategories = () => {
     const { data: iconicCategories, isLoading, isSuccess, refetch } = useQuery({
         queryKey: ["iconicCategories"],
-        queryFn: () => axios.get("http://localhost:5000/iconic_categories")
+        queryFn: () => API.get("/iconic_categories")
     });
 
     const [deletingId, setDeletingId] = useState(null); // track deleting category
@@ -25,7 +26,7 @@ const IconicCategories = () => {
 
         try {
             setDeletingId(id); // start loading
-            await axios.delete(`http://localhost:5000/iconic_category_delete/${id}`);
+            await API.delete(`/iconic_category_delete/${id}`);
             toast.success("Category deleted successfully!");
             refetch(); // refresh list
         } catch (error) {
@@ -45,7 +46,7 @@ const IconicCategories = () => {
             products: []
         };
 
-        fetch('http://localhost:5000/iconic_categories', {
+        fetch(`${SERVER_URL}/iconic_categories`, {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

@@ -8,6 +8,7 @@ const Cart = () => {
     let data = useCart();
     let subTotal = 0;
 
+
     let content;
     if (data.length === 0) {
         return (
@@ -28,29 +29,9 @@ const Cart = () => {
             subTotal = subTotal + multiplication;
         }
 
-        // Clear previous ecommerce data before pushing the new product
-        window.dataLayer.push({ ecommerce: null });
-
-        // Pushing Data to the Data Layer for Google data manager(GTM)
-        window.dataLayer.push({
-            event: 'view_cart',
-            gtm: {
-                uniqueEventId: new Date().getTime(), // Ensure unique event ID
-                historyChangeSource: "pushState",
-                oldHistoryState: null, // Reset old history state
-                newHistoryState: { usr: null, key: "new_key", idx: 2 }, // Keep new state
-            },
-            ecommerce: {
-                currency: 'BDT',
-                items: data
-            },
-            pagePath: window.location.pathname,
-        });
-
 
     }
 
-    console.log(data)
     return (
         <div className='lg:flex md:flex justify-center px-6 py-4 lg:px-20 md:px-4 lg:py-10'>
             {/* ------Products Section------ */}

@@ -5,11 +5,20 @@ import { useNavigate } from 'react-router-dom';
 import CheckoutProduct from './CheckoutProduct';
 import { FaBangladeshiTakaSign } from "react-icons/fa6";
 import { MdOutlineSell } from "react-icons/md";
+import { SERVER_URL } from '../../../../api/api';
 
 const Checkout = () => {
     const data = useCart();
     const dispatch = useDispatchCart();
     const navigate = useNavigate();
+
+    // if the cart is empty the user can't stay on this checkout
+    useEffect(() => {
+        if (data.length === 0) {
+            toast.error("Your cart is empty.");
+            navigate("/", { replace: true });
+        }
+    }, [data, navigate]);
 
     const [freeShipping, setFreeShipping] = useState(false);
     const [shipping, setShipping] = useState(130);
@@ -33,7 +42,7 @@ const Checkout = () => {
 
     // Fetch divisions
     useEffect(() => {
-        fetch("http://localhost:5000/divisions")
+        fetch(`${SERVER_URL}/divisions`)
             .then(res => res.json())
             .then(data => setDivisions(data.data || []))
             .catch(err => console.error("Error fetching divisions:", err));
@@ -41,7 +50,7 @@ const Checkout = () => {
 
     // Fetch coupons
     useEffect(() => {
-        fetch("http://localhost:5000/coupons")
+        fetch(`${SERVER_URL}/coupons`)
             .then(res => res.json())
             .then(data => setAvailableCoupons(data))
             .catch(err => console.error("Error fetching coupons:", err));
@@ -57,7 +66,7 @@ const Checkout = () => {
         setUpazilas([]);
 
         if (divisionId) {
-            fetch(`http://localhost:5000/districts/${divisionId}`)
+            fetch(`${SERVER_URL}/districts/${divisionId}`)
                 .then(res => res.json())
                 .then(data => setDistricts(data.data || []))
                 .catch(err => console.error("Error fetching districts:", err));
@@ -74,14 +83,13 @@ const Checkout = () => {
         setUpazilas([]);
 
         if (districtId) {
-            fetch(`http://localhost:5000/upazilas/${districtId}`)
+            fetch(`${SERVER_URL}/upazilas/${districtId}`)
                 .then(res => res.json())
                 .then(data => setUpazilas(data.data || []))
                 .catch(err => console.error("Error fetching upazilas:", err));
         }
     };
 
-    console.log(data)
     const handleFreeShipping = () => {
         const allFree = data.every(p => p.shippingCharge === 'free');
         if (allFree) {
@@ -151,7 +159,7 @@ const Checkout = () => {
             ]
         };
 
-        fetch('http://localhost:5000/orders', {
+        fetch(`${SERVER_URL}/orders`, {
             method: 'POST',
             headers: { 'content-type': 'application/json' },
             body: JSON.stringify(order)
@@ -166,7 +174,7 @@ const Checkout = () => {
             });
 
         const customer = { name: customerName, email: "No Email", address: { street, upazila: selectedUpazila, district: selectedDistrictName, division: selectedDivision }, phone };
-        fetch(`http://localhost:5000/customers/${phone}`, { method: 'PUT', headers: { 'content-type': 'application/json' }, body: JSON.stringify(customer) });
+        fetch(`${SERVER_URL}/customers/${phone}`, { method: 'PUT', headers: { 'content-type': 'application/json' }, body: JSON.stringify(customer) });
     };
 
     return (

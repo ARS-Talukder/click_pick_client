@@ -8,20 +8,21 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 import { useQuery } from '@tanstack/react-query';
 import axios from 'axios';
 import Loading from '../../Shared/Loading';
+import API from '../../../api/api';
 
 
 const Slider = () => {
     const { data: banner, isLoading, isSuccess, isError, error } = useQuery({
         queryKey: ["banner"],
         queryFn: () => {
-            return axios.get("http://localhost:5000/banner")
+            return API.get("/banner")
         }
     })
 
     let content;
 
     if (isLoading) {
-        return <Loading></Loading>
+        return <Loading />
     }
 
     if (isSuccess) {
@@ -42,8 +43,8 @@ const Slider = () => {
                 }}
                 // spaceBetween={30}
                 centeredSlides={true}
-                autoplay={false}
-                loop={false}
+                autoplay={true}
+                loop={true}
                 navigation={true}
                 modules={[Autoplay, Navigation]}
                 className="mySwiper"

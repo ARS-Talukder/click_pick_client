@@ -4,6 +4,7 @@ import {
     BarChart, Bar, LineChart, Line, CartesianGrid, XAxis, YAxis, Tooltip, ResponsiveContainer, Legend,
 } from 'recharts';
 import DashboardButton from '../../DashboardButton';
+import API from '../../../../api/api';
 
 
 const SalesChart = () => {
@@ -15,44 +16,41 @@ const SalesChart = () => {
     const [todaySalesData, setTodaySalesData] = useState({ totalSales: 0, count: 0 });
 
     useEffect(() => {
-        axios.get('http://localhost:5000/api/sales/total')
+        API.get('/api/sales/total')
             .then(res => setTotalSalesData(res.data))
             .catch(err => console.error("Error fetching total sales:", err));
     }, []);
 
     useEffect(() => {
-        axios.get('http://localhost:5000/api/sales/today')
+        API.get('/api/sales/today')
             .then(res => setTodaySalesData(res.data))
             .catch(err => console.error("Error fetching today's sales:", err));
     }, []);
 
     useEffect(() => {
-        axios.get('http://localhost:5000/api/sales/monthly-summary')
+        API.get('/api/sales/monthly-summary')
             .then(res => setMonthlySalesData(res.data))
             .catch(err => console.error(err));
     }, []);
 
     useEffect(() => {
-        axios.get('http://localhost:5000/api/sales/last-month')
+        API.get('/api/sales/last-month')
             .then(res => setLastMontSalesData(res.data))
             .catch(err => console.error("Last month chart error:", err));
     }, []);
 
     useEffect(() => {
-        axios.get('http://localhost:5000/api/sales/this-month')
+        API.get('/api/sales/this-month')
             .then(res => setThisMonthSalesData(res.data))
             .catch(err => console.error("Error fetching this month sales:", err));
     }, []);
 
     useEffect(() => {
-        axios.get('http://localhost:5000/api/sales/last-7-days')
+        API.get('/api/sales/last-7-days')
             .then(res => setLastSevenDaysData(res.data))
             .catch(err => console.error("Error fetching last 7 days sales:", err));
     }, []);
 
-
-    console.log(lastMonthSalesData)
-    console.log(thisMonthSalesData)
     return (
         <div>
             {/* ---------------Dashboard Button------------- */}

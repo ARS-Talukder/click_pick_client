@@ -8,7 +8,6 @@ const OrderProduct = ({ order }) => {
 
     const lastStatus = orderSteps?.length ? orderSteps[orderSteps.length - 1]?.title : "Pending";
 
-    console.log(orderSteps)
     return (
         <div className="relative">
             {/* Status Section */}

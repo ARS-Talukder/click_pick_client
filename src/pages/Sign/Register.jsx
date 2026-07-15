@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { useCreateUserWithEmailAndPassword, useSignInWithGoogle, useUpdateProfile } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
 import Loading from '../Shared/Loading';
+import { SERVER_URL } from '../../api/api';
 
 const Register = () => {
     // const [email, setEmail] = useState('');
@@ -24,7 +25,7 @@ const Register = () => {
         error_message = <p className='text-red-500 font-bold'><small>{emailError?.message || gError?.message}</small></p>
     }
     if (emailLoading || updating || gLoading) {
-        return <Loading></Loading>
+        return <Loading />
     }
     if (emailUser || gUser) {
         navigate('/')
@@ -43,7 +44,7 @@ const Register = () => {
             await createUserWithEmailAndPassword(email, password);
             await updateProfile({ displayName: name });
             //Post a customer
-            fetch(`http://localhost:5000/customers/${email}`, {
+            fetch(`${SERVER_URL}/customers/${email}`, {
                 method: 'PUT',
                 headers: {
                     'content-type': 'application/json'
@@ -67,7 +68,7 @@ const Register = () => {
                 const customer = { name, email, phone, address }
                 if (data.user) {
                     //Post a customer
-                    fetch(`http://localhost:5000/customers/${email}`, {
+                    fetch(`${SERVER_URL}/customers/${email}`, {
                         method: 'PUT',
                         headers: {
                             'content-type': 'application/json'

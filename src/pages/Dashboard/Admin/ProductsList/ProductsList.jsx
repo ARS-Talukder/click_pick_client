@@ -5,6 +5,7 @@ import ProductTable from './ProductTable';
 import DashboardButton from '../../DashboardButton';
 import Loading from '../../../Shared/Loading';
 import Pagination from '../../../Shared/Pagination';
+import API from '../../../../api/api';
 
 const ProductsList = () => {
     // Current page and products per page is to send for pagination
@@ -14,7 +15,7 @@ const ProductsList = () => {
     const { data: products, isLoading, isSuccess, isError, error, refetch } = useQuery({
         queryKey: ["products", currentPage],
         queryFn: () => {
-            return axios.get(`http://localhost:5000/products_paginated?page=${currentPage}&limit=${productsPerPage}`)
+            return API.get(`/products_paginated?page=${currentPage}&limit=${productsPerPage}`)
         }
     })
 
@@ -26,7 +27,7 @@ const ProductsList = () => {
     let content;
 
     if (isLoading) {
-        return <Loading></Loading>
+        return <Loading />
     }
 
     if (isSuccess) {

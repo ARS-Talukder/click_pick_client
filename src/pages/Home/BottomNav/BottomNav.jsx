@@ -13,8 +13,15 @@ import useAdmin from '../../hooks/useAdmin';
 import auth from '../../../firebase.init';
 import Loading from '../../Shared/Loading';
 import { signOut } from 'firebase/auth';
+import API from '../../../api/api';
 
 const BottomNav = () => {
+    // Cart Drawer open and close handling
+    const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+    const data = useCart();
+
+    const navigate = useNavigate();
+
     const [drawerOpen, setDrawerOpen] = useState(false);
     const [user, loading, error] = useAuthState(auth);
     const [admin, adminLoading] = useAdmin(user);
@@ -22,11 +29,11 @@ const BottomNav = () => {
 
     const { data: categories, isLoading, isSuccess } = useQuery({
         queryKey: ["categories"],
-        queryFn: () => axios.get("http://localhost:5000/categories")
+        queryFn: () => API.get("/categories")
     });
 
     if (isLoading || loading || adminLoading) {
-        <Loading></Loading>
+        return <Loading />
     }
 
     const handleSignOut = () => {
@@ -45,24 +52,9 @@ const BottomNav = () => {
 
     }
 
-    // Cart Drawer open and close handling
-    const [isDrawerOpen, setIsDrawerOpen] = useState(false);
-    const data = useCart();
 
-    const navigate = useNavigate();
     const navigateToInventory = name => {
         navigate(`/${name}`);
-
-        // Pushing Data to the Data Layer for Google data manager(GTM)
-        window.dataLayer.push({
-            event: 'category_button',
-            ecommerce: {
-                categoryName: { name }
-            },
-            buttonText: 'Category Button',
-            buttonClick: 'Clicked',
-            pagePath: window.location.pathname,
-        });
     }
     return (
         <div>

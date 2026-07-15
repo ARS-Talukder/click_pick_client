@@ -9,6 +9,7 @@ import { AiFillDelete } from "react-icons/ai";
 import { FaRegImages } from "react-icons/fa";
 import { RxCross2 } from "react-icons/rx";
 import { FaCloudUploadAlt } from "react-icons/fa";
+import API, { SERVER_URL } from '../../../../api/api';
 
 
 const AddProduct = () => {
@@ -37,13 +38,13 @@ const AddProduct = () => {
     const { data: categories, isLoading, isSuccess, isError } = useQuery({
         queryKey: ["categories"],
         queryFn: () => {
-            return axios.get("http://localhost:5000/categories")
+            return API.get("/categories")
         }
     })
 
     const navigate = useNavigate();
     if (isLoading || loading) {
-        return <Loading></Loading>
+        return <Loading />
     }
 
     // Handling Shipping Charge
@@ -121,11 +122,11 @@ const AddProduct = () => {
         const formData = new FormData();
         formData.append("image", file);
         try {
-            const response = await axios.post("http://localhost:5000/upload", formData, {
+            const response = await API.post("/upload", formData, {
                 headers: { "Content-Type": "multipart/form-data" },
             });
 
-            setImages([...images, { _id: Date.now(), url: `http://localhost:5000/${response.data.filePath}` }]);
+            setImages([...images, { _id: Date.now(), url: `${SERVER_URL}/${response.data.filePath}` }]);
             toast.success("Uploaded");
         } catch (err) {
             console.error("Error uploading image:", err);
@@ -134,7 +135,7 @@ const AddProduct = () => {
     };
     const handleDeleteImage = async (id, imageUrl) => {
         try {
-            await axios.delete("http://localhost:5000/delete", {
+            await API.delete("/delete", {
                 data: { imageUrl }
             });
 
@@ -186,7 +187,7 @@ const AddProduct = () => {
         const description = { description_title, description_details, specificDescription };
         const product = { name, category, shippingCharge, price, discount, discount_price, subtitle, whyBest: why, productColor, size, images: images, description };
 
-        fetch('http://localhost:5000/products', {
+        fetch(`${SERVER_URL}/products`, {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

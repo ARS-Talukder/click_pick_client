@@ -2,6 +2,7 @@ import React from 'react';
 import toast from 'react-hot-toast';
 import { TbPointFilled } from "react-icons/tb";
 import { AiFillDelete } from "react-icons/ai";
+import { SERVER_URL } from '../../../../api/api';
 
 const Order = ({ order, index, refetch }) => {
     const { _id, date, orderID, time, shipping, total, products, customerName, email, phone, address, status, paymentMethod, transactionID } = order;
@@ -54,7 +55,7 @@ const Order = ({ order, index, refetch }) => {
             steps: steps
         };
 
-        fetch(`http://localhost:5000/order_state/${_id}`, {
+        fetch(`${SERVER_URL}/order_state/${_id}`, {
             method: 'PATCH',
             headers: {
                 'content-type': 'application/json'
@@ -90,7 +91,7 @@ const Order = ({ order, index, refetch }) => {
     const handleDelete = (id) => {
         const proceed = window.confirm('Do You Want to remove this order information from database?');
         if (proceed) {
-            fetch(`http://localhost:5000/order-delete/${id}`, {
+            fetch(`${SERVER_URL}/order-delete/${id}`, {
                 method: 'DELETE'
             })
                 .then(res => res.json())
@@ -213,11 +214,6 @@ const Order = ({ order, index, refetch }) => {
                         </>
                     )}
                 </select>
-            </td>
-            <td className='border'>
-                <button onClick={() => handleDelete(_id)} className='p-1 bg-red-100 rounded hover:bg-red-200' title="Delete">
-                    <AiFillDelete className="text-2xl text-red-500"></AiFillDelete>
-                </button>
             </td>
         </tr>
     );

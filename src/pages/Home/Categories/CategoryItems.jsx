@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import Product from '../Products/Product';
+import { SERVER_URL } from '../../../api/api';
 
 const CategoryItems = () => {
     const { name } = useParams();
     let content;
     const [products, setProducts] = useState([])
     useEffect(() => {
-        fetch(`http://localhost:5000/category/${name}`)
+        fetch(`${SERVER_URL}/category/${name}`)
             .then(res => res.json())
             .then(data => setProducts(data))
 

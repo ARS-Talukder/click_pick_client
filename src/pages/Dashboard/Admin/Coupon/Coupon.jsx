@@ -6,19 +6,20 @@ import { FaCloudUploadAlt } from "react-icons/fa";
 import Loading from '../../../Shared/Loading';
 import DashboardButton from '../../DashboardButton';
 import { AiFillDelete } from "react-icons/ai";
+import API, { SERVER_URL } from '../../../../api/api';
 
 const Coupon = () => {
     const { data: coupons, isLoading, isSuccess, isError, error, refetch } = useQuery({
         queryKey: ["coupons"],
         queryFn: () => {
-            return axios.get("http://localhost:5000/coupons")
+            return API.get("/coupons")
         }
     })
 
     let content;
 
     if (isLoading) {
-        return <Loading></Loading>
+        return <Loading />
     }
 
     if (isSuccess) {
@@ -44,7 +45,7 @@ const Coupon = () => {
     const handleDelete = (id) => {
         const proceed = window.confirm('Want to delete?');
         if (proceed) {
-            fetch(`http://localhost:5000/coupon/${id}`, {
+            fetch(`${SERVER_URL}/coupon/${id}`, {
                 method: 'DELETE'
             })
                 .then(res => res.json())
@@ -65,9 +66,8 @@ const Coupon = () => {
         const coupon_discount = e.target.coupon_discount.value;
 
         const coupon = { coupon_code, coupon_discount };
-        console.log(coupon)
 
-        fetch('http://localhost:5000/coupon', {
+        fetch(`${SERVER_URL}/coupon`, {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

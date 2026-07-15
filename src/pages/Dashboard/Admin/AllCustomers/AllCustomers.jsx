@@ -4,19 +4,20 @@ import React from 'react';
 import Customer from './Customer';
 import Loading from '../../../Shared/Loading';
 import DashboardButton from '../../DashboardButton';
+import API from '../../../../api/api';
 
 const AllCustomers = () => {
     const { data: customers, isLoading, isSuccess, isError, error, refetch } = useQuery({
         queryKey: ["customers"],
         queryFn: () => {
-            return axios.get("http://localhost:5000/customers")
+            return API.get("/customers")
         }
     })
 
     let content;
 
     if (isLoading) {
-        return <Loading></Loading>
+        return <Loading />
     }
 
     if (isSuccess) {

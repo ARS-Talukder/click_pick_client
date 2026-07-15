@@ -5,27 +5,13 @@ import Loading from '../../Shared/Loading';
 import Product from '../Products/Product';
 import CountdownTimer from '../../Shared/CountdownTimer';
 import './SpecialProducts.css';
+import API from '../../../api/api';
 
 const SpecialProducts = () => {
     const { data: specialCategories, isLoading, isSuccess } = useQuery({
         queryKey: ["specialCategories"],
-        queryFn: () => axios.get("http://localhost:5000/special_categories")
+        queryFn: () => API.get("/special_categories")
     });
-
-    // // Google Tag Manager data layer push
-    // useEffect(() => {
-    //     if (isSuccess && specialCategories?.data) {
-    //         window.dataLayer.push({ ecommerce: null });
-    //         window.dataLayer.push({
-    //             event: "view_item_list",
-    //             ecommerce: {
-    //                 currency: 'BDT',
-    //                 items: specialCategories.data
-    //             },
-    //             pagePath: window.location.pathname,
-    //         });
-    //     }
-    // }, [isSuccess, specialCategories]);
 
     if (isLoading) return <Loading />;
 

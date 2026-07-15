@@ -6,11 +6,12 @@ import Loading from '../../../Shared/Loading';
 import { Link } from 'react-router-dom';
 import { AiOutlineClose } from "react-icons/ai";
 import toast from 'react-hot-toast';
+import API from '../../../../api/api';
 
 const SpecialCategoriesList = () => {
     const { data: specialCategories, isLoading, isSuccess, refetch } = useQuery({
         queryKey: ["specialCategories"],
-        queryFn: () => axios.get("http://localhost:5000/special_categories")
+        queryFn: () => API.get("/special_categories")
     });
 
     const [deletingId, setDeletingId] = useState(null); // track deleting category
@@ -24,7 +25,7 @@ const SpecialCategoriesList = () => {
 
         try {
             setDeletingId(id); // start loading
-            await axios.delete(`http://localhost:5000/special_category_delete/${id}`);
+            await API.delete(`/special_category_delete/${id}`);
             toast.success("Category deleted successfully!");
             refetch(); // refresh list
         } catch (error) {

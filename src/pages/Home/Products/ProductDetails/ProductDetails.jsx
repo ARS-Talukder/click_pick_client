@@ -9,30 +9,6 @@ const ProductDetails = () => {
     const { state } = useLocation();
     const product = state;
     const { name, price, discount, category, images, description, productColor, size, whyBest } = product;
-    useEffect(() => {
-        if (product) {
-            // Clear previous ecommerce data before pushing the new product
-            window.dataLayer.push({ ecommerce: null });
-
-            // Pushing Data to the Data Layer for Google data manager(GTM)
-            window.dataLayer.push({
-                event: 'view_item',
-                gtm: {
-                    uniqueEventId: new Date().getTime(), // Ensure unique event ID
-                    historyChangeSource: "pushState",
-                    oldHistoryState: null, // Reset old history state
-                    newHistoryState: { usr: null, key: "new_key", idx: 2 }, // Keep new state
-                },
-                ecommerce: {
-                    currency: 'BDT',
-                    value: parseFloat(price),
-                    items: [product]
-                },
-                pagePath: window.location.pathname,
-            });
-        }
-    }, [product, price]);
-    console.log(product)
 
     return (
         <div className='lg:px-48'>

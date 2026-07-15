@@ -6,6 +6,7 @@ import { FaBangladeshiTakaSign } from "react-icons/fa6";
 import { MdEdit } from "react-icons/md";
 import { GrView } from "react-icons/gr";
 import { useNavigate } from 'react-router-dom';
+import { SERVER_URL } from '../../../../api/api';
 
 
 const ProductTable = ({ index, product, refetch }) => {
@@ -17,7 +18,7 @@ const ProductTable = ({ index, product, refetch }) => {
     const handleDelete = (id) => {
         const proceed = window.confirm('Do You Want to delete this product?');
         if (proceed) {
-            fetch(`http://localhost:5000/product-delete/${id}`, {
+            fetch(`${SERVER_URL}/product-delete/${id}`, {
                 method: 'DELETE'
             })
                 .then(res => res.json())

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import DashboardButton from '../DashboardButton';
 import OrderProduct from './OrderProduct';
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
+import { SERVER_URL } from '../../../api/api';
 
 const OrderTrack = () => {
     const [orders, setOrders] = useState([]);
@@ -12,7 +13,7 @@ const OrderTrack = () => {
         e.preventDefault();
         const phone = e.target.phone.value;
 
-        fetch(`http://localhost:5000/order_by_phone/${phone}`, {
+        fetch(`${SERVER_URL}/order_by_phone/${phone}`, {
             method: 'GET',
             headers: { 'content-type': 'application/json' }
         })
@@ -97,7 +98,7 @@ const OrderTrack = () => {
                                     <p className="text-gray-700">OrderID: <span className='text-gray-600 font-bold'>{order.orderID}</span></p>
                                 </div>
                                 <div className="text-gray-600 text-lg">
-                                    {expandedOrder === order.orderID ? <button className='btn btn-sm btn-info'>hide <FaChevronUp/></button> : <button className='btn btn-sm btn-accent'>view <FaChevronDown/></button>}
+                                    {expandedOrder === order.orderID ? <button className='btn btn-sm btn-info'>hide <FaChevronUp /></button> : <button className='btn btn-sm btn-accent'>view <FaChevronDown /></button>}
                                 </div>
                             </div>
 

@@ -15,6 +15,7 @@ import axios from 'axios';
 import { useQuery } from '@tanstack/react-query';
 import { FiSearch } from "react-icons/fi";
 import useDebounce from '../../hooks/useDebounce';
+import API from '../../../api/api';
 
 
 const Header = () => {
@@ -24,7 +25,7 @@ const Header = () => {
 
     const { data: categories, isLoading, isSuccess } = useQuery({
         queryKey: ["categories"],
-        queryFn: () => axios.get("http://localhost:5000/categories")
+        queryFn: () => API.get("/categories")
     });
 
     // Category Drawer open and close handling
@@ -67,17 +68,6 @@ const Header = () => {
 
     const navigateToInventory = name => {
         navigate(`/${name}`);
-
-        // Pushing Data to the Data Layer for Google data manager(GTM)
-        window.dataLayer.push({
-            event: 'category_button',
-            ecommerce: {
-                categoryName: { name }
-            },
-            buttonText: 'Category Button',
-            buttonClick: 'Clicked',
-            pagePath: window.location.pathname,
-        });
     }
 
     // Search Product Field handling function
@@ -103,8 +93,8 @@ const Header = () => {
                 return;
             }
 
-            const res = await axios.get(
-                `http://localhost:5000/products/suggestions?q=${value}`
+            const res = await API.get(
+                `/products/suggestions?q=${value}`
             );
 
             setSuggestions(res.data);

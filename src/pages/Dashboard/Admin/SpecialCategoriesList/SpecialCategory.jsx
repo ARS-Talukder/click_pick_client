@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom';
 import { FaBangladeshiTakaSign } from "react-icons/fa6";
 import DashboardButton from '../../DashboardButton';
 import CountdownTimer from '../../../Shared/CountdownTimer';
+import { SERVER_URL } from '../../../../api/api';
 
 const SpecialCategory = () => {
     const { id } = useParams();
@@ -13,7 +14,7 @@ const SpecialCategory = () => {
 
     // Fetch the special category
     useEffect(() => {
-        fetch(`http://localhost:5000/special_category/${id}`)
+        fetch(`${SERVER_URL}/special_category/${id}`)
             .then(res => res.json())
             .then(data => {
                 setSpecialCategory(data);
@@ -24,7 +25,7 @@ const SpecialCategory = () => {
 
     // Fetch all products
     useEffect(() => {
-        fetch("http://localhost:5000/products")
+        fetch(`${SERVER_URL}/products`)
             .then(res => res.json())
             .then(data => setAllProducts(data));
     }, []);
@@ -38,7 +39,7 @@ const SpecialCategory = () => {
 
     // Add product to special category
     const handleAddProduct = (product) => {
-        fetch(`http://localhost:5000/special_category/${id}/add-product`, {
+        fetch(`${SERVER_URL}/special_category/${id}/add-product`, {
             method: "PATCH",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(product)
@@ -54,7 +55,7 @@ const SpecialCategory = () => {
 
     // Remove product from special category
     const handleRemoveProduct = (product) => {
-        fetch(`http://localhost:5000/special_category/${id}/remove-product`, {
+        fetch(`${SERVER_URL}/special_category/${id}/remove-product`, {
             method: "PATCH",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ _id: product._id })
@@ -71,7 +72,7 @@ const SpecialCategory = () => {
     // Update Timer
     const handleUpdateTimer = (e) => {
         e.preventDefault();
-        fetch(`http://localhost:5000/special_category/${id}/update-timer`, {
+        fetch(`${SERVER_URL}/special_category/${id}/update-timer`, {
             method: "PATCH",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ startTime, endTime })

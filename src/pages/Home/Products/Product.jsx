@@ -4,7 +4,6 @@ import { useCart, useDispatchCart } from '../../ContextReducer';
 import toast from 'react-hot-toast';
 import { FaTruckFast } from "react-icons/fa6";
 import { Link, useNavigate } from 'react-router-dom';
-import { dataLayer } from 'react-gtm-module';
 import CartDrawer from './Cart/CartDrawer/CartDrawer';
 
 const Product = ({ product }) => {
@@ -28,27 +27,6 @@ const Product = ({ product }) => {
         toast.success('Added')
         navigate('/checkout', { state: product })
 
-        // Clear previous ecommerce data before pushing the new product
-        window.dataLayer.push({ ecommerce: null });
-
-        // Pushing Data to the Data Layer for Google data manager(GTM)
-        window.dataLayer.push({
-            event: 'begin_checkout',
-            gtm: {
-                uniqueEventId: new Date().getTime(), // Ensure unique event ID
-                historyChangeSource: "pushState",
-                oldHistoryState: null, // Reset old history state
-                newHistoryState: { usr: null, key: "new_key", idx: 2 }, // Keep new state
-            },
-            ecommerce: {
-                currency: 'BDT',
-                value: parseFloat(price),
-                items: [{ product_id: _id, name: name, category: category, img: img, price: price, discount: discount, discount_price: discount_price, size: size, productColor: productColor, shippingCharge: shippingCharge, quantity: 1 }]
-            },
-            buttonText: 'Order Now',
-            buttonClick: 'Clicked',
-            pagePath: window.location.pathname,
-        });
     }
 
     // let productAdded = false;
@@ -63,37 +41,8 @@ const Product = ({ product }) => {
         await dispatch({ type: "ADD", product_id: _id, name: name, category: category, img: img, price: price, discount: discount, discount_price: discount_price, shippingCharge: shippingCharge, quantity: 1 });
         setIsDrawerOpen(true);
 
-        // Clear previous ecommerce data before pushing the new product
-        window.dataLayer.push({ ecommerce: null });
-
-        // Pushing Data to the Data Layer for Google data manager(GTM)
-        window.dataLayer.push({
-            event: 'add_to_cart',
-            gtm: {
-                uniqueEventId: new Date().getTime(), // Ensure unique event ID
-                historyChangeSource: "pushState",
-                oldHistoryState: null, // Reset old history state
-                newHistoryState: { usr: null, key: "new_key", idx: 2 }, // Keep new state
-            },
-            ecommerce: {
-                currency: 'BDT',
-                value: parseFloat(price),
-                items: [{ product_id: _id, name: name, category: category, img: img, price: price, discount: discount, discount_price: discount_price, shippingCharge: shippingCharge, quantity: 1 }]
-            },
-            buttonText: 'Add To Cart',
-            buttonClick: 'Clicked',
-            pagePath: window.location.pathname,
-        });
     }
 
-    // if (data.length !== 0) {
-    //     for (let i = 0; i < data.length; i++) {
-    //         const data_id = data[i].product_id;
-    //         if (data_id === _id) {
-    //             productAdded = true
-    //         }
-    //     }
-    // }
     const productAdded = data.some(item => item.product_id === _id);
 
     return (
@@ -111,20 +60,7 @@ const Product = ({ product }) => {
                         <img className='max-h-full max-w-full object-contain' src={img} alt={name} />
                     </div>
                     <div className="px-3 mt-2">
-                        <h3
-                            className="font-semibold text-sm mb-2 leading-5"
-                            style={{
-                                display: "-webkit-box",
-                                WebkitLineClamp: 2,
-                                WebkitBoxOrient: "vertical",
-                                overflow: "hidden",
-                                lineHeight: "1.4em",
-                                maxHeight: "2.8em",
-                                minHeight: "2.8em"
-                            }}
-                        >
-                            {name}
-                        </h3>
+                        <h3 className="font-semibold text-sm mb-2 leading-5 two-line-clamp">{name}</h3>
                         <div className='mb-2 min-h-[72px]'>
                             <p className={price == discount_price ? 'hidden' : 'flex items-center text-xl font-bold text-red-600'}>
                                 <span className='text-xs mr-0.5'><FaBangladeshiTakaSign /></span>

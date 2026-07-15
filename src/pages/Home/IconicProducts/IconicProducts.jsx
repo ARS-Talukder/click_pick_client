@@ -3,27 +3,13 @@ import Product from '../Products/Product';
 import { useQuery } from '@tanstack/react-query';
 import axios from 'axios';
 import Loading from '../../Shared/Loading';
+import API from '../../../api/api';
 
 const IconicProducts = () => {
     const { data: iconicCategories, isLoading, isSuccess } = useQuery({
         queryKey: ["iconicCategories"],
-        queryFn: () => axios.get("http://localhost:5000/iconic_categories")
+        queryFn: () => API.get("/iconic_categories")
     });
-
-    // Google Tag Manager data layer push
-    // useEffect(() => {
-    //     if (isSuccess && iconicCategories?.data) {
-    //         window.dataLayer.push({ ecommerce: null });
-    //         window.dataLayer.push({
-    //             event: "view_item_list",
-    //             ecommerce: {
-    //                 currency: 'BDT',
-    //                 items: iconicCategories.data
-    //             },
-    //             pagePath: window.location.pathname,
-    //         });
-    //     }
-    // }, [isSuccess, iconicCategories]);
 
     if (isLoading) return <Loading />;
     return (

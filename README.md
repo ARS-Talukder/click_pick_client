@@ -7,7 +7,7 @@ Click Pick is a modern, responsive, and user-friendly eCommerce web application 
 - **Live Website:** https://click-pick.netlify.app/
 - **Client Repository:** https://github.com/ARS-Talukder/click_pick_client
 - **Server Repository:** https://github.com/ARS-Talukder/click_pick_server
-- **Backend API:** http://localhost:5000/
+- **Backend API:** https://click-pick-server.onrender.com/
 
 ---
 

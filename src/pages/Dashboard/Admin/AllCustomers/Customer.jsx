@@ -1,13 +1,14 @@
 import React from 'react';
 import toast from 'react-hot-toast';
 import { AiFillDelete } from "react-icons/ai";
+import { SERVER_URL } from '../../../../api/api';
 
 const Customer = ({ customer, index, refetch }) => {
     const { _id, name, email, phone, role } = customer;
     const handleDelete = (id) => {
         const proceed = window.confirm('Do You Want to remove this order information from database?');
         if (proceed) {
-            fetch(`http://localhost:5000/customer-delete/${_id}`, {
+            fetch(`${SERVER_URL}/customer-delete/${_id}`, {
                 method: 'DELETE'
             })
                 .then(res => res.json())

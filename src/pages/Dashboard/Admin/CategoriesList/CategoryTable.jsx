@@ -3,6 +3,7 @@ import toast from 'react-hot-toast';
 import { AiFillDelete } from "react-icons/ai";
 import { MdEdit } from "react-icons/md";
 import { useNavigate } from 'react-router-dom';
+import { SERVER_URL } from '../../../../api/api';
 
 const CategoryTable = ({ index, category, refetch }) => {
     const navigate = useNavigate();
@@ -10,7 +11,7 @@ const CategoryTable = ({ index, category, refetch }) => {
     const handleDelete = (id) => {
         const proceed = window.confirm('Do You Want to delete this category?');
         if (proceed) {
-            fetch(`http://localhost:5000/category-delete/${id}`, {
+            fetch(`${SERVER_URL}/category-delete/${id}`, {
                 method: 'DELETE'
             })
                 .then(res => res.json())

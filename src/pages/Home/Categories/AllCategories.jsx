@@ -3,18 +3,19 @@ import React from 'react';
 import Loading from '../../Shared/Loading';
 import Category from './Category';
 import { useQuery } from '@tanstack/react-query';
+import API from '../../../api/api';
 
 const AllCategories = () => {
     const { data: categories, isLoading, isSuccess, isError, error } = useQuery({
         queryKey: ["categories"],
         queryFn: () => {
-            return axios.get("http://localhost:5000/categories")
+            return API.get("/categories")
         }
     })
     let content;
 
     if (isLoading) {
-        return <Loading></Loading>
+        return <Loading />
     }
 
     if (isSuccess) {

@@ -3,6 +3,7 @@ import DashboardButton from '../../DashboardButton';
 import { FaCloudUploadAlt } from "react-icons/fa";
 import toast from 'react-hot-toast';
 import { useNavigate } from 'react-router-dom';
+import { SERVER_URL } from '../../../../api/api';
 
 const AddSpecialCategory = () => {
     const navigate = useNavigate();
@@ -20,7 +21,7 @@ const AddSpecialCategory = () => {
             products: []
         };
 
-        fetch('http://localhost:5000/special_categories', {
+        fetch(`${SERVER_URL}/special_categories`, {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

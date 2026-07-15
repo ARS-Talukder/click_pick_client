@@ -8,6 +8,7 @@ import { RxCross2 } from "react-icons/rx";
 import { FaRegImages } from "react-icons/fa";
 import { FaCloudUploadAlt } from "react-icons/fa";
 import Loading from '../../../Shared/Loading';
+import API, { SERVER_URL } from '../../../../api/api';
 
 
 
@@ -17,7 +18,7 @@ const EditCategory = () => {
     const id = param.id;
     const [category, setCategory] = useState({});
     useEffect(() => {
-        fetch(`http://localhost:5000/category_by_id/${id}`)
+        fetch(`${SERVER_URL}/category_by_id/${id}`)
             .then(res => res.json())
             .then(data => setCategory(data))
 
@@ -31,14 +32,14 @@ const EditCategory = () => {
     // Handling images upload state
     const [editImage, setEditImage] = useState('');
     useEffect(() => {
-        fetch(`http://localhost:5000/category_by_id/${id}`)
+        fetch(`${SERVER_URL}/category_by_id/${id}`)
             .then(res => res.json())
             .then(data => setEditImage(data?.img))
     }, [id])
 
     const navigate = useNavigate();
     if (loading) {
-        return <Loading></Loading>
+        return <Loading />
     }
 
     // Handling image upload and delete from hosting
@@ -52,11 +53,11 @@ const EditCategory = () => {
         const formData = new FormData();
         formData.append("image", file);
         try {
-            const response = await axios.post("http://localhost:5000/upload", formData, {
+            const response = await API.post("/upload", formData, {
                 headers: { "Content-Type": "multipart/form-data" },
             });
 
-            const imageUrl = `http://localhost:5000/${response.data.filePath}`;
+            const imageUrl = `${SERVER_URL}/${response.data.filePath}`;
             const newImage = { _id: Date.now(), url: imageUrl };
 
             // Add new image to the local state
@@ -65,7 +66,7 @@ const EditCategory = () => {
             toast.success("Uploaded");
 
             //Add image to the database
-            fetch(`http://localhost:5000/category_image/${id}`, {
+            fetch(`${SERVER_URL}/category_image/${id}`, {
                 method: 'PATCH',
                 headers: {
                     'content-type': 'application/json'
@@ -79,7 +80,7 @@ const EditCategory = () => {
     };
     const handleDeleteImage = async (imageUrl) => {
         try {
-            await axios.delete("http://localhost:5000/delete", {
+            await API.delete("/delete", {
                 data: { imageUrl }
             });
 
@@ -89,7 +90,7 @@ const EditCategory = () => {
             toast.success("Deleted!");
 
             //Remove image from the database
-            fetch(`http://localhost:5000/category_image/${id}`, {
+            fetch(`${SERVER_URL}/category_image/${id}`, {
                 method: 'PATCH',
                 headers: {
                     'content-type': 'application/json'
@@ -117,7 +118,7 @@ const EditCategory = () => {
             img: editImage,
         };
 
-        fetch(`http://localhost:5000/edit_category/${id}`, {
+        fetch(`${SERVER_URL}/edit_category/${id}`, {
             method: 'PATCH',
             headers: {
                 'content-type': 'application/json'

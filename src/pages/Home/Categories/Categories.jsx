@@ -5,11 +5,12 @@ import axios from 'axios';
 import { FaLongArrowAltRight } from "react-icons/fa";
 import Loading from '../../Shared/Loading';
 import { Link } from 'react-router-dom';
+import API from '../../../api/api';
 
 const Categories = () => {
     const { data: categories, isLoading, isSuccess } = useQuery({
         queryKey: ["categories"],
-        queryFn: () => axios.get("http://localhost:5000/categories")
+        queryFn: () => API.get("/categories")
     });
 
     const [isMobile, setIsMobile] = useState(window.innerWidth < 768);

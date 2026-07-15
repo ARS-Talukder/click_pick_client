@@ -8,13 +8,14 @@ import { FaCloudUploadAlt } from "react-icons/fa";
 import toast from 'react-hot-toast';
 import { FaRegImages } from "react-icons/fa";
 import { RxCross2 } from "react-icons/rx";
+import API, { SERVER_URL } from '../../../../api/api';
 
 const EditProduct = () => {
     const param = useParams();
     const id = param.id;
     const [product, setProduct] = useState({});
     useEffect(() => {
-        fetch(`http://localhost:5000/product/${id}`)
+        fetch(`${SERVER_URL}/product/${id}`)
             .then(res => res.json())
             .then(data => setProduct(data))
 
@@ -27,7 +28,7 @@ const EditProduct = () => {
     // Handling images upload state
     const [editImages, setEditImages] = useState([]);
     useEffect(() => {
-        fetch(`http://localhost:5000/product/${id}`)
+        fetch(`${SERVER_URL}/product/${id}`)
             .then(res => res.json())
             .then(data => setEditImages(data?.images))
     }, [id])
@@ -38,7 +39,7 @@ const EditProduct = () => {
     const { data: categories, isLoading, isSuccess, isError } = useQuery({
         queryKey: ["categories"],
         queryFn: () => {
-            return axios.get("http://localhost:5000/categories")
+            return API.get("/categories")
         }
     })
 
@@ -49,7 +50,7 @@ const EditProduct = () => {
     }
 
     if (loading || isLoading) {
-        return <Loading></Loading>
+        return <Loading />
     }
 
     const handleShippingCharge = (event) => {
@@ -82,11 +83,11 @@ const EditProduct = () => {
         const formData = new FormData();
         formData.append("image", file);
         try {
-            const response = await axios.post("http://localhost:5000/upload", formData, {
+            const response = await API.post("/upload", formData, {
                 headers: { "Content-Type": "multipart/form-data" },
             });
 
-            const imageUrl = `http://localhost:5000/${response.data.filePath}`;
+            const imageUrl = `${SERVER_URL}/${response.data.filePath}`;
             const newImage = { _id: Date.now(), url: imageUrl };
 
             // Add new image to the local state
@@ -95,7 +96,7 @@ const EditProduct = () => {
             toast.success("Uploaded");
 
             //Add image to the database
-            fetch(`http://localhost:5000/product_image/${id}`, {
+            fetch(`${SERVER_URL}/product_image/${id}`, {
                 method: 'PATCH',
                 headers: {
                     'content-type': 'application/json'
@@ -109,7 +110,7 @@ const EditProduct = () => {
     };
     const handleDeleteImage = async (imageId, imageUrl) => {
         try {
-            await axios.delete("http://localhost:5000/delete", {
+            await API.delete("/delete", {
                 data: { imageUrl }
             });
 
@@ -121,7 +122,7 @@ const EditProduct = () => {
             toast.success("Deleted!");
 
             //Remove image from the database
-            fetch(`http://localhost:5000/product_image/${id}`, {
+            fetch(`${SERVER_URL}/product_image/${id}`, {
                 method: 'PATCH',
                 headers: {
                     'content-type': 'application/json'
@@ -181,7 +182,7 @@ const EditProduct = () => {
             images: editImages,
             description
         };
-        fetch(`http://localhost:5000/edit_product/${id}`, {
+        fetch(`${SERVER_URL}/edit_product/${id}`, {
             method: 'PATCH',
             headers: {
                 'content-type': 'application/json'

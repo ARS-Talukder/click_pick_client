@@ -3,6 +3,7 @@ import { useSignInWithEmailAndPassword, useSignInWithGoogle } from 'react-fireba
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 import Loading from '../Shared/Loading';
+import { SERVER_URL } from '../../api/api';
 
 const Sign = () => {
     const [signInWithEmailAndPassword, user, loading, error,] = useSignInWithEmailAndPassword(auth);
@@ -18,7 +19,7 @@ const Sign = () => {
     }, [user, gUser, from, navigate])
 
     if (loading || gLoading) {
-        return <Loading></Loading>
+        return <Loading />
     }
 
     let signInError;
@@ -46,7 +47,7 @@ const Sign = () => {
                 const customer = { name, email, phone, address }
                 if (data.user) {
                     //Post a customer
-                    fetch(`http://localhost:5000/customers/${email}`, {
+                    fetch(`${SERVER_URL}/customers/${email}`, {
                         method: 'PUT',
                         headers: {
                             'content-type': 'application/json'

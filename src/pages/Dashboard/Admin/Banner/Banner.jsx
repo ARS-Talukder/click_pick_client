@@ -7,13 +7,14 @@ import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import toast from 'react-hot-toast';
 import '../../../Home/Slider/Slider.css';
+import API, { SERVER_URL } from '../../../../api/api';
 
 const Banner = () => {
     // Handling images upload state
     const [images, setImages] = useState([]);
 
     useEffect(() => {
-        fetch("http://localhost:5000/banner")
+        fetch(`${SERVER_URL}/banner`)
             .then(res => res.json())
             .then(data => setImages(data))
     }, [])
@@ -31,11 +32,11 @@ const Banner = () => {
         const formData = new FormData();
         formData.append("image", file);
         try {
-            const response = await axios.post("http://localhost:5000/upload", formData, {
+            const response = await axios.post(`${SERVER_URL}/upload`, formData, {
                 headers: { "Content-Type": "multipart/form-data" },
             });
 
-            const imageUrl = `http://localhost:5000/${response.data.filePath}`;
+            const imageUrl = `${SERVER_URL}/${response.data.filePath}`;
             const newImage = { _id: Date.now(), url: imageUrl };
 
             // Add new image to the local state
@@ -44,7 +45,7 @@ const Banner = () => {
             toast.success("Uploaded");
 
             //Add banner to the database
-            await fetch('http://localhost:5000/banner', {
+            await fetch(`${SERVER_URL}/banner`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -59,7 +60,7 @@ const Banner = () => {
     };
     const handleDeleteImage = async (id, imageUrl) => {
         try {
-            await axios.delete("http://localhost:5000/delete", {
+            await API.delete("/delete", {
                 data: { imageUrl }
             });
 
@@ -71,7 +72,7 @@ const Banner = () => {
             toast.success("Deleted!");
 
             // Remove from database
-            fetch('http://localhost:5000/banner', {
+            fetch(`${SERVER_URL}/banner`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -92,7 +93,7 @@ const Banner = () => {
             toast.error("Failed");
         }
     };
-    
+
     return (
         <div className='py-2'>
             {/* ---------------Dashboard Button------------- */}

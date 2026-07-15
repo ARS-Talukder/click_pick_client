@@ -6,6 +6,7 @@ import Loading from '../../Shared/Loading';
 import { useQuery } from '@tanstack/react-query';
 import axios from 'axios';
 import DashboardButton from '../DashboardButton';
+import API from '../../../api/api';
 
 
 const MyProfile = () => {
@@ -15,12 +16,12 @@ const MyProfile = () => {
     const { data: customers, isLoading, isSuccess, isError, refetch } = useQuery({
         queryKey: ["customers"],
         queryFn: () => {
-            return axios.get("http://localhost:5000/customers")
+            return API.get("/customers")
         }
     })
 
     if (loading || isLoading) {
-        return <Loading></Loading>
+        return <Loading />
     }
     if (customers.data.length !== 0) {
         customers.data.filter((order) => {

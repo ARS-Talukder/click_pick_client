@@ -8,9 +8,9 @@ import toast from 'react-hot-toast';
 import CartDrawer from '../../Cart/CartDrawer/CartDrawer';
 
 const ProductDescription = ({ product }) => {
-    const { _id, name, price, discount, discount_price, category, images, description, productColor, subtitle, size, whyBest } = product;
+    const { _id, name, price, discount, discount_price, category, images, description, productColor, shippingCharge, subtitle, size, whyBest } = product;
     const img = images[0]?.url;
-    console.log(discount_price)
+
 
     // Cart Drawer open and close handling
     const [isDrawerOpen, setIsDrawerOpen] = useState(false);
@@ -28,31 +28,9 @@ const ProductDescription = ({ product }) => {
     const selectedColorName = selectedColorObj?.text;
 
     const handleOrderNow = async () => {
-        await dispatch({ type: "ADD", product_id: _id, name: name, category: category, img: img, price: price, discount: discount, discount_price: discount_price, size: selectedSizeName, color: selectedColorName, quantity: 1 });
+        await dispatch({ type: "ADD", product_id: _id, name: name, category: category, img: img, price: price, discount: discount, discount_price: discount_price, size: selectedSizeName, color: selectedColorName, shippingCharge: shippingCharge, quantity: 1 });
         toast.success('Added to the cart')
         navigate('/checkout', { state: product })
-
-        // Clear previous ecommerce data before pushing the new product
-        window.dataLayer.push({ ecommerce: null });
-
-        // Pushing Data to the Data Layer for Google data manager(GTM)
-        window.dataLayer.push({
-            event: 'begin_checkout',
-            gtm: {
-                uniqueEventId: new Date().getTime(), // Ensure unique event ID
-                historyChangeSource: "pushState",
-                oldHistoryState: null, // Reset old history state
-                newHistoryState: { usr: null, key: "new_key", idx: 2 }, // Keep new state
-            },
-            ecommerce: {
-                currency: 'BDT',
-                value: parseFloat(price),
-                items: [{ product_id: _id, name: name, category: category, img: img, price: price, discount: discount, discount_price: discount_price, size: selectedSizeName, color: selectedColorName, quantity: 1 }]
-            },
-            buttonText: 'Order Now',
-            buttonClick: 'Clicked',
-            pagePath: window.location.pathname,
-        });
 
     }
 
@@ -62,30 +40,8 @@ const ProductDescription = ({ product }) => {
     let data = useCart();
 
     const handleAddToCart = async () => {
-        await dispatch({ type: "ADD", product_id: _id, name: name, category: category, img: img, price: price, discount: discount, discount_price: discount_price, size: selectedSizeName, color: selectedColorName, quantity: 1 });
+        await dispatch({ type: "ADD", product_id: _id, name: name, category: category, img: img, price: price, discount: discount, discount_price: discount_price, size: selectedSizeName, color: selectedColorName, shippingCharge: shippingCharge, quantity: 1 });
         setIsDrawerOpen(true);
-
-        // Clear previous ecommerce data before pushing the new product
-        window.dataLayer.push({ ecommerce: null });
-
-        // Pushing Data to the Data Layer for Google data manager(GTM)
-        window.dataLayer.push({
-            event: 'add_to_cart',
-            gtm: {
-                uniqueEventId: new Date().getTime(), // Ensure unique event ID
-                historyChangeSource: "pushState",
-                oldHistoryState: null, // Reset old history state
-                newHistoryState: { usr: null, key: "new_key", idx: 2 }, // Keep new state
-            },
-            ecommerce: {
-                currency: 'BDT',
-                value: parseFloat(price),
-                items: [{ product_id: _id, name: name, category: category, img: img, price: price, discount: discount, discount_price: discount_price, size: selectedSizeName, color: selectedColorName, quantity: 1 }]
-            },
-            buttonText: 'Add To Cart',
-            buttonClick: 'Clicked',
-            pagePath: window.location.pathname,
-        });
 
     }
 

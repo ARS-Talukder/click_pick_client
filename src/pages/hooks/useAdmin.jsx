@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import { SERVER_URL } from "../../api/api";
 
 const useAdmin = user => {
     const [admin, setAdmin] = useState(false);
@@ -11,7 +12,7 @@ const useAdmin = user => {
             return;
         }
         if (email) {
-            fetch(`http://localhost:5000/admin/${email}`, {
+            fetch(`${SERVER_URL}/admin/${email}`, {
                 method: 'GET',
                 headers: {
                     'content-type': 'application/json'

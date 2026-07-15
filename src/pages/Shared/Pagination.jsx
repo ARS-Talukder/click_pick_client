@@ -3,7 +3,6 @@ import React from 'react';
 const Pagination = ({currentPage, setCurrentPage, totalPages}) => {
     
     const pageNumbers = [...Array(totalPages).keys()].map(number => number + 1);
-    console.log(currentPage,setCurrentPage,totalPages)
 
     return (
         <div className="flex justify-center gap-2 mt-8">

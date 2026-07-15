@@ -10,13 +10,14 @@ import Loading from '../Shared/Loading';
 import useAdmin from '../hooks/useAdmin';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import auth from '../../firebase.init';
+import API from '../../api/api';
 
 const fetchAllData = async () => {
     const [products, categories, orders, customers] = await Promise.all([
-        axios.get("http://localhost:5000/products"),
-        axios.get("http://localhost:5000/categories"),
-        axios.get("http://localhost:5000/orders"),
-        axios.get("http://localhost:5000/customers")
+        API.get("/products"),
+        API.get("/categories"),
+        API.get("/orders"),
+        API.get("/customers")
     ]);
 
     return {
@@ -36,7 +37,7 @@ const Index = () => {
     });
 
     if (isLoading || loading || adminLoading) {
-        <Loading></Loading>
+        return <Loading />
     }
     if (isError) return <p>Error: {error.message}</p>;
     return (

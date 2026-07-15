@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import DashboardButton from '../../DashboardButton';
 import { useParams } from 'react-router-dom';
 import { FaBangladeshiTakaSign } from "react-icons/fa6";
+import { SERVER_URL } from '../../../../api/api';
 
 const IconicCategory = () => {
     const { id } = useParams();
@@ -10,7 +11,7 @@ const IconicCategory = () => {
 
     // Fetch the special category
     useEffect(() => {
-        fetch(`http://localhost:5000/iconic_category/${id}`)
+        fetch(`${SERVER_URL}/iconic_category/${id}`)
             .then(res => res.json())
             .then(data => {
                 setIconicCategory(data);
@@ -19,7 +20,7 @@ const IconicCategory = () => {
 
     // Fetch all products
     useEffect(() => {
-        fetch("http://localhost:5000/products")
+        fetch(`${SERVER_URL}/products`)
             .then(res => res.json())
             .then(data => setAllProducts(data));
     }, []);
@@ -33,7 +34,7 @@ const IconicCategory = () => {
 
     // Add product to special category
     const handleAddProduct = (product) => {
-        fetch(`http://localhost:5000/iconic_category/${id}/add-product`, {
+        fetch(`${SERVER_URL}/iconic_category/${id}/add-product`, {
             method: "PATCH",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(product)
@@ -49,7 +50,7 @@ const IconicCategory = () => {
 
     // Remove product from special category
     const handleRemoveProduct = (product) => {
-        fetch(`http://localhost:5000/iconic_category/${id}/remove-product`, {
+        fetch(`${SERVER_URL}/iconic_category/${id}/remove-product`, {
             method: "PATCH",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify({ _id: product._id })
@@ -63,7 +64,7 @@ const IconicCategory = () => {
             });
     };
 
-    
+
     return (
         <div>
             {/* ---------------Dashboard Button------------- */}

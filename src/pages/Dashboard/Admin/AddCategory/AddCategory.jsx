@@ -63,30 +63,35 @@ const AddCategory = () => {
         const img = images[0]?.url;
         const category = { name, img };
 
-        if (img != undefined) {
+        if (img !== undefined) {
             fetch(`${SERVER_URL}/categories`, {
-                method: 'POST',
+                method: "POST",
                 headers: {
-                    'content-type': 'application/json'
+                    "content-type": "application/json",
                 },
-                body: JSON.stringify(category)
+                body: JSON.stringify(category),
             })
-                .then(res => res.json())
-                .then(data => {
-                    toast.success(`Done`);
-                    navigate('/dashboard/categories_list')
+                .then(async (res) => {
+                    const data = await res.json();
 
+                    if (!res.ok) {
+                        toast.error(data.message);
+                        return;
+                    }
+
+                    toast.success("Category added successfully.");
+                    navigate("/dashboard/categories_list");
                 })
-                .catch(err => {
-                    toast.error("Failed");
+                .catch((err) => {
                     console.error(err);
+                    toast.error("Something went wrong.");
                 })
                 .finally(() => {
-                    setLoading(false); // Stop loading
+                    setLoading(false);
                 });
-        }
-        else {
-            toast.error(`Done`);
+        } else {
+            toast.error("Image is required.");
+            setLoading(false);
         }
     }
     return (

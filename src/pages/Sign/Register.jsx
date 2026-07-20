@@ -77,7 +77,6 @@ const Register = () => {
                     })
                 }
             })
-        // singinwithgoogle().then(data => console.log(data)).catch()
     }
     return (
         <div className='flex justify-center items-center mt-6 pt-8 pb-16 px-4'>

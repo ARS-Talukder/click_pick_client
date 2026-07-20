@@ -176,7 +176,7 @@ const Header = () => {
                 {/* Category dropdown list */}
                 <ul className="p-4 space-y-3 text-gray-700 overflow-y-auto h-[calc(100vh-64px)]">
                     {
-                        categories?.data.map(c => <li key={c._id} className="cursor-pointer hover:text-blue-600 flex items-center" onClick={() => navigateToInventory(c.name)}>
+                        categories?.data?.map(c => <li key={c._id} className="cursor-pointer hover:text-blue-600 flex items-center" onClick={() => navigateToInventory(c.name)}>
                             <div className='avatar mr-4 my-0.5'>
                                 <div className="w-8 shadow-lg shadow-black hover:shadow-xl transition-shadow duration-300 rounded-3xl">
                                     <img className='w-full text-center' src={c.img} alt='category_img' />

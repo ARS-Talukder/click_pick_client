@@ -38,7 +38,7 @@ const ProductsList = () => {
             {/* ---------------Dashboard Button------------- */}
             <DashboardButton></DashboardButton>
             <div className='bg-white p-5 my-4 rounded-xl shadow-xl'>
-                <h2 className='text-xl font-bold text-slate-600'>Products List</h2>
+                <h2 className='text-xl font-bold text-slate-600'>Products List <span className='text-green-600'>({totalProducts})</span></h2>
             </div>
             <div className="overflow-x-auto bg-white rounded-xl shadow-xl my-6 pb-6">
                 <table className="table table border">

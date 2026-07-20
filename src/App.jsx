@@ -40,6 +40,7 @@ import IconicCategories from './pages/Dashboard/Admin/IconicCategories/IconicCat
 import IconicCategory from './pages/Dashboard/Admin/IconicCategories/IconicCategory'
 import Campaign from './pages/Home/Campaign/Campaign'
 import SearchProducts from './pages/Home/Search/SearchProducts'
+import CategoryProducts from './pages/Dashboard/Admin/CategoriesList/CategoryProducts'
 
 function App() {
 
@@ -78,6 +79,7 @@ function App() {
             <Route path='/dashboard/categories_list' element={<RequireAdmin><CategoriesList></CategoriesList></RequireAdmin>}></Route>
             <Route path='/dashboard/add_category' element={<RequireAdmin><AddCategory></AddCategory></RequireAdmin>}></Route>
             <Route path='/dashboard/edit_category/:id' element={<RequireAdmin><EditCategory></EditCategory></RequireAdmin>}></Route>
+            <Route path='/dashboard/category_products/:name' element={<RequireAdmin><CategoryProducts></CategoryProducts></RequireAdmin>}></Route>
 
 
             <Route path='/dashboard/special_categories_list' element={<RequireAdmin><SpecialCategoriesList></SpecialCategoriesList></RequireAdmin>}></Route>

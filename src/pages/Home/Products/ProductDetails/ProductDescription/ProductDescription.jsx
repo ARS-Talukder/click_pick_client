@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { FaBangladeshiTakaSign } from "react-icons/fa6";
 import { FaWhatsapp } from "react-icons/fa";
 import { FaPhone } from "react-icons/fa6";
+import { FaFacebookMessenger } from "react-icons/fa";
 import { useNavigate } from 'react-router-dom';
 import { useCart, useDispatchCart } from '../../../../ContextReducer';
 import toast from 'react-hot-toast';
@@ -143,9 +144,21 @@ const ProductDescription = ({ product }) => {
                     <span>WHATSAPP</span>
                 </a>
 
-                <a href="tel:+8801629396785" className='flex justify-center items-center w-full h-9 bg-blue-100 hover:bg-blue-600 text-blue-600 hover:text-white border border-blue-600 rounded ml-4'>
+                {/* <a href="tel:+8801629396785" className='flex justify-center items-center w-full h-9 bg-blue-100 hover:bg-blue-600 text-blue-600 hover:text-white border border-blue-600 rounded ml-4'>
                     <span className='mx-1'><small><FaPhone /></small></span>
                     <span>01629396785</span>
+                </a> */}
+
+                <a
+                    href="https://m.me/funtouchpoint"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex justify-center items-center w-full h-9 bg-blue-100 hover:bg-blue-600 text-blue-600 hover:text-white border border-blue-600 rounded ml-4"
+                >
+                    <span className="mx-1">
+                        <FaFacebookMessenger className="text-lg" />
+                    </span>
+                    <span>Messenger</span>
                 </a>
             </div>
 

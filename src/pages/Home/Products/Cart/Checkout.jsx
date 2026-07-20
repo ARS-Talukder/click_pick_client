@@ -131,14 +131,12 @@ const Checkout = () => {
             if (transactionID.trim().length < 8) return toast.error('Transaction ID must be at least 8 characters.');
         }
 
-        const orderID = Math.floor(10000000 + Math.random() * 90000000);
         const customerName = e.target.name.value;
         const street = e.target.street.value;
         const phone = e.target.phone.value;
 
         const order = {
             customerName,
-            orderID,
             address: { street, upazila: selectedUpazila, district: selectedDistrictName, division: selectedDivision },
             subTotal,
             shipping,
@@ -153,10 +151,6 @@ const Checkout = () => {
             transactionID: paymentMethod === 'bKash' ? transactionID : null,
             status: 'processing',
             status_color: 'yellow',
-            orderSteps: [
-                { time: `${date}\n${time}`, title: 'Order Placed', description: `Your order is successfully placed. Order id ${orderID}` },
-                { time: `${date}\n${time}`, title: 'Processing', description: 'We have received your order. Our team will confirm shortly' }
-            ]
         };
 
         fetch(`${SERVER_URL}/orders`, {
@@ -169,7 +163,7 @@ const Checkout = () => {
                 if (data.acknowledged) {
                     toast.success("Congratulations! Your order's completed");
                     dispatch({ type: "CLEAR" });
-                    navigate('/confirmed', { state: orderID });
+                    navigate('/confirmed', { state: data.orderID });
                 } else toast.error('Sorry! Try again');
             });
 

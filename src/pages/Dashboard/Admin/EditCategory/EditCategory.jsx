@@ -106,37 +106,42 @@ const EditCategory = () => {
     const handleEditCategory = (e) => {
         e.preventDefault();
 
-        // start loading
         setLoading(true);
 
         const form = e.target;
 
-        const name = form.name.value || category.name;
-
         const updatedCategory = {
-            name,
+            name: form.name.value || category.name,
             img: editImage,
         };
 
         fetch(`${SERVER_URL}/edit_category/${id}`, {
-            method: 'PATCH',
+            method: "PATCH",
             headers: {
-                'content-type': 'application/json'
+                "content-type": "application/json",
             },
-            body: JSON.stringify(updatedCategory)
+            body: JSON.stringify(updatedCategory),
         })
-            .then(res => res.json())
-            .then(data => {
-                toast.success(`Category added`);
-                navigate('/dashboard/categories_list')
-                setLoading(false)
+            .then(async (res) => {
+                const data = await res.json();
 
+                if (!res.ok) {
+                    toast.error(data.message || "Failed to update category.");
+                    return;
+                }
+
+                toast.success("Category updated successfully.");
+                navigate("/dashboard/categories_list");
             })
-
-
-
-
+            .catch((err) => {
+                console.error(err);
+                toast.error("Something went wrong. Please try again.");
+            })
+            .finally(() => {
+                setLoading(false);
+            });
     };
+    
     return (
         <div className='py-2'>
             {/* ---------------Dashboard Button------------- */}

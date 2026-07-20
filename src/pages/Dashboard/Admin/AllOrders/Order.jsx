@@ -42,6 +42,13 @@ const Order = ({ order, index, refetch }) => {
         if (stateName === 'canceled') {
             newStep1 = { time: now, title: 'Canceled', description: 'Sorry, your order has been canceled by our team. For more details, please contact +8801814728277' }
         }
+        if (stateName === "refunded") {
+            newStep1 = {
+                time: now,
+                title: "Refunded",
+                description: "The payment has been refunded to the customer."
+            };
+        }
 
         // Build steps array safely
         const steps = [];
@@ -86,6 +93,9 @@ const Order = ({ order, index, refetch }) => {
     }
     if (status === 'delivered') {
         classColor = 'text-xl text-green-500'
+    }
+    if (status === "refunded") {
+        classColor = "text-xl text-purple-600";
     }
 
     const handleDelete = (id) => {
@@ -179,7 +189,11 @@ const Order = ({ order, index, refetch }) => {
                     value={status}
                     onChange={handleOrderState}
                     className="select select-sm select-primary"
-                    disabled={status === 'delivered' || status === 'canceled' && true}
+                    disabled={
+                        status === "delivered" ||
+                        status === "canceled" ||
+                        status === "refunded"
+                    }
                 >
                     {status === "canceled" ? (
                         // Only show Canceled when canceled is selected
@@ -198,17 +212,25 @@ const Order = ({ order, index, refetch }) => {
                                         item === "processing" ? "text-yellow-500" :
                                             item === "confirmed" ? "text-black" :
                                                 item === "packed" ? "text-blue-600" :
-                                                    item === "delivered" ? "text-green-500" : ""
+                                                    item === "delivered" ? "text-green-500" :
+                                                        item === "refunded" ? "text-purple-600" : ""
                                     }
                                 >
                                     {item.charAt(0).toUpperCase() + item.slice(1)}
                                 </option>
                             ))}
 
-                            {/* Show 'Canceled' if status is not delivered or canceled */}
-                            {status !== "delivered" && (
+                            {/* for Cash on Delivery show cancel button */}
+                            {!transactionID && status !== "delivered" && (
                                 <option value="canceled" className="text-red-500">
                                     Canceled
+                                </option>
+                            )}
+
+                            {/* for bKash / Paid Order show refunded button */}
+                            {transactionID && status !== "delivered" && (
+                                <option value="refunded" className="text-purple-600">
+                                    Refunded
                                 </option>
                             )}
                         </>
